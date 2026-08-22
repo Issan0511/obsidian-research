@@ -10,3 +10,8 @@
 ## 現在のテーマ
 
 - `可塑性喪失/`
+
+## MCPでの変更追跡
+
+MCPからcommitするときは`author`と`message`を渡し、commit subjectを`[author]:message`に統一する。
+行の最終変更者は`obsidian_git_blame`で確認する。
