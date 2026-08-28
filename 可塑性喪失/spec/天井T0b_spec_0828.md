@@ -194,7 +194,7 @@ P3 の閾値 15% は「前身の主根がブリップで 0.6 / 0.93 ≒ 64% 動�
 | B6 | 主ペアに軸回転なし | `flip_state_start == flip_state_end` | **確認済み**（前身 A13） |
 | B7 | **µ 軸が非退化** | `median(mu_norm)` が閾値 1.0 以上 | **std = 3.041**（q05 = 2.291、`mu_norm < 0.5` の割合 0.000） |
 | B8 | **centered は本 spec の対象外** | 同上の閾値を centered に適用すると落ちる | **centered = 0.117**（q05 = 0.044、`< 0.5` の割合 **0.670**）→ §8.3 |
-| B9 | 腕C の起動手段が存在 | `src/ratchet_log.py` に `--seeds` と `--outdir` | **確認済み**（L947, L951） |
+| B9 | 腕C の起動手段が存在し、**かつ乱数系列が腕E と bit 一致しない** | `src/ratchet_log.py` に `--seeds` と `--outdir`。加えて解析対象ログの軌道列（`cos_u_mu`・`w_norm`・`p_hat`・`F_gate`・`F_self`・`F_rest`・`flip_state`・`mu_norm`）の指紋が腕E と交わらないこと | 初版は前半のみだった。**8/28 に後半を追加**（§12） |
 | B10 | H の実装一致 | 新実装のペア別 H が `disp − f0` と一致 | 実行時に検証 |
 
 **B7/B8 は前身に存在しなかった行であり、本 spec で新設した。**起草中に事前登録腕の候補を 1 つ棄却した根拠がこれである（§8.3）。
@@ -212,8 +212,9 @@ P3 の閾値 15% は「前身の主根がブリップで 0.6 / 0.93 ≒ 64% 動�
 
 ### 8.2 腕C（事前登録・新規 seed）
 
-- 生成: `OMP_NUM_THREADS=1 python -m src.ratchet_log --config configs/ratchet_log_0819.yaml --seeds 10 11 12 13 14 15 16 17 18 19 --outdir results/ratchet_log_0829c`
-- **config は 0819 と同一**。変えるのは seed のみ
+- 生成: `OMP_NUM_THREADS=1 python -m src.ratchet_log --config configs/ratchet_log_0829c.yaml --outdir results/ratchet_log_0829c`
+- **config は 0819 との差分 2 行のみ**: `seeds` を 10–19 へ、`generator_offset: 20260831` を追加
+- **seed 番号だけを変えても新しい seed 群にはならない（8/28 に実測で判明、§12）。** `src/train.py` の `make_gens` は乱数を `SEED_BASE[exp] + width + generator_offset` からのみ作り、config の seed 値は `run_id` と保存列にしか入らない。独立系列のノブは `generator_offset` である（先例: `function_blind_direct_0823_confirm` の `generator_offset: 20260830`）
 - 出力: `results/ceiling_t0b_C_0829/`
 - **判定基準は本ファイルの凍結 commit で確定済みとする。腕C のデータを見た後に窓・k・ガード・閾値を変更しない**
 - 未確定事項: 走行時間。**起草時点で計測していない。**実行前に smoke で 1 seed の実測を取る（§11-2）。1M step × 10 seed の規模なので、着手前に所要時間を把握しておく
@@ -305,6 +306,17 @@ preflight・アサーション FAIL 時は実装を修正して同じ spec で�
 | 2026-08-28 | 初版を凍結 commit（`b44078c`） | Issa |
 | 2026-08-28 | **8/21 合意（機構の深掘りは事前提案）の適用を、本 spec に限り事前提案から事後報告へ変更。**腕E・腕C とも先行実行を可とする | Issa |
 | 2026-08-28 | **§4 の CI を percentile から studentized (bootstrap-t) へ差し替え。**P2 が percentile で FAIL したことへの、§6 が指定する推定量側の修正 | Issa |
+| 2026-08-28 | **§8.2 の腕C 生成を `--seeds` から `generator_offset` へ差し替え、B9 に乱数系列の非一致を追加。**seed 番号が乱数系列に入らないことが実測で判明したため | Issa |
+
+### 腕C 生成手段の差し替え（4 行目）
+
+初版 §8.2 のコマンド（`--seeds 10..19`、config は 0819 と同一）で 10 本を生成したところ、**seed 0–9 の軌道と `cos_u_mu`・`w_norm`・`p_hat`・`F_gate` まで bit 一致した**。原因は `src/train.py` の `make_gens` で、乱数生成器は `SEED_BASE[exp] + width + generator_offset` からのみ作られ、config の seed 値は `run_id` と保存列にしか入らない。すなわち seed 番号は表示軸のラベルであって乱数系列ではない。R（seed 本数）を変えると系列が変わるのはこのためであり、8/12 のメモ「seeds 5 → 10 本で bit 一致しない」とも整合する。
+
+本プロジェクトは 8/23 の `function_blind_direct_0823_confirm` で既に `generator_offset: 20260830` を「独立確認走の乱数系列」として使っており、これが正しいノブである。腕C は `configs/ratchet_log_0829c.yaml`（0819 との差分は seeds と `generator_offset: 20260831` の 2 行）で再生成した。20260831 は未使用の値で、解析側の `bootstrap_seed = 20260829` とは別物である。
+
+**B9 が素通りしたのは初版の B9 が弱かったからである。**「`--seeds` と `--outdir` が存在する」ことしか見ておらず、そのフラグが乱数系列を変えるかを見ていなかった。B9 に「解析対象ログの軌道列指紋が腕E と交わらない」を追加した。退避した衝突データを入力にすると B9 は `n_shared=10` で落ちることを確認済み。
+
+無効化した生成物と解析出力は `results/ratchet_log_0829c_invalid_seedcollision_b7f6963/` と `results/ceiling_t0b_C_0829_invalid_seedcollision_b7f6963/` に残す。**判定基準（窓・k・ガード・閾値・CI）はこの差し替えで一切動かしていない。**
 
 ### CI 差し替えの根拠（3 行目）
 
