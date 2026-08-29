@@ -100,7 +100,7 @@ Phase 0b は `unfit_floor = 1e-12` を決め打ちにし、**実データを切�
 
 $$\Delta_k = \log_{10}U_k^{A} - \log_{10}U_k^{\rm none}$$
 
-を seed ごとに取り、中央値と **paired studentized bootstrap**（B=10,000、`rng = np.random.default_rng(20260830)`）。**改善 = CI が 0 を下に外す。**
+を seed ごとに取り、中央値と **paired studentized bootstrap**（B=10,000、`rng = np.random.default_rng(20260829)`）。**改善 = CI が 0 を下に外す。**
 
 **P2: eff_rank の水準**
 
@@ -177,7 +177,9 @@ $D^{(\ell)} = -\mathrm{median}_i M_i^{(\ell)}$、32 パターン厳密計算、�
 
 ## 6. 出力
 
-`results/mlp2_phase1_0830/` に `verdict.csv`（腕・対比・$\Delta$・CI・床割合・`CENSORED`・`CI_DEGENERATE` を列に持つ）、`summary.md`、`layer_stats.csv`（タスク末尾行のみ）、`provenance.json`、`logs/`。
+`results/mlp2_phase1_0829/` に `verdict.csv`（腕・対比・$\Delta$・CI・床割合・`CENSORED`・`CI_DEGENERATE` を列に持つ）、`summary.md`、`layer_stats.csv`（タスク末尾行のみ）、`floor_calibration.csv`、`provenance.json`、`logs/`。
+
+> **命名の注意**: 走・spec・config・結果ディレクトリはすべて **`0829`**（作成日）で揃える。`20260830` は本プロジェクトで既に `generator_offset` として使われている値なので（`function_blind_direct_0823_confirm` など）、日付として流用しない。解析側の bootstrap seed は Phase 0/0b と同じ `20260829`。
 
 **数値は `verdict.csv` と `summary.md` からのみ転記する。**
 
