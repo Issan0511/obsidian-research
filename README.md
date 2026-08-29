@@ -13,8 +13,12 @@
 
 ## MCPでの変更追跡
 
-MCPからcommitするときは`author`と`message`を渡し、commit subjectを`[author]:message`に統一する。
-行の最終変更者は`obsidian_git_blame`で確認する。
+- Issan用URLは`main`、先生用URLは`teacher`をそれぞれ別cloneで操作する。
+- `author`には使用したAI名を渡す。人間名はURL側で固定され、commit subjectは`[Issan/Codex]:...`または`[先生/Claude]:...`となる。
+- 研究作業の冒頭に`obsidian_research_context`を呼び、`main`の正本を読む。
+- 全ツールの`COLLABORATION NOTICE`を確認し、表示されたら`obsidian_collaboration_changes`でcommit・未保存差分を読む。
+- 先生の変更は`teacher`へpushし、Issanがdry-run後に`obsidian_collaboration_accept`で`main`へ取り込む。
+- 行の最終変更者は`obsidian_git_blame`で確認する。
 
 ## MCPでの安全な編集
 
