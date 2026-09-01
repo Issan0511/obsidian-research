@@ -300,3 +300,7 @@ results/channel_2x2_0901/           ← 段階 D
 ```
 
 3 commit（spec 単独 → config+実装 → 結果）。**各段で `git ls-remote origin refs/heads/main` の出力を報告に貼る。**
+
+---
+
+> **帰趨（2026-09-01）:** 全段階完了。repo は spec `31f3792` → 実装 `a072f09` → 結果 `bb5fd09`。主判定と監査は [[チャネル遮断2x2結果_0901]]。
