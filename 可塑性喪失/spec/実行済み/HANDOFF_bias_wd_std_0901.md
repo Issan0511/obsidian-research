@@ -1,5 +1,9 @@
 # HANDOFF — bias_wd_std_0901（std 腕に b-WD・反証テスト）
 
+状態: **実行済み**（`results/bias_wd_std_0901/` および seed 単位隔離版 `results/bias_wd_std_seediso_0901/`。判定 **`INCONCLUSIVE_PARTIAL`**＝予言 P の `LOP_PERSISTS` にも反証の `LOP_REMOVED` にも届かない部分緩和。**`S_main` は seed 7 が step 3,381,000 で発散し n=9**。後続の要因計画は [[チャネル遮断2x2_spec_0901]]） / 状態行追加・`spec/実行済み/` へ移動 2026-09-01（本文は発行時のまま）
+
+> **本ファイルは HANDOFF（実行手順の委譲文書）であって判定基準の正本ではない。** 事前登録の正本は repo 側 `specs/spec_bias_wd_std_0901.md` / `specs/spec_bias_wd_std_seediso_0901.md`。
+
 宛先: Codex / 委譲元: Issa / 作成: 2026-09-01
 repo: `github.com/Issan0511/lop_analysis`（main = `da22465` 時点）
 前件: `bias_wd_0901`（centered で `BIAS_WD_PROTECTS`）。本件はその**反証テスト**。

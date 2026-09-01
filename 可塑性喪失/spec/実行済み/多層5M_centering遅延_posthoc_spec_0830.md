@@ -1,6 +1,6 @@
 # spec_mlp2_centering_delay_posthoc_0830: 5M 層別 centering 遅延仮説
 
-親: [[容量不足レジームの機構_0830]] / 状態: **解析手順登録・未実装・未実行** / 作成: 2026-08-30\n\nrepo 正本: `specs/spec_mlp2_centering_delay_posthoc_0830.md` / 事前固定 commit: `9c60fe1`\n\nproj_004 / 作成 2026-08-30 / 対象リポジトリ: `lop_analysis` / 対象データ: `results/mlp2_phase1_0829/layer_stats.csv`
+親: [[容量不足レジームの機構_0830]] / 状態: **実行済み**（`results/mlp2_centering_delay_posthoc_0830/`・結果 commit `a6e90fb`。P1 `NO_EARLY_MORPHOLOGICAL_ADVANTAGE` / `CATCHUP_BY_5M_SINGLE_BLOCK`、P2 `INCONCLUSIVE_FUNCTIONAL_KINETICS`、P3 `AALL_RELATIVE_ONLY`、P4 `INCONCLUSIVE_LAYER_LOCALIZATION`。**`Aall B10−B02` = +0.3827 [0.3392, 0.4646]** で「centering は治癒ではなく遅延」が 5M の実測になった → [[容量不足レジームの機構_0830]] §11。**格は post-hoc reanalysis registration のまま**） / 作成: 2026-08-30 / 実行: 2026-08-30 / 状態行更新 2026-09-01（`spec/実行済み/` へ移動。本文は起草時のまま。§10「このspecをcommitした時点で停止する」は当時の停止点であって現状ではない）\n\nrepo 正本: `specs/spec_mlp2_centering_delay_posthoc_0830.md` / 事前固定 commit: `9c60fe1`\n\nproj_004 / 作成 2026-08-30 / 対象リポジトリ: `lop_analysis` / 対象データ: `results/mlp2_phase1_0829/layer_stats.csv`
 
 > **状態: 解析手順登録・未実装・未実行。** この commit では本 spec だけを追加する。
 > 集計コード、結果ディレクトリ、図、数値表は作らない。本 spec の push を確認した後、

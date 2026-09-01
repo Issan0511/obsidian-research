@@ -1,6 +1,6 @@
 # ELU の沼（`E_A1` で第2層の µ は再生されるか、沈下は駆動か拡散か）
 
-親: [[LoP防止アーキテクチャ_0829]] §7 / 状態: **実行済み・判定確定（結果は [[ELU沼結果_0830]]）** / 作成 2026-08-30 / 出典チャット: `elu_swamp_0830`
+親: [[LoP防止アーキテクチャ_0829]] §7 / 状態: **実行済み・判定確定（結果は [[ELU沼結果_0830]]）** / `spec/実行済み/` へ移動 2026-09-01 / 作成 2026-08-30 / 出典チャット: `elu_swamp_0830`
 
 > **実行記録**: G0b 閾値 0.30 は Issa が 2026-08-30 に「0.30 のまま」で確認（repo spec §5.0・`config: g0b_threshold_confirmed: true`・実行前）。repo 側は spec・config・実装・結果を 1 commit（`c60335c`）で push。凍結の証拠は vault `52c65f0`（02:32 JST、結果の 9 時間前）。判定: **G0 = `LOP_REDUCED`、Q1 = `MU_INTERMEDIATE` / `DECREASING`、Q2 = `NOISE_DOMINATED`（ρ = +0.044）/ `PARTIAL_SCALING`、P2c = `INSUFFICIENT_DATA`**。両者の機構予測はどちらも外れ（§8.3 対比の結果列は結果ノート §3）。
 
