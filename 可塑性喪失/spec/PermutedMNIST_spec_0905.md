@@ -137,20 +137,20 @@
 
 ### 6.1 Issa（2026-09-05・**走らせる前に記入**）
 
-> **P2 は `SINKING_NOT_BINDING` にはならない。** すなわち「合成箱の幅 5 と同じ結末（沈下は防げるが性能に効かない）」を否定する。
+> **P2 = `SNAKE_RETAINS_BETTER`。** すなわち評価窓（タスク 151–200）の平均 test 精度で **`SN3` が `LR` を符号検定で有意に上回る**（9/10 以上・p<0.05）。合成箱の幅 5 と同じ結末（`SINKING_NOT_BINDING`）にはならない。
 
 **格**: これは **Issa 自身の独立した予言**である。Claude の候補値を承認したものではなく、Claude の予測（§6.2 = `SINKING_NOT_BINDING`）を**見たうえで反対を表明**したもの。[[LR_A1結果_0901]] で問題になった「起草側の候補値を承認しただけ」の格とは異なる。
 
-**逐語**: 「同じ結末ならないと予測する」。**残る 3 ラベル（`SNAKE_RETAINS_BETTER` / `SNAKE_WORSE` / `SNAKE_DIVERGED`）のどれかまでは指定されていない。** 文脈上は `SNAKE_RETAINS_BETTER` と読めるが、**judgement は「`SINKING_NOT_BINDING` ではない」の 1 点でのみ行う**（読み替えを Claude が勝手に足さない）。
+**経緯**: 逐語は「同じ結末ならないと予測する」（= `SINKING_NOT_BINDING` の否定）で、Claude が「残る 3 ラベルまでは指定されていない」と留保したのに対し、**Issa が同日 `SNAKE_RETAINS_BETTER` に確定させた**。したがって予測は 1 ラベルに絞られており、`SNAKE_WORSE` と `SNAKE_DIVERGED` も外れになる。
 
 **したがって本走は Issa と Claude が正面から割れている検定である。**
 
-| | P2 の予測 |
-|---|---|
-| Issa | `SINKING_NOT_BINDING` **ではない** |
-| Claude | `SINKING_NOT_BINDING` |
+| | P2 の予測 | 外れる条件 |
+|---|---|---|
+| **Issa** | `SNAKE_RETAINS_BETTER` | `SINKING_NOT_BINDING` / `SNAKE_WORSE` / `SNAKE_DIVERGED` のいずれか |
+| **Claude** | `SINKING_NOT_BINDING` | 上記以外のいずれか |
 
-どちらが当たったかを結果ノートに必ず記録する。
+**両者とも外れる場合がある**（`SNAKE_WORSE` か `SNAKE_DIVERGED`）。どちらが当たったかを結果ノートに必ず記録する。
 
 ### 6.2 Claude（2026-09-05・走らせる前に記入）
 
