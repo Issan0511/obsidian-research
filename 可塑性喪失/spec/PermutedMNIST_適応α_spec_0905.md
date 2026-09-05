@@ -1,6 +1,6 @@
 # Permuted MNIST × 適応 α（Snake の α を前活性の広がり W に追随させる — 「α の選定」は消えるか、ゲートの帯は原因か、既存手法に対してどこに立つか）
 
-親: [[PermutedMNIST_追加診断_0905]] §8–§10（材料・全部未登録）／[[PermutedMNIST_spec_0905]]（段 0–2・`SNAKE_WORSE`）／[[PermutedMNIST_既存手法比較_spec_0905]]（別セッション・`SNAKE_BELOW_INTERVENTIONS`） / 状態: **起草（v1・Claude）・予測 §6 記入済み・走らせる前** / 作成 2026-09-05 / 出典チャット: `活性化プロット_0904`
+親: [[PermutedMNIST_追加診断_0905]] §8–§10（材料・全部未登録）／[[PermutedMNIST_spec_0905]]（段 0–2・`SNAKE_WORSE`）／[[PermutedMNIST_既存手法比較_spec_0905]]（別セッション・`SNAKE_BELOW_INTERVENTIONS`） / 状態: **決着 → [[PermutedMNIST_適応α結果_0905]]**（Q1 `ALPHA_SELF_SETS`／Q2 `GATE_BAND_CAUSAL_SUPPORTED`／Q3 `SNAKE_RETAINS_BETTER_BOTH`／Q4 `B_BELOW_C` 両箱） / 作成 2026-09-05 / 出典チャット: `活性化プロット_0904`
 関連: [[前活性の力学_事後_0904]] §8／[[運用ルール]] §2・§3／[[引用禁止]]
 
 > **run id: `pmnist_adapt_0905`。** 宿主は `src/pmnist_0905.py`（データ・置換・init・検査を継承）。既存手法の腕は `src/pmnist_lopcmp_0905.py`（別セッション）を宿主ごと再利用する。
