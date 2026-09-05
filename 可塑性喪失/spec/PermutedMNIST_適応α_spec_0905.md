@@ -193,6 +193,23 @@
 (A) は正面から割れている。判定は `SNA+l2` 対 残り 5 腕すべて・1/5/20-step BWT のどれか 1 つ以上で
 9/10 以上かつ p<0.05。**未登録の診断であり M0/P1/P2 や Q1–Q4 には入れない。**
 
+## 6.4 復習の速さ（relearning / savings）の予測 — 走らせる前（2026-09-06 01:5x）
+
+Issa「一通り実験したあと古いやつを復習したらどれだけ早くフィットできるか。これも ReLU 強そう」。
+`--relearn`: 200 タスク後にタスク 1・100・180・199 を末尾状態から 625 step 学び直し（`relearn`）、θ₀ から同じタスクを
+学ぶ基準（`fresh`）、初回遭遇時の曲線（`first`）を step 0/25/50/100/200/400/625 で記録。**速さ = relearn の絶対値、
+記憶（savings）= relearn − fresh。** 6 腕（`SNA+l2` `R+l2` `R+l2init` `SNA+l2init` `SNA` `R`）× seed 0–9・箱 A。
+予測の正本は `results/pmnist_adapt_0905/PREDICTION_relearn.md`。
+
+| | Issa | Claude |
+|---|---|---|
+| 記憶（savings・step 25–100・task 100/180） | **ReLU 系が上** | `R+l2` > Snake 系（一致）。ただし素の `R` は死んでいて学び直せず savings も小 |
+| 速さ（relearn 絶対値） | （未指定） | **Snake 系が上**（全ユニット生存・task-1 初速 0.918 が全腕最高） |
+| task 1 | — | 全腕 savings ≈ 0（忘却 −82 pt で床） |
+| l2init 対 l2 | — | l2init の savings が小（θ₀ への引き戻しが未使用の重みを消す） |
+
+**未登録の診断。Q1–Q4 には入れない。** 外れたら第一に疑うのは Adam moment の末尾からの引き継ぎ（fresh 側は moment ゼロで条件が揃わない → step 100 以降だけ読む）。
+
 ## 7. Issa 裁定待ち
 
 1. **§6.1 を記入するか、空欄で走るか**
