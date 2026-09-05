@@ -257,10 +257,10 @@ Issa・Claude の両予測が外れる**。詳細は結果ノートへ。
 
 **Snake は可塑性の文脈で試されていない**（検索範囲: 下記 2 本とその参照）。
 
-- **Lillo & Cheney, "Activation Function Design Sustains Plasticity in Continual Learning", arXiv:2509.22562 (ICLR 2026)** — 本 spec の §3 と**ほぼ同一のプロトコル**（Permuted MNIST・MNIST 訓練から 10,000 例・1 タスク 1 エポック・batch 16・**隠れ 2 層 × 幅 100 の MLP**）。違いは **Adam（lr 0.001）対 素の SGD** と **500 タスク対 200 タスク**。試した活性化は ReLU・LReLU・RReLU・PReLU・Swish・GeLU・CeLU・eLU・SeLU・Tanh・Sigmoid・CReLU・Rational・Deep Fourier ＋ 提案 2 種（Smooth-Leaky・Rand. Smooth-Leaky）。**周期活性化は 1 つも入っていない。**
+- **Lillo & Cheney, "Activation Function Design Sustains Plasticity in Continual Learning", arXiv:2509.22562 (ICLR 2026)** — 本 spec の §3 と**ほぼ同一のプロトコル**（Permuted MNIST・MNIST 訓練から 10,000 例・1 タスク 1 エポック・batch 16・**隠れ 2 層 × 幅 100 の MLP**）。違いは **Adam（lr 0.001）対 素の SGD** と **500 タスク対 200 タスク**。試した活性化は ReLU・LReLU・RReLU・PReLU・Swish・GeLU・CeLU・eLU・SeLU・Tanh・Sigmoid・CReLU・Rational・Deep Fourier ＋ 提案 2 種（Smooth-Leaky・Rand. Smooth-Leaky）。~~**周期活性化は 1 つも入っていない。**~~ → **誤り（9/5 に原論文で訂正）。Deep Fourier Features を評価しており、本文が「periodic oscillation で応答性を保つ」と明記して自分たちの基準を満たす側に分類している。** 訂正は [[PermutedMNIST結果_0905]] §3.3。
 - **arXiv:2608.12874（学習可能ウェーブレット活性化）** — Permuted MNIST 200 タスク。baseline は ReLU・AID・Rand. Smooth-Leaky・Rational・KAN。**Snake なし。**
 
-**先行研究との関係で本走が持つ意味が 1 つ増えた。** Lillo & Cheney の中心規則は **derivative-floor rule**（`inf_x |φ'(x)| > 0` の活性化が可塑性を保つ）で、彼らの分類では **Snake は zero-floor**（φ' = 1+sin(2αz) は零点を持つ）なので **ReLU・Tanh と同じ群に入り、失敗する側に予測される**。一方で彼らのもう 1 つの規則 **dead-band width**（`|φ'|` がほぼ 0 になる入力範囲の割合が shock 感受性を予測する・r = 0.81）では、Snake の零点は測度 0 なので **DBW ≈ 0 で保つ側に予測される**。**Snake は彼ら自身の 2 規則が食い違う点である。** ただし本走は彼らの箱（Adam・500 タスク）ではないので、**この食い違いを彼らの主張への反証として書かない**。
+**先行研究との関係で本走が持つ意味が 1 つ増えた。** Lillo & Cheney の中心規則は **derivative-floor rule**（`inf_x |φ'(x)| > 0` の活性化が可塑性を保つ）で、彼らの分類では **Snake は zero-floor**（φ' = 1+sin(2αz) は零点を持つ）なので **ReLU・Tanh と同じ群に入り、失敗する側に予測される**。一方で彼らのもう 1 つの規則 **dead-band width**（`|φ'|` がほぼ 0 になる入力範囲の割合が shock 感受性を予測する・r = 0.81）では、Snake の零点は測度 0 なので **DBW ≈ 0 で保つ側に予測される**。~~**Snake は彼ら自身の 2 規則が食い違う点である。**~~ → **撤回（9/5）。** 彼らは周期活性化を DBW ≈ 0 の「保つ側」に分類済みで、食い違いは生じていない。 ただし本走は彼らの箱（Adam・500 タスク）ではないので、**この食い違いを彼らの主張への反証として書かない**。
 
 ### 10.6 §7 の検査（全通過・`results/_checks_pmnist_0905/checks.json`）
 

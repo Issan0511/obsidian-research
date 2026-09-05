@@ -108,16 +108,20 @@ C4 の外れ方が示唆的で、**CBP は Snake に何もしない**。Snake �
 - **P1 が到達不能**。`dead_frac` を `|φ′|<1e-6` と定義したので床のある腕（`LR`・`SN1`・`SN3`・`LIN`）は全部恒等的に 0。0 対 0 の符号検定は 9/10 に届かない。**`mobility` を使うべきだった**（§8.6 で自分でそう書いておきながら spec で `dead_frac` を使った不整合）
 - **§5.1 の錨**。「タスク 1 からの低下」は lr が小さいとタスク 1 がウォームアップ中で、失ったものでなく「タスク 1 が何点だったか」を測る。ピーク基準なら lr 0.05 でも `MECHANISM_PRESENT`
 
-## 3.3 先行研究との位置（[[PermutedMNIST_spec_0905]] §10.5・9/5 実施）
+## 3.3 先行研究との位置（原論文を 9/5 に直接確認・spec §10.5 を 1 点訂正）
 
-**Snake は可塑性の文脈で試されていない。**
+**Lillo & Cheney, "Activation Function Design Sustains Plasticity in Continual Learning", arXiv:2509.22562 (ICLR 2026)**。可塑性喪失を防ぐ手段として活性化設計そのものを主張し、`Smooth-Leaky` / `Rand. Smooth-Leaky` を提案する。ベンチマークは **5 つ**（Permuted MNIST・Random Label MNIST・Random Label CIFAR・CIFAR 5+1・Continual ImageNet）、活性化は **17 種**。
 
-- **Lillo & Cheney, arXiv:2509.22562 (ICLR 2026)** — 本走と**ほぼ同一のプロトコル**（Permuted MNIST・10,000 例・1 エポック・batch 16・隠れ 2 層 × 幅 100）。違いは **Adam(1e-3) 対 素の SGD** と **500 対 200 タスク**。活性化 14 種＋提案 2 種を比較しているが**周期活性化はゼロ**
-- arXiv:2608.12874（学習可能ウェーブレット）も Snake なし
+2 つの規則:
+- **derivative-floor**: $\inf_x|\varphi'(x)|=0$ を zero-floor（ReLU・Sigmoid・Tanh）とし、AUSC 最大・非回復率最高。非ゼロ床（Leaky・RReLU・PReLU）は非回復率 <5%
+- **Dead-Band Width**: $|\varphi'(x)|<10^{-3}$ になる入力範囲の割合。AUSC と **r=0.81, p=0.0016**、非回復率と r=0.84
+- **Goldilocks zone**: 最良の負側傾きは **[0.6, 0.9]**
 
-**Snake は彼ら自身の 2 規則が食い違う点である。** 中心規則 **derivative-floor**（`inf|φ′|>0` が保つ）では Snake は zero-floor なので **ReLU 群＝失敗する側**に予測される。もう 1 つの **dead-band width**（r=0.81）では Snake の零点は測度 0 なので **保つ側**に予測される。
+**★ spec §10.5 の「周期活性化は 1 つも入っていない」は誤り（9/5 に原論文で確認して訂正）。** 論文は **Deep Fourier Features**（Lewandowski et al. 2024）を評価しており、本文が *"which satisfies our criteria for a smooth, non-zero gradient floor, maintaining responsiveness via **periodic oscillation** rather than a fixed linear slope"* と書いている。**周期振動で応答性を保つ活性化を、彼らは既に「基準を満たす側」に分類している。**
 
-**ただし本走は彼らの箱ではない（Adam・500 タスク）ので、この食い違いを彼らの主張への反証として書かない。**
+Permuted MNIST の成績（表 2）: Rand. Smooth-Leaky 84.26 / **Leaky-ReLU 84.14** / Smooth-Leaky 84.03 / RReLU 83.95 / **Deep Fourier 83.69** / Swish 83.41 / … / **ReLU 78.85**。**周期系が leaky にわずかに劣り ReLU を大きく上回る**のは、本走で `SN1` が leaky に勝ち切れなかったのと同じ構図。
+
+**したがって「Snake は彼らの 2 規則が食い違う点だ」とは書けない**（当初そう書いたが撤回）。彼らは周期活性化を DBW ≈ 0 の側に分類済みで、食い違いは生じていない。**`Snake` という語自体は本文に 0 回**なので「Snake は未検証」は保つ。
 
 ## 4. 引用制限
 
@@ -127,4 +131,5 @@ C4 の外れ方が示唆的で、**CBP は Snake に何もしない**。Snake �
 - **`NEITHER_ORDERS` を「w_norm が効く」と読み替えない。** w_norm も有意ではない
 - つまみは介入側だけ最良点を取っている（Snake に不利な設計）。それでも Snake が負けた、という向きでのみ読む
 - **P1 と P2 は割れている。** 「沈まない（P1）」を「効く（P2）」の根拠にしない
-- **Lillo & Cheney の 2 規則の食い違いを、彼らへの反証として書かない**（箱が違う: Adam・500 タスク）
+- **「Snake は Lillo & Cheney の 2 規則が食い違う点」と書かない**（9/5 撤回。彼らは Deep Fourier を「基準を満たす側」に分類済み）
+- **彼らの Permuted MNIST の数値と本走の数値を直接比べない**（彼らは Adam・500 タスク、本走は素の SGD・200 タスク）
