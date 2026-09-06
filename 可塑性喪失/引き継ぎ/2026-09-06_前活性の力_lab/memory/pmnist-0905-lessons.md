@@ -1,0 +1,28 @@
+---
+name: pmnist-0905-lessons
+description: Permuted MNIST 箱 (pmnist_0905) の確定事実 — 登録判定 M0/P1/P2、625 step は合成箱の 1/16、Adam で W 2.5 倍、適応 α は α 問題を解くが l2init に 2 pt 負ける (原因は ‖w‖・ゲートは探針で無欠陥)、Permuted MNIST は忘却が無料、成果物の所在
+metadata:
+  type: project
+---
+
+**登録判定**（2026-09-05・spec v2）: M0 `MECHANISM_PRESENT`（lr 0.1）／P1 `SNAKE_DOES_NOT_SINK`／P2 **`SNAKE_WORSE`**（SN3@0.02 対 LR@0.1・0/10・p=0.002）。Issa（`SNAKE_RETAINS_BETTER`）・Claude（`SINKING_NOT_BINDING`）とも外れ。
+
+**箱の事実**: 784-100-100-10・batch 16・1 タスク 10,000 例 = 625 step/タスク（**合成箱 condA は `task_period: 10000` step で 16 倍**）。1 epoch は非線形性のレンジを半分に潰す（R−LIN +0.018 → 4 epoch で +0.037）。§4.2 の lr 較正（タスク 1–20 平均）は 5 腕中 4 腕で lr を高く選び過ぎる。§5.2 の `dead_frac` は微分に床のある腕で恒等 0（→ mobility に差し替え済み）。
+
+**Snake**: α=3 は 2αW が周期を超えてゲートが 1 に潰れ、線形＋摂動になる（Adam では線形ピークを一度も超えない）。**Adam ではユニット内 W が 素の SGD の 2.5 倍**（0.95 → 2.43）。**勝つ α は箱で変わる（SGD 1・Adam 0.1–0.3）が、そのときの mobility はどの箱でも 0.55–0.82**。0.93 以上に張り付くと負ける。位相固定仮説は Rayleigh で棄却（拡散）。原典初期化 (E[W²]=1/d) は私の 1.73 倍大きく、採ると α=3 は悪化。
+
+**別セッションの並走**: `pmnist_lopcmp_0905` で SN1 は既存 LoP 手法 4 本（l2init/l2/cbp/snp）すべてに負ける（素の SGD）。α=0.2 を同じ箱で並べるまで Snake の位置は未定。
+
+**適応 α（`pmnist_adapt_0905`・決着 2026-09-06 03:23・結果ノート `測定/PermutedMNIST_適応α結果_0905.md`）**: **Q1 `ALPHA_SELF_SETS`**（箱 A Adam・箱 B SGD×4ep とも mob 0.70・2αW 1.20・clip 0%）／**Q2 `GATE_BAND_CAUSAL_SUPPORTED`**（帯外固定に 10/10・帯内固定にも 10/10 で勝つ）／**Q3 `SNAKE_RETAINS_BETTER_BOTH`**（対 leaky 箱 A +0.0200・箱 B +0.0123・10/10）— Issa の元の P2 予測が適応 α で成立／**Q4 `B_BELOW_C` 両箱**（l2init −0.0198/−0.0152・cbp −0.0065/−0.0135）。Claude 予測 4.5/7（箱 A の Q4 と `SN02` 箱 B を外す）。前段の詳細: α_i = c/W_i（c=0.6・β=0.01）は箱 A で自動的に mob 0.70・2αW 1.20 に落ち（Q1 箱 A ○）、手選択の最適 α にも 10/10 で勝つ（Q2 箱 A ○）。**しかし `R+l2init`（θ₀ への L2・λ=1e-3）に −0.0199・0/10 で負ける**（Q4 `B_BELOW_C`）。差の 58% は天井・42% は失う量。**原因は ‖w‖**: SNA は 7.45 倍（ReLU 8.04・恒等 8.31 と同じ）、l2init は 1.29 倍。Snake は活性化なのでノルム経路に手が届かない。**ゲート品質探針**（`src/pmnist_gateq_0905.py`・ユニット別 mob の min/p10・off 率・利得 CV・勾配符号一致）では SNA に欠陥なし: min 0.49・0.3 未満ゼロ・両層同一・符号一致 0.130（leaky 0.107・ReLU 0.138 と同等）。**Issa の指摘「Permuted MNIST は忘却が無料」**: 置換でタスク間の知識は移転しないが損傷（死・ノルム）は移転するので、θ₀ に引き戻す l2init は損しない。移転のある土俵では別。「毎タスク完全リセット」対照が欠けている（l2init 末尾 0.9329 > 素の ReLU の task-1 0.9113 なので単純なリセットではない）。
+
+**l2init の公表された弱点（本文確認済み）**: Kumar et al. (CoLLAs 2024) 自身が §6 で forgetting を範囲外と明記し、付録 A.2.6 で **BWT −63.4%**（Permuted MNIST 20 タスク・過去タスク精度が 63 pt 落ちる）、EWC に足すと forgetting が増えると報告。Lillo & Cheney (ICLR 2026) 付録 E.3: L2-Init は ReLU を助けるが **5+1 CIFAR で強い活性化を壊す**（Deep Fourier 72.29→20.40%、Rand. Smooth-Leaky 57.01→34.56%）、Permuted MNIST では逆に相乗。**効果の符号がベンチマークで反転する** — 移転の無い箔では助け、構造のある箱では壊す。Snake 対 l2init の次の土俵は 5+1 CIFAR 型。
+
+**忘却（BWT・箱 A・10 seed）**: 死んだユニットは凍結記憶 — 素の `R`（mob 0.017）の 5-step BWT −0.22、他は −0.58〜−0.72。**Snake を載せた腕は ReLU 系より速く忘れる**（`SNA+l2` 対 `R+l2` 5-step −0.135・0/10）— 生きたゲートは上書きされる。Issa の「SNA+l2 で記憶」は外れ、Claude の「有意差なし」も外れ（有意に逆）。アンカー: ReLU では l2init が l2 より 5-step で 2.6 pt 多く忘れる（10/10）、Snake では無差。20-step と task1 は全腕チャンス床（幅 100 では読めない）。ログは `--bwt`（`acc_prev1/5/20`・`acc_task1`）。
+
+**復習（relearn/savings・箱 A・10 seed）**: 記憶は 2 種類 — 保持（BWT）と再学習の速さ（savings = 末尾から − θ₀ から）。**保持なき savings**: task 1 の精度は全腕チャンス床なのに `R+l2init` は末尾から step 25 で +25 pt 速く学び直す（重みには残り、読み出しだけ消える）。**死んだ `R` の savings は負**（relearn < fresh・−6 pt）— 凍結重みは取り出せない。`R+l2`/`R+l2init` の savings は Snake 系の 4〜8 倍（+0.079・10/10）。速さは素の腕なら Snake +8.5 pt・10/10、+l2 では ns。l2init は l2 より忘れるが速く取り戻す。Issa「ReLU 強そう」当たり・Claude 2/5。ログは `--relearn`（`relearn.csv`・kind ∈ first/relearn/fresh・probe 1/100/180/199）。
+
+**Snake の本当の優位（2026-09-06・箱 A・10 seed・04:1x 訂正済み）**: `fresh`（θ₀ から）は**初期化直後の速さ**であって可塑性ではない（一度「純粋な可塑性」と誤記した）。**可塑性 = 系列後半で初めて出会うタスクの学習速度（first・task 180/199）対 fresh。** 結果: 正則化なしでは **Snake が可塑性を強く保つ**（後半 first@25 で `SNA` 0.644 対 `R` 0.440・+20 pt・10/10。喪失 −3.7 対 −10.5 pt）— 元 spec が測ろうとした量で成立。**WD 下では消える**: `R+l2` は系列を通して新タスク学習速度が +15 pt 上がり（学び方を学ぶ）`SNA+l2` と同着。復習（relearn）は可塑性＋記憶。Snake のインパクト: 手法として小（+0.23 pt on WD・l2init に −1.5〜2 pt）、計測器として大、**正則化なしの可塑性保持では最良**。
+
+**次の spec（登録済み・2026-09-06 04:4x）**: `spec/PermutedMNIST_RandomLabel_spec_0906.md`（vault commit 7e9d206）= Random Label MNIST（Kumar §4.2: 1200 枚固定・毎タスク一様乱数ラベル・400 epoch・batch 16・50 タスク・Adam 0.001）で 7 腕（R/LR/SNA/R+l2/SNA+l2/R+l2init/SNA+l2init・λ=1e−3）。主判定 Q1 = `SNA+l2` − `R+l2` ≥ +0.02 かつ 9/10 → `ACTIVATION_MATTERS_UNDER_WD`、`R+l2` 窓 < 0.50 → `INCONCLUSIVE_WD_TOO_WEAK` → 段 2 λ=1e−2。予測は Claude のみ（Issa 指示）: R 崩落・SNA ≥0.85・Q1 は成立するが λ 弱で INCONCLUSIVE が最もありそうな外れ方。**実装済み（Opus subagent・2026-09-06 05:0x）**: `src/pmnist_rlmnist_0906.py`・検査 `checks_rlmnist.py` 7/7 通過（S-online 手計算と max|Δ|=0・S-repro byte 一致・宿主 sha256 不変）。**S-cost 23.6 s/タスク = 1 run 20 分・70 run で 22.9 h@1proc → 7 並列で 5–7 h**（Permuted の 12 倍・400 epoch のため）。subagent の推奨 launch は spec の主対象 `SNA+l2` を含まなかったので不採用 — `launch_rlmnist.sh`（spec 7 腕・explicit `--out`・ログ `rlm_*`）で launch — **実際の起動は 13:12**（05:10〜13:10 はマシンがサスペンドしていて、launch のターンは復帰後に実行された。`nohup` した走はサスペンド中は止まるだけで死なない）。**7 並列の実測 83 s/タスク = 1 run 69 分 = 10 seed で 11.5 h → 完走 0:45 頃**（S-cost 23.6 s は 1 プロセスの値・7 並列で 3.5 倍に伸びる）。CLI 差異: 既定 `--out` は `<arms>[_<iv>]` で `:`→`-`、多腕 shard は explicit `--out` 必須。判定 `analysis/pmnist_0905/verdict_rlmnist.py`、launch `launch_rlmnist.sh`（検査合格までゲート）。参照値: Lillo & Cheney ReLU 20.0%・leaky 91.5%、Kumar L2 0.71・L2Init 0.86。
+
+**所在**: コード `src/pmnist_0905.py`（`--optimizer adam --epochs N`、腕 SN01..SN3/LIN0）、解析 `analysis/pmnist_0905/`、結果 `results/pmnist_{probe,lrcal,main}_0905/` と `results/_diag_{lin0,adam,hist,spread,epochs,alpha_adam,sn1}_0905/`（各 PREDICTION.md 同梱）。vault: `spec/実行済み/PermutedMNIST_spec_0905.md` §10、`測定/PermutedMNIST結果_0905.md`（別セッション保守）、`測定/PermutedMNIST_追加診断_0905.md`（本セッション）。**git は未 commit**（Issa 裁定待ち）。関連: [[proj-004-drift-experiment]] [[peak-final-max-selection-bias]] [[issa-hypotheses-take-seriously]] [[vault-parallel-session-collision]]

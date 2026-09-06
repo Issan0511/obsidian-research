@@ -1,0 +1,116 @@
+{
+ "items": {
+  "handoff_0906_bundle": {
+   "file": "/tmp/claude-1000/-home-issan-Projects-claude/29c253bb-5936-4f13-be2a-58212b32aad5/scratchpad/handoff_0906/out/handoff_0906_bundle.tar.gz",
+   "size_bytes": 7369543,
+   "sha256": "d50833a84cde0697a96eee663e657da78b235a622000cb1152df9bc052b6ec36",
+   "built": true,
+   "sources": [
+    "/tmp/claude-1000/-home-issan-Projects-claude/29c253bb-5936-4f13-be2a-58212b32aad5/scratchpad/handoff_0906/handoff_0906_bundle"
+   ],
+   "kind": "tgz",
+   "url": "https://108.gigafile.jp/1215-b2dedd5351f271928b056a1b84df89098",
+   "delete_key": "e924",
+   "uploaded_at": "2026-09-06 16:01:42",
+   "upload_sec": 2,
+   "upload_error": null
+  },
+  "snake_flip_0906": {
+   "file": "/tmp/claude-1000/-home-issan-Projects-claude/29c253bb-5936-4f13-be2a-58212b32aad5/scratchpad/handoff_0906/out/snake_flip_0906.tar",
+   "size_bytes": 900823040,
+   "sha256": "174c7ee6aeb7a23b31afa27fd2563491ef27f08574a21ecc3637b4e3492dfb85",
+   "built": true,
+   "sources": [
+    "/home/issan/Projects/claude/proj_004_drift/results/snake_flip_0906"
+   ],
+   "kind": "tar",
+   "url": "https://108.gigafile.jp/1215-e94ae1a4e0f66576bf6bbdfaa211e1d2a",
+   "delete_key": "192e",
+   "uploaded_at": "2026-09-06 16:02:03",
+   "upload_sec": 20,
+   "upload_error": null
+  },
+  "scale_attractor_0906": {
+   "file": "/tmp/claude-1000/-home-issan-Projects-claude/29c253bb-5936-4f13-be2a-58212b32aad5/scratchpad/handoff_0906/out/scale_attractor_0906.tar",
+   "size_bytes": 1708175360,
+   "sha256": "4963e6eb5c01a70cb9f23527409261c1c71a88a65879d8a48f1e3792e8a50d82",
+   "built": true,
+   "sources": [
+    "/home/issan/Projects/claude/proj_004_drift/results/scale_attractor_0906"
+   ],
+   "kind": "tar",
+   "url": "https://108.gigafile.jp/1215-je8bd05b564b2f1ddb494bf4d0ef08564",
+   "delete_key": "24c3",
+   "uploaded_at": "2026-09-06 16:02:34",
+   "upload_sec": 28,
+   "upload_error": null
+  },
+  "scale_attractor_b_0906": {
+   "file": "/tmp/claude-1000/-home-issan-Projects-claude/29c253bb-5936-4f13-be2a-58212b32aad5/scratchpad/handoff_0906/out/scale_attractor_b_0906.tar",
+   "size_bytes": 1520967680,
+   "sha256": "e540a4c8551354df533da57fc0ff8e35bcf5179a211d35b02e20f1bcaca61424",
+   "built": true,
+   "sources": [
+    "/home/issan/Projects/claude/proj_004_drift/results/scale_attractor_b_0906"
+   ],
+   "kind": "tar",
+   "url": "https://108.gigafile.jp/1215-l65caa5f1cf70a5f1a5043467f30a96ef",
+   "delete_key": "9fc2",
+   "uploaded_at": "2026-09-06 16:03:02",
+   "upload_sec": 27,
+   "upload_error": null
+  },
+  "edge_law_0905_tail": {
+   "file": "/tmp/claude-1000/-home-issan-Projects-claude/29c253bb-5936-4f13-be2a-58212b32aad5/scratchpad/handoff_0906/out/edge_law_0905_tail.tar",
+   "size_bytes": 1339555840,
+   "sha256": "1dbd4a754448debee4fa816d5f62c6403d104accad765f3cc69daed43313a2fc",
+   "built": true,
+   "sources": [
+    "/home/issan/Projects/claude/proj_004_drift/results/edge_law_0905/logs_tail",
+    "/home/issan/Projects/claude/proj_004_drift/results/edge_law_0905/ckpts",
+    "/home/issan/Projects/claude/proj_004_drift/results/edge_law_0905/arm_status",
+    "/home/issan/Projects/claude/proj_004_drift/results/edge_law_0905/sanity",
+    "/home/issan/Projects/claude/proj_004_drift/results/edge_law_0905/summary.md",
+    "/home/issan/Projects/claude/proj_004_drift/results/edge_law_0905/verdict.csv"
+   ],
+   "kind": "tar",
+   "url": "https://108.gigafile.jp/1215-e7e212ebefb95b280571d26f9a45208d3",
+   "delete_key": "da97",
+   "uploaded_at": "2026-09-06 16:03:31",
+   "upload_sec": 27,
+   "upload_error": null,
+   "extract_to": "results/edge_law_0905"
+  },
+  "w5_snake_diag_0905": {
+   "file": "/tmp/claude-1000/-home-issan-Projects-claude/29c253bb-5936-4f13-be2a-58212b32aad5/scratchpad/handoff_0906/out/w5_snake_diag_0905.tar",
+   "size_bytes": 581263360,
+   "sha256": "64da7ab83f02d661318e87a6161393559242bbe38827778fa578f9da6dee2da6",
+   "built": true,
+   "sources": [
+    "/home/issan/Projects/claude/snake_out_0904/results/_diag_w5_snake_0905"
+   ],
+   "kind": "tar",
+   "url": "https://108.gigafile.jp/1215-jac1541e8ca0b3ff5da9d927e282b7353",
+   "delete_key": "e4c0",
+   "uploaded_at": "2026-09-06 16:03:44",
+   "upload_sec": 12,
+   "upload_error": null
+  },
+  "edge_law_0905_logs": {
+   "file": "/tmp/claude-1000/-home-issan-Projects-claude/29c253bb-5936-4f13-be2a-58212b32aad5/scratchpad/handoff_0906/out/edge_law_0905_logs.tar",
+   "size_bytes": 6736291840,
+   "sha256": "e8b803972dad139751105ec6fb55eb2c81e637e4540837c36c81cc824b4c1bb4",
+   "built": true,
+   "sources": [
+    "/home/issan/Projects/claude/proj_004_drift/results/edge_law_0905/logs"
+   ],
+   "kind": "tar",
+   "url": "https://108.gigafile.jp/1215-ef81250dd975ae82082319084804389c8",
+   "delete_key": "f924",
+   "uploaded_at": "2026-09-06 16:05:32",
+   "upload_sec": 100,
+   "upload_error": null,
+   "extract_to": "results/edge_law_0905"
+  }
+ }
+}
