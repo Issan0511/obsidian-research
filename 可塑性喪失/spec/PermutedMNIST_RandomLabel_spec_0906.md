@@ -1,6 +1,6 @@
 # Random Label MNIST × 適応 α Snake（WD が失敗すると報告されている箱で、正則化の下でも活性化は効くか）
 
-親: [[PermutedMNIST_適応α結果_0905]]（Q4 `B_BELOW_C`・WD 3 腕で `SNA+l2` − `R+l2` = +0.0023）／[[PermutedMNIST_追加診断_0905]] §11–§14 / 状態: **起草（v1・Claude）・予測 §6 記入済み（Issa 指示により Claude のみ）・実装前** / 作成 2026-09-06 / 出典チャット: `活性化プロット_0904`
+親: [[PermutedMNIST_適応α結果_0905]]（Q4 `B_BELOW_C`・WD 3 腕で `SNA+l2` − `R+l2` = +0.0023）／[[PermutedMNIST_追加診断_0905]] §11–§14 / 状態: **決着 → [[RandomLabelMNIST結果_0906]]**（Q1 `ACTIVATION_MATTERS_UNDER_WD` +0.0233・10/10／Q2 `B_ABOVE_C` +0.0062・10/10／ガード不発で段 2 不要） / 作成 2026-09-06 / 出典チャット: `活性化プロット_0904`
 関連: [[PermutedMNIST_適応α_spec_0905]]／[[PermutedMNIST結果_0905]]／[[引用禁止]]
 
 > **run id: `pmnist_rlmnist_0906`。** 宿主は `src/pmnist_0905.py`（init・Adam・l2/l2init フック・`AdaptiveSnake`・`evaluate` を import）。**新モジュール `src/pmnist_rlmnist_0906.py`** に置き、宿主の登録経路は 1 ビットも変えない。実装は Opus subagent（Issa 指示）。
