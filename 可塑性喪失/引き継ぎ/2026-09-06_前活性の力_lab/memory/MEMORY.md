@@ -11,3 +11,4 @@
 - [ハーネスの無言失敗 3 種](harness-silent-failure-pitfalls.md) — nohup ログ名の /・CUDA スカラー除算の逆数畳み込み・replace の assert
 - [edge_law_0905（命題1–5・上端則）](proj-004-edge-law-0905.md) — spec/config の場所（実装 dad3bc7）・批評で潰した罠（沈下は zmax で定義・B と C は同時識別不能・κ は lag 窓の v・進捗ゲート G1・flip の述語は <0）・**空虚な S 検査は通算 6 回目→変異対照を必ず書く**・**bit 一致検査を持つ走は参照を作ったマシンから動かせない（GCP 実測で確定）**・VM 消し忘れは skill でなく --max-run-duration
 - [計算機と到達経路](machines-and-network.md) — white-san / lab(i9・62GiB・**bit 一致 MATCH 実証済**・別 tailnet で経路なし) / node(Windows・15.7GiB・ssh は通る)。3 台とも Raptor Lake=AVX2 止まりで、これが bit 一致の条件
+- [セッション引き継ぎの仕組み](session-handoff-system.md) — skill は lop_analysis の .claude/skills/session-handoff・vault の 引き継ぎ/ フォルダ・manifest（sha256・URL）・最初の実走 9/6（12.8 GB を 4 分）
