@@ -78,7 +78,8 @@
    "delete_key": "da97",
    "uploaded_at": "2026-09-06 16:03:31",
    "upload_sec": 27,
-   "upload_error": null
+   "upload_error": null,
+   "extract_to": "results/edge_law_0905"
   },
   "w5_snake_diag_0905": {
    "file": "/tmp/claude-1000/-home-issan-Projects-claude/29c253bb-5936-4f13-be2a-58212b32aad5/scratchpad/handoff_0906/out/w5_snake_diag_0905.tar",
@@ -108,7 +109,8 @@
    "delete_key": "f924",
    "uploaded_at": "2026-09-06 16:05:32",
    "upload_sec": 100,
-   "upload_error": null
+   "upload_error": null,
+   "extract_to": "results/edge_law_0905"
   }
  }
 }
