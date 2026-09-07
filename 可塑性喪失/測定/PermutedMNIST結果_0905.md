@@ -123,6 +123,8 @@ Permuted MNIST の成績（表 2）: Rand. Smooth-Leaky 84.26 / **Leaky-ReLU 84.
 
 **したがって「Snake は彼らの 2 規則が食い違う点だ」とは書けない**（当初そう書いたが撤回）。彼らは周期活性化を DBW ≈ 0 の側に分類済みで、食い違いは生じていない。**`Snake` という語自体は本文に 0 回**なので「Snake は未検証」は保つ。
 
+> **追加診断（別セッション・9/5 午後・7 本）は [[PermutedMNIST_追加診断_0905]]。** `LIN0`・Adam・ReLU の部分回復・位相固定の棄却・epoch 予算・Spearman・α スイープ（α=0.3 が Adam で leaky に 10/10）。すべて未登録。
+
 ## 4. 引用制限
 
 - **主判定腕は `SN3` で、それは負けた。** 「Permuted MNIST で Snake が勝った」と書かない。α=1 の勝ちは REPORT_ONLY 枠
