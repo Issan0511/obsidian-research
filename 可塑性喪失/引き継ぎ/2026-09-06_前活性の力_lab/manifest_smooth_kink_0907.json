@@ -1,0 +1,41 @@
+{
+ "items": {
+  "smooth_kink_0907_tail": {
+   "file": "/tmp/claude-1002/-home-i-nakatsuka-Projects-lop-analysis/f98f5026-41c3-4c45-ae9a-801c3c15ddf6/scratchpad/handoff_out/smooth_kink/smooth_kink_0907_tail.tar",
+   "size_bytes": 526090240,
+   "sha256": "c01359d4fb4624d8d9bde973e0d6ee2979eeaf035d46c95aac3af03c4f7d33a2",
+   "built": true,
+   "sources": [
+    "/home/i_nakatsuka/Projects/lop_analysis/.claude/worktrees/act_offset_0906/results/smooth_kink_0907/logs_tail",
+    "/home/i_nakatsuka/Projects/lop_analysis/.claude/worktrees/act_offset_0906/results/smooth_kink_0907/arm_status",
+    "/home/i_nakatsuka/Projects/lop_analysis/.claude/worktrees/act_offset_0906/results/smooth_kink_0907/ckpts",
+    "/home/i_nakatsuka/Projects/lop_analysis/.claude/worktrees/act_offset_0906/results/smooth_kink_0907/summary.md",
+    "/home/i_nakatsuka/Projects/lop_analysis/.claude/worktrees/act_offset_0906/results/smooth_kink_0907/verdict.json",
+    "/home/i_nakatsuka/Projects/lop_analysis/.claude/worktrees/act_offset_0906/results/smooth_kink_0907/s_null_full.json"
+   ],
+   "kind": "tar",
+   "extract_to": "results/smooth_kink_0907",
+   "url": "https://70.gigafile.jp/1216-g6c81316ed4efaabd0e972721e712fc9f",
+   "delete_key": "165c",
+   "uploaded_at": "2026-09-07 13:59:32",
+   "upload_sec": 80,
+   "upload_error": null
+  },
+  "smooth_kink_0907_logs": {
+   "file": "/tmp/claude-1002/-home-i-nakatsuka-Projects-lop-analysis/f98f5026-41c3-4c45-ae9a-801c3c15ddf6/scratchpad/handoff_out/smooth_kink/smooth_kink_0907_logs.tar",
+   "size_bytes": 2519224320,
+   "sha256": "8191a7399bfbd3333873df41ce342e27797caf6f59becf3224ad62c06e8597e9",
+   "built": true,
+   "sources": [
+    "/home/i_nakatsuka/Projects/lop_analysis/.claude/worktrees/act_offset_0906/results/smooth_kink_0907/logs"
+   ],
+   "kind": "tar",
+   "extract_to": "results/smooth_kink_0907",
+   "url": "https://70.gigafile.jp/1216-gd71642b4e31029439758f4ee00e0c5d3",
+   "delete_key": "ce73",
+   "uploaded_at": "2026-09-07 14:08:21",
+   "upload_sec": 527,
+   "upload_error": null
+  }
+ }
+}
