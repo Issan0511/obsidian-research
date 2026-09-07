@@ -1,6 +1,6 @@
 # Random Label CIFAR × 適応 α Snake（WD が最も失敗する箱で差はさらに開くか・入力分布を替えて c=0.6 は保つか）
 
-親: [[RandomLabelMNIST結果_0906]]（Q1 `ACTIVATION_MATTERS_UNDER_WD` +0.0233・Q2 `B_ABOVE_C` +0.0062）／[[PermutedMNIST_適応α結果_0905]] / 状態: **起草（v1・Claude）・予測 §6 記入済み（Claude のみ）・実装前** / 作成 2026-09-07 / 出典チャット: `活性化プロット_0904`
+親: [[RandomLabelMNIST結果_0906]]（Q1 `ACTIVATION_MATTERS_UNDER_WD` +0.0233・Q2 `B_ABOVE_C` +0.0062）／[[PermutedMNIST_適応α結果_0905]] / 状態: **段 0 で中止 → [[RandomLabelCIFAR_CNN_spec_0908]] に引き継ぎ**（Kumar A.1.3 が CIFAR に CNN を使うと明記していた。MLP では ReLU が λ 4 点すべてで死ぬ） / 作成 2026-09-07 / 出典チャット: `活性化プロット_0904`
 関連: [[論点/理論が説明すべき事実_0906|理論が説明すべき事実_0906]] §D／[[引用禁止]]
 
 > **run id: `pmnist_rlcifar_0907`。** 宿主は `src/pmnist_rlmnist_0906.py`（プロトコル・介入・検査を継承）で、**データ層だけ差し替える**。新モジュール `src/pmnist_rlcifar_0907.py`。既存 `src/` は無改変。
@@ -143,3 +143,22 @@ seed 逐次で走らせ、**6 seed 完了時点（符号検定が p=0.031 に届
 - **Kumar の表の値と当方の値を直接比べない**（彼らは別ネット・別 λ・online 精度の定義も要確認）
 - **`GAP_WIDENS` が出ても「活性化 > 正則化」と書かない。** 階級 B+C 対 C の比較（[[PermutedMNIST_適応α_spec_0905]] §2.1）
 - **c=0.6 が transport しても「チューニング不要」を一般化しない。** MNIST 系 2 種＋CIFAR 1 種の 3 点
+
+## 8. 中止の記録（2026-09-08・段 1 は 1 run も回していない）
+
+**段 0（λ 較正・§2.5 で登録）の結果**（`R+l2`・seed 0–2・10 タスク・`results/pmnist_rlcifar_0907_lamcal/`）:
+
+| λ | online 1–10 | memo | ‖w‖ 比 | mob L1 |
+|---|---|---|---|---|
+| 1e−5 | 0.1376 | 0.167 | 0.05 | **0.0000** |
+| **1e−4**（規則が選ぶ） | **0.2218** | 0.340 | 0.50 | **0.0000** |
+| 1e−3 | 0.1228 | 0.116 | — | 0.0000 |
+| 1e−2 | 0.1129 | 0.114 | — | 0.332 |
+
+**最良の λ でも online 0.2218 < ガードの 0.30。** §3.1 のとおり Q1 は `INCONCLUSIVE_WD_TOO_WEAK` になる。しかも λ 1e−5〜1e−3 では **mobility が厳密に 0.0000** で、ReLU は生きてすらいない（`SNA` は同条件で memo 1.000）。
+
+**原因は箱の不一致だった。** Kumar et al. A.1.3 を 2026-09-08 に本文確認したところ *"we used an MLP on Permuted MNIST and Random Label MNIST and **a CNN on Random Label CIFAR**, 5+1 CIFAR, and Continual ImageNet"*。**本 spec は 3072 次元入力に MLP を当てており、彼らの箱ではない。** L2 が Random Label CIFAR で 0.75 を出すのは CNN での話である。
+
+**したがって段 1 は回さず、[[RandomLabelCIFAR_CNN_spec_0908]] に引き継ぐ。** 予測 §6 は未検定のまま残す（§6-8「外れたら疑うのは前処理」は当たった — CIFAR の入力スケールが λ と clip の両方を壊していた）。
+
+**この中止から残る未登録の観察**（引用時は限定つきで）: **1200 枚の CIFAR 乱数ラベル記憶を 3072–100–100–10 の MLP でやると、L2 は λ ∈ {1e−5, 1e−4, 1e−3, 1e−2} のどれでも ReLU を救えない（mob 0.0000 か online チャンス）。同じ箱・同じ λ=1e−3 で適応 α Snake は memo 1.000 に到達する。** ただし「MLP は CIFAR で使えない」と一般化しない — 乱数ラベル記憶・1200 枚・この init での話。
