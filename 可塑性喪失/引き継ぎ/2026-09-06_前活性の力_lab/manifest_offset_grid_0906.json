@@ -1,0 +1,41 @@
+{
+ "items": {
+  "offset_grid_0906_tail": {
+   "file": "/tmp/claude-1002/-home-i-nakatsuka-Projects-lop-analysis/f98f5026-41c3-4c45-ae9a-801c3c15ddf6/scratchpad/handoff_out/grid/offset_grid_0906_tail.tar",
+   "size_bytes": 1957212160,
+   "sha256": "c40046d9719dca63fc7568ba947ecfc4e7ae685c70053cf9173e22df58627813",
+   "built": true,
+   "sources": [
+    "/home/i_nakatsuka/Projects/lop_analysis/.claude/worktrees/act_offset_0906/results/offset_grid_0906/logs_tail",
+    "/home/i_nakatsuka/Projects/lop_analysis/.claude/worktrees/act_offset_0906/results/offset_grid_0906/arm_status",
+    "/home/i_nakatsuka/Projects/lop_analysis/.claude/worktrees/act_offset_0906/results/offset_grid_0906/ckpts",
+    "/home/i_nakatsuka/Projects/lop_analysis/.claude/worktrees/act_offset_0906/results/offset_grid_0906/summary.md",
+    "/home/i_nakatsuka/Projects/lop_analysis/.claude/worktrees/act_offset_0906/results/offset_grid_0906/verdict.csv",
+    "/home/i_nakatsuka/Projects/lop_analysis/.claude/worktrees/act_offset_0906/results/offset_grid_0906/verdict.json"
+   ],
+   "kind": "tar",
+   "extract_to": "results/offset_grid_0906",
+   "url": "https://63.gigafile.jp/1216-pb66effb29ff7de1a5dffaf23f944aa05",
+   "delete_key": "2021",
+   "uploaded_at": "2026-09-07 00:57:30",
+   "upload_sec": 43,
+   "upload_error": null
+  },
+  "offset_grid_0906_logs": {
+   "file": "/tmp/claude-1002/-home-i-nakatsuka-Projects-lop-analysis/f98f5026-41c3-4c45-ae9a-801c3c15ddf6/scratchpad/handoff_out/grid/offset_grid_0906_logs.tar",
+   "size_bytes": 10689280000,
+   "sha256": "0b643fd9bccf998bde76e24fdf849a885ed664fc61bb621fc8d31b505c8357a1",
+   "built": true,
+   "sources": [
+    "/home/i_nakatsuka/Projects/lop_analysis/.claude/worktrees/act_offset_0906/results/offset_grid_0906/logs"
+   ],
+   "kind": "tar",
+   "extract_to": "results/offset_grid_0906",
+   "url": "https://63.gigafile.jp/1216-h141d85735a7fb85b0affcdfd0daa5590",
+   "delete_key": "3c94",
+   "uploaded_at": "2026-09-07 01:01:39",
+   "upload_sec": 241,
+   "upload_error": null
+  }
+ }
+}
