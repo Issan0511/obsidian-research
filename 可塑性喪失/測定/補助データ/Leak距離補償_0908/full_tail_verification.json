@@ -1,0 +1,41 @@
+[
+  {
+    "arm": "LRoffm0p5_1216",
+    "full_rows": 5001,
+    "tail_rows": 681,
+    "columns_match": {
+      "layer1_zbar": true,
+      "layer1_zmin": true,
+      "layer1_zmax": true,
+      "layer1_v_unit": true,
+      "layer1_mob": true
+    },
+    "relative_file": "full/logs/LRoffm0p5_1216_seed0.npz"
+  },
+  {
+    "arm": "LRoff0_1216",
+    "full_rows": 5001,
+    "tail_rows": 681,
+    "columns_match": {
+      "layer1_zbar": true,
+      "layer1_zmin": true,
+      "layer1_zmax": true,
+      "layer1_v_unit": true,
+      "layer1_mob": true
+    },
+    "relative_file": "full/logs/LRoff0_1216_seed0.npz"
+  },
+  {
+    "arm": "LRoffp0p5_1216",
+    "full_rows": 5001,
+    "tail_rows": 681,
+    "columns_match": {
+      "layer1_zbar": true,
+      "layer1_zmin": true,
+      "layer1_zmax": true,
+      "layer1_v_unit": true,
+      "layer1_mob": true
+    },
+    "relative_file": "full/logs/LRoffp0p5_1216_seed0.npz"
+  }
+]

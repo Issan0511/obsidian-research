@@ -1,0 +1,53 @@
+[
+  {
+    "arm": "LRoffm0p5_1216",
+    "task_end_rows_per_seed": [
+      50,
+      50,
+      50,
+      50,
+      50,
+      50,
+      50,
+      50,
+      50,
+      50
+    ],
+    "positive_input_fraction_last50task_mean": 0.18628062307834625,
+    "m_phidphi_median_last50": -0.06977774202823639
+  },
+  {
+    "arm": "LRoff0_1216",
+    "task_end_rows_per_seed": [
+      50,
+      50,
+      50,
+      50,
+      50,
+      50,
+      50,
+      50,
+      50,
+      50
+    ],
+    "positive_input_fraction_last50task_mean": 0.041241250932216644,
+    "m_phidphi_median_last50": -0.03575954586267471
+  },
+  {
+    "arm": "LRoffp0p5_1216",
+    "task_end_rows_per_seed": [
+      50,
+      50,
+      50,
+      50,
+      50,
+      50,
+      50,
+      50,
+      50,
+      50
+    ],
+    "positive_input_fraction_last50task_mean": 0.002050000010058284,
+    "m_phidphi_median_last50": -9.07817593542859e-05
+  }
+]
