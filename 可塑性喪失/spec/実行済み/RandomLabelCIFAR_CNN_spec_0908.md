@@ -1,7 +1,7 @@
 # Random Label CIFAR（CNN）× 適応 α Snake — Kumar の箱に合わせ、チャネル単位のゲートで測る
 
-親: [[RandomLabelCIFAR_spec_0907]]（MLP 版・**段 0 で中止**）／[[RandomLabelMNIST結果_0906]]（Q1 `ACTIVATION_MATTERS_UNDER_WD` +0.0233） / 状態: **起草（v1・Claude）・予測 §7 記入済み・実装前** / 作成 2026-09-08 / 出典チャット: `活性化プロット_0904`
-関連: [[PermutedMNIST_適応α結果_0905]]／[[論点/理論が説明すべき事実_0906|理論が説明すべき事実_0906]]／[[引用禁止]]
+親: [[RandomLabelCIFAR_spec_0907]]（MLP 版・**段 0 で中止**）／[[RandomLabelMNIST結果_0906]]（Q1 `ACTIVATION_MATTERS_UNDER_WD` +0.0233） / 状態: **実行済み → [[RandomLabelCIFAR_CNN結果_0908]]**（n=10確定。追加固定$\alpha$比較では適応SNAが`SN3`に0/10で敗れた） / 作成 2026-09-08 / 更新 2026-09-09 / 出典チャット: `活性化プロット_0904`
+関連: [[PermutedMNIST_適応α結果_0905]]／[[理論が説明すべき事実_0906]]／[[引用禁止]]
 
 > **run id: `rlcifar_cnn_0908`。** 新モジュール `src/rlcifar_cnn_0908.py`。宿主 `src/pmnist_0905.py`・`src/pmnist_rlmnist_0906.py`・`src/pmnist_rlcifar_0907.py` は**すべて無改変**（他走の bit 再現性が依存）。
 > **本 spec は [[運用ルール]] §3 の自動起案ではない。** 2026-09-08 のチャットで Issa が指示した。

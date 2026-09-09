@@ -1,7 +1,7 @@
 # Random Label CIFAR × 適応 α Snake（WD が最も失敗する箱で差はさらに開くか・入力分布を替えて c=0.6 は保つか）
 
 親: [[RandomLabelMNIST結果_0906]]（Q1 `ACTIVATION_MATTERS_UNDER_WD` +0.0233・Q2 `B_ABOVE_C` +0.0062）／[[PermutedMNIST_適応α結果_0905]] / 状態: **段 0 で中止 → [[RandomLabelCIFAR_CNN_spec_0908]] に引き継ぎ**（Kumar A.1.3 が CIFAR に CNN を使うと明記していた。MLP では ReLU が λ 4 点すべてで死ぬ） / 作成 2026-09-07 / 出典チャット: `活性化プロット_0904`
-関連: [[論点/理論が説明すべき事実_0906|理論が説明すべき事実_0906]] §D／[[引用禁止]]
+関連: [[理論が説明すべき事実_0906]] §D／[[引用禁止]]
 
 > **run id: `pmnist_rlcifar_0907`。** 宿主は `src/pmnist_rlmnist_0906.py`（プロトコル・介入・検査を継承）で、**データ層だけ差し替える**。新モジュール `src/pmnist_rlcifar_0907.py`。既存 `src/` は無改変。
 > **本 spec は [[運用ルール]] §3 の自動起案ではない。** 2026-09-07 のチャットで Issa が「次に Snake をテストするのは CIFAR がいいか」「目安 8 時間」「seed 10 で中間結果が見られれば」と指示した。
