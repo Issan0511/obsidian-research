@@ -1,5 +1,5 @@
 # ELU の第1層ノルム成長と沈下 spec 0909
-状態: 検証中 / 更新: 2026-09-09
+状態: 実行済み / 更新: 2026-09-09
 親: [[沈下の機構_事後解析_0909]] / [[置換循環_幅成長の反実仮想_結果_0909]] / [[ELU沼結果_0830]]
 実装: lop_analysis repo `collective_kick_0908` ブランチ `specs/spec_elu_growth_0909.md` / `src/elu_growth_0909.py`（事前登録 commit bf9435d）。
 run id: `elu_growth_0909`
