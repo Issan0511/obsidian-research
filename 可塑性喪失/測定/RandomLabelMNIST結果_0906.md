@@ -1,7 +1,7 @@
 # Random Label MNIST 結果（`pmnist_rlmnist_0906`・7 腕 × 10 seed × 50 タスク）
 
 親: [[PermutedMNIST_RandomLabel_spec_0906.md|PermutedMNIST_RandomLabel_spec_0906]]（事前登録 `7e9d206`・予測 §6 は Claude のみ・実装前） / 状態: **決着（Q1 `ACTIVATION_MATTERS_UNDER_WD`・Q2 `B_ABOVE_C`）** / 作成 2026-09-07 / 出典チャット: `活性化プロット_0904`
-関連: [[PermutedMNIST_適応α結果_0905]]（同じ 7 腕を Permuted で）／[[PermutedMNIST_追加診断_0905]]／[[論点/理論が説明すべき事実_0906|理論が説明すべき事実_0906]]／[[引用禁止]]
+関連: [[PermutedMNIST_適応α結果_0905]]（同じ 7 腕を Permuted で）／[[PermutedMNIST_追加診断_0905]]／[[理論が説明すべき事実_0906]]／[[引用禁止]]
 
 > **数値は `results/pmnist_rlmnist_0906/*/per_task.csv`・`verdict.csv`・`summary.md` からのみ転記。** 検査 7/7 通過（`results/_checks_pmnist_rlmnist_0906/checks.json`・S-online は手計算と max|Δ|=0・S-repro byte 一致・宿主 sha256 不変）。実装は Opus subagent（`src/pmnist_rlmnist_0906.py`・宿主 `src/pmnist_0905.py` は無改変）。350 run・発散 0・壁時計 11.6 h（7 並列）。**proj_004_drift 側は未 commit。**
 

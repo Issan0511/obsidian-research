@@ -1,7 +1,7 @@
 # rlhist_0907 — Random Label MNIST 前活性分布データ（配布用）
 
 親: [[RandomLabelMNIST結果_0906]] §5b-4 / 状態: **配布中（2026-12-16 まで）** / 作成 2026-09-07
-関連: [[PermutedMNIST_RandomLabel_spec_0906]]（事前登録）／[[論点/理論が説明すべき事実_0906|理論が説明すべき事実_0906]] 項目 16
+関連: [[PermutedMNIST_RandomLabel_spec_0906]]（事前登録）／[[理論が説明すべき事実_0906]] 項目 16
 
 **ダウンロード**: https://76.gigafile.nu/1216-d919e4b708fff6e4696213ad7624c2adf
 **ファイル**: `rlhist_0907_npz.tar.gz`（398 KB・README.md ＋ npz 7 本）
