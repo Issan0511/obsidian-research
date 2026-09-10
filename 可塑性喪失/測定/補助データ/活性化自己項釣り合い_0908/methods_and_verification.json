@@ -1,0 +1,38 @@
+{
+  "status": "post-hoc descriptive analysis; no intervention or training",
+  "anchors": [
+    0,
+    1000000,
+    5000000
+  ],
+  "unit_checkpoint_rows": 18900,
+  "seed_checkpoint_checks": 930,
+  "z_max_abs_error": 1.9521003054023822e-06,
+  "exact_loss_max_abs_error": 3.552713678800501e-15,
+  "silu_duplicate_identical_at_5m": true,
+  "moment_dtype": "float64",
+  "force_units": "gradient-flow direction; learning rate not multiplied; support and centering frozen",
+  "quiet_total_moment_threshold": 1e-08,
+  "near_balance_relative_threshold": 0.1,
+  "definition": "m+=E[max(phi phi_prime,0)]; m-=E[max(-phi phi_prime,0)]; rho=abs(m+-m-)/(m++m-)",
+  "zero_denominator_policy": "ratio set to 1 as non-cancellation sentinel; classify as quiet, not balanced",
+  "animation_window": "10 endpoint distributions pooled; Snake original also has first 10 singleton frames",
+  "source_code": [
+    {
+      "path": "/home/issan/Projects/claude/snake_out_0904/src/nets.py",
+      "sha256": "f0e099bc32821cd08d60fca9a2572ae9fa31b2b525a68d42d5c99dca8a9e62a5"
+    },
+    {
+      "path": "/tmp/claude-1000/-home-issan-Projects-claude/5144225e-c906-48ea-af81-1e2c8a536462/scratchpad/actanim_smooth_0904.py",
+      "sha256": "378fc9002c097e20d709f57ce411919761709a1c01df2d0c29b9eef2835594af"
+    },
+    {
+      "path": "/tmp/claude-1000/-home-issan-Projects-claude/5144225e-c906-48ea-af81-1e2c8a536462/scratchpad/actplot_smooth_0904.py",
+      "sha256": "789db97627d1c79e8e04ec9834b68e168910f687c12a5c43d34af46830e06964"
+    },
+    {
+      "path": "/tmp/claude-1000/-home-issan-Projects-claude/44dd8ade-4c36-41aa-a180-d37f33fd34e9/scratchpad/asweep_anim.py",
+      "sha256": "c538629cb98714e62163999843fec33c6164e682d5d6e6079d3bdf636a1dac66"
+    }
+  ]
+}

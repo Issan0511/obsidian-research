@@ -1,0 +1,866 @@
+[
+  {
+    "label": "leaky100",
+    "step": 0,
+    "pooled_v2_imbalance": 0.9836245290909812,
+    "seed_v2_imbalance_q25_median_q75": [
+      0.9794575927399366,
+      0.9826898617796869,
+      0.9860658041959146
+    ],
+    "seed_near_balance_q25_median_q75": [
+      0.0,
+      0.0,
+      0.01
+    ],
+    "zero_moment_frac": 0.0
+  },
+  {
+    "label": "leaky100",
+    "step": 1000000,
+    "pooled_v2_imbalance": 0.11701940611545428,
+    "seed_v2_imbalance_q25_median_q75": [
+      0.053220095964084196,
+      0.15404469400168214,
+      0.18551371376556924
+    ],
+    "seed_near_balance_q25_median_q75": [
+      0.02,
+      0.025,
+      0.0475
+    ],
+    "zero_moment_frac": 0.0
+  },
+  {
+    "label": "leaky100",
+    "step": 5000000,
+    "pooled_v2_imbalance": 0.11763563336995887,
+    "seed_v2_imbalance_q25_median_q75": [
+      0.08653887423674646,
+      0.1753909558700537,
+      0.19979926413587246
+    ],
+    "seed_near_balance_q25_median_q75": [
+      0.0325,
+      0.04,
+      0.04
+    ],
+    "zero_moment_frac": 0.0
+  },
+  {
+    "label": "elu100",
+    "step": 0,
+    "pooled_v2_imbalance": 0.6867567843490489,
+    "seed_v2_imbalance_q25_median_q75": [
+      0.6228570158627625,
+      0.6758260603506328,
+      0.7371841158428976
+    ],
+    "seed_near_balance_q25_median_q75": [
+      0.0125,
+      0.02,
+      0.02
+    ],
+    "zero_moment_frac": 0.0
+  },
+  {
+    "label": "elu100",
+    "step": 1000000,
+    "pooled_v2_imbalance": 0.1904931383324108,
+    "seed_v2_imbalance_q25_median_q75": [
+      0.04972754547418852,
+      0.10418682871023996,
+      0.2690180810335176
+    ],
+    "seed_near_balance_q25_median_q75": [
+      0.115,
+      0.14,
+      0.14
+    ],
+    "zero_moment_frac": 0.0
+  },
+  {
+    "label": "elu100",
+    "step": 5000000,
+    "pooled_v2_imbalance": 0.15820932651683947,
+    "seed_v2_imbalance_q25_median_q75": [
+      0.08640260852940752,
+      0.14194057181159758,
+      0.18207561742025946
+    ],
+    "seed_near_balance_q25_median_q75": [
+      0.1,
+      0.10500000000000001,
+      0.15
+    ],
+    "zero_moment_frac": 0.0
+  },
+  {
+    "label": "silu100",
+    "step": 0,
+    "pooled_v2_imbalance": 0.9349855245821873,
+    "seed_v2_imbalance_q25_median_q75": [
+      0.9239871975444185,
+      0.9337408417403925,
+      0.9500486407665011
+    ],
+    "seed_near_balance_q25_median_q75": [
+      0.03,
+      0.035,
+      0.0475
+    ],
+    "zero_moment_frac": 0.0
+  },
+  {
+    "label": "silu100",
+    "step": 1000000,
+    "pooled_v2_imbalance": 0.8791451834570061,
+    "seed_v2_imbalance_q25_median_q75": [
+      0.8153610872737652,
+      0.8640788000258006,
+      0.907722144382459
+    ],
+    "seed_near_balance_q25_median_q75": [
+      0.0,
+      0.005,
+      0.01
+    ],
+    "zero_moment_frac": 0.0
+  },
+  {
+    "label": "silu100",
+    "step": 5000000,
+    "pooled_v2_imbalance": 0.6318298629839394,
+    "seed_v2_imbalance_q25_median_q75": [
+      0.5459701431637874,
+      0.7971405002180874,
+      0.964806603658322
+    ],
+    "seed_near_balance_q25_median_q75": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "zero_moment_frac": 0.0
+  },
+  {
+    "label": "silu100_gd",
+    "step": 0,
+    "pooled_v2_imbalance": 0.9349855245821873,
+    "seed_v2_imbalance_q25_median_q75": [
+      0.9239871975444185,
+      0.9337408417403925,
+      0.9500486407665011
+    ],
+    "seed_near_balance_q25_median_q75": [
+      0.03,
+      0.035,
+      0.0475
+    ],
+    "zero_moment_frac": 0.0
+  },
+  {
+    "label": "silu100_gd",
+    "step": 1000000,
+    "pooled_v2_imbalance": 0.8791451834570061,
+    "seed_v2_imbalance_q25_median_q75": [
+      0.8153610872737652,
+      0.8640788000258006,
+      0.907722144382459
+    ],
+    "seed_near_balance_q25_median_q75": [
+      0.0,
+      0.005,
+      0.01
+    ],
+    "zero_moment_frac": 0.0
+  },
+  {
+    "label": "silu100_gd",
+    "step": 5000000,
+    "pooled_v2_imbalance": 0.6318298629839394,
+    "seed_v2_imbalance_q25_median_q75": [
+      0.5459701431637874,
+      0.7971405002180874,
+      0.964806603658322
+    ],
+    "seed_near_balance_q25_median_q75": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "zero_moment_frac": 0.0
+  },
+  {
+    "label": "gelu100",
+    "step": 0,
+    "pooled_v2_imbalance": 0.9779774707427589,
+    "seed_v2_imbalance_q25_median_q75": [
+      0.9735510639771224,
+      0.9780791844674478,
+      0.9828968084354641
+    ],
+    "seed_near_balance_q25_median_q75": [
+      0.04,
+      0.05,
+      0.06
+    ],
+    "zero_moment_frac": 0.0
+  },
+  {
+    "label": "gelu100",
+    "step": 1000000,
+    "pooled_v2_imbalance": 0.8460107108903687,
+    "seed_v2_imbalance_q25_median_q75": [
+      0.5997270696842278,
+      0.8685610547326588,
+      0.9076059717332193
+    ],
+    "seed_near_balance_q25_median_q75": [
+      0.0,
+      0.01,
+      0.02
+    ],
+    "zero_moment_frac": 0.015
+  },
+  {
+    "label": "gelu100",
+    "step": 5000000,
+    "pooled_v2_imbalance": 0.5874706337580518,
+    "seed_v2_imbalance_q25_median_q75": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "seed_near_balance_q25_median_q75": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "zero_moment_frac": 0.432
+  },
+  {
+    "label": "leaky5",
+    "step": 0,
+    "pooled_v2_imbalance": 0.9812364694692715,
+    "seed_v2_imbalance_q25_median_q75": [
+      0.9449860814756142,
+      0.9815674339378169,
+      0.9891675626092771
+    ],
+    "seed_near_balance_q25_median_q75": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "zero_moment_frac": 0.0
+  },
+  {
+    "label": "leaky5",
+    "step": 1000000,
+    "pooled_v2_imbalance": 0.3418829164408955,
+    "seed_v2_imbalance_q25_median_q75": [
+      0.15604363533780363,
+      0.41185599500554715,
+      0.7690439917543848
+    ],
+    "seed_near_balance_q25_median_q75": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "zero_moment_frac": 0.0
+  },
+  {
+    "label": "leaky5",
+    "step": 5000000,
+    "pooled_v2_imbalance": 0.18042579658148494,
+    "seed_v2_imbalance_q25_median_q75": [
+      0.28582845712904004,
+      0.41734554894142933,
+      0.6776150994765775
+    ],
+    "seed_near_balance_q25_median_q75": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "zero_moment_frac": 0.0
+  },
+  {
+    "label": "snake_025",
+    "step": 0,
+    "pooled_v2_imbalance": 0.7237352752293374,
+    "seed_v2_imbalance_q25_median_q75": [
+      0.46020300137425185,
+      0.7413495001734296,
+      0.9116982640844469
+    ],
+    "seed_near_balance_q25_median_q75": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "zero_moment_frac": 0.0
+  },
+  {
+    "label": "snake_025",
+    "step": 1000000,
+    "pooled_v2_imbalance": 0.06993116691502638,
+    "seed_v2_imbalance_q25_median_q75": [
+      0.12419839224586364,
+      0.2537130953227559,
+      0.37640150597971145
+    ],
+    "seed_near_balance_q25_median_q75": [
+      0.0,
+      0.0,
+      0.2
+    ],
+    "zero_moment_frac": 0.0
+  },
+  {
+    "label": "snake_025",
+    "step": 5000000,
+    "pooled_v2_imbalance": 0.2937128908347768,
+    "seed_v2_imbalance_q25_median_q75": [
+      0.10528115243588454,
+      0.43010835259421387,
+      0.6970303329709574
+    ],
+    "seed_near_balance_q25_median_q75": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "zero_moment_frac": 0.0
+  },
+  {
+    "label": "snake_05",
+    "step": 0,
+    "pooled_v2_imbalance": 0.9104525911240122,
+    "seed_v2_imbalance_q25_median_q75": [
+      0.7204033064312501,
+      0.872928673044181,
+      0.9634146660090214
+    ],
+    "seed_near_balance_q25_median_q75": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "zero_moment_frac": 0.0
+  },
+  {
+    "label": "snake_05",
+    "step": 1000000,
+    "pooled_v2_imbalance": 0.01988237653103481,
+    "seed_v2_imbalance_q25_median_q75": [
+      0.21385689066229888,
+      0.2616222020184644,
+      0.5366615614986346
+    ],
+    "seed_near_balance_q25_median_q75": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "zero_moment_frac": 0.0
+  },
+  {
+    "label": "snake_05",
+    "step": 5000000,
+    "pooled_v2_imbalance": 0.13062333069835208,
+    "seed_v2_imbalance_q25_median_q75": [
+      0.17443817334979306,
+      0.3055236783362899,
+      0.457756996591165
+    ],
+    "seed_near_balance_q25_median_q75": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "zero_moment_frac": 0.0
+  },
+  {
+    "label": "snake_075",
+    "step": 0,
+    "pooled_v2_imbalance": 0.8875077850016692,
+    "seed_v2_imbalance_q25_median_q75": [
+      0.820364767084311,
+      0.933290170588289,
+      0.9784277727089912
+    ],
+    "seed_near_balance_q25_median_q75": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "zero_moment_frac": 0.0
+  },
+  {
+    "label": "snake_075",
+    "step": 1000000,
+    "pooled_v2_imbalance": 0.07636320130311401,
+    "seed_v2_imbalance_q25_median_q75": [
+      0.2455362528832084,
+      0.45186818849835375,
+      0.637260946939843
+    ],
+    "seed_near_balance_q25_median_q75": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "zero_moment_frac": 0.0
+  },
+  {
+    "label": "snake_075",
+    "step": 5000000,
+    "pooled_v2_imbalance": 0.06856768369288023,
+    "seed_v2_imbalance_q25_median_q75": [
+      0.18980401621891096,
+      0.3113228162234588,
+      0.6603119052784547
+    ],
+    "seed_near_balance_q25_median_q75": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "zero_moment_frac": 0.0
+  },
+  {
+    "label": "snake_10",
+    "step": 0,
+    "pooled_v2_imbalance": 0.732232094155851,
+    "seed_v2_imbalance_q25_median_q75": [
+      0.8504774055639877,
+      0.9211337229780666,
+      0.9396827545999957
+    ],
+    "seed_near_balance_q25_median_q75": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "zero_moment_frac": 0.0
+  },
+  {
+    "label": "snake_10",
+    "step": 1000000,
+    "pooled_v2_imbalance": 0.037697792206262834,
+    "seed_v2_imbalance_q25_median_q75": [
+      0.15948743224910222,
+      0.4517915412018132,
+      0.6731204800462334
+    ],
+    "seed_near_balance_q25_median_q75": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "zero_moment_frac": 0.0
+  },
+  {
+    "label": "snake_10",
+    "step": 5000000,
+    "pooled_v2_imbalance": 0.015083558962485918,
+    "seed_v2_imbalance_q25_median_q75": [
+      0.15617016885746765,
+      0.42979405739332116,
+      0.6341582019953769
+    ],
+    "seed_near_balance_q25_median_q75": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "zero_moment_frac": 0.0
+  },
+  {
+    "label": "snake_15",
+    "step": 0,
+    "pooled_v2_imbalance": 0.41121795780215376,
+    "seed_v2_imbalance_q25_median_q75": [
+      0.5145786384018051,
+      0.5903718680002816,
+      0.9344684632425273
+    ],
+    "seed_near_balance_q25_median_q75": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "zero_moment_frac": 0.0
+  },
+  {
+    "label": "snake_15",
+    "step": 1000000,
+    "pooled_v2_imbalance": 0.027968089373672782,
+    "seed_v2_imbalance_q25_median_q75": [
+      0.2141082963005356,
+      0.41698135873817527,
+      0.5394396294421124
+    ],
+    "seed_near_balance_q25_median_q75": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "zero_moment_frac": 0.0
+  },
+  {
+    "label": "snake_15",
+    "step": 5000000,
+    "pooled_v2_imbalance": 0.17818481508128772,
+    "seed_v2_imbalance_q25_median_q75": [
+      0.26141254879064846,
+      0.47091055065923737,
+      0.6595219222423764
+    ],
+    "seed_near_balance_q25_median_q75": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "zero_moment_frac": 0.0
+  },
+  {
+    "label": "snake_20",
+    "step": 0,
+    "pooled_v2_imbalance": 0.30612604570509205,
+    "seed_v2_imbalance_q25_median_q75": [
+      0.22785125471691456,
+      0.509458781160669,
+      0.9057523398777618
+    ],
+    "seed_near_balance_q25_median_q75": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "zero_moment_frac": 0.0
+  },
+  {
+    "label": "snake_20",
+    "step": 1000000,
+    "pooled_v2_imbalance": 0.0785123481996837,
+    "seed_v2_imbalance_q25_median_q75": [
+      0.2642193170623933,
+      0.4567750660727863,
+      0.7192914479520885
+    ],
+    "seed_near_balance_q25_median_q75": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "zero_moment_frac": 0.0
+  },
+  {
+    "label": "snake_20",
+    "step": 5000000,
+    "pooled_v2_imbalance": 0.18426444045299992,
+    "seed_v2_imbalance_q25_median_q75": [
+      0.11448578250807812,
+      0.31607126202300473,
+      0.5605048938913568
+    ],
+    "seed_near_balance_q25_median_q75": [
+      0.0,
+      0.0,
+      0.2
+    ],
+    "zero_moment_frac": 0.0
+  },
+  {
+    "label": "snake_30",
+    "step": 0,
+    "pooled_v2_imbalance": 0.20332627901733988,
+    "seed_v2_imbalance_q25_median_q75": [
+      0.22050773253957234,
+      0.40599707286676107,
+      0.8145796685273162
+    ],
+    "seed_near_balance_q25_median_q75": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "zero_moment_frac": 0.0
+  },
+  {
+    "label": "snake_30",
+    "step": 1000000,
+    "pooled_v2_imbalance": 0.08696721983309373,
+    "seed_v2_imbalance_q25_median_q75": [
+      0.1778998912282458,
+      0.3527246995973804,
+      0.5249233690355419
+    ],
+    "seed_near_balance_q25_median_q75": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "zero_moment_frac": 0.0
+  },
+  {
+    "label": "snake_30",
+    "step": 5000000,
+    "pooled_v2_imbalance": 0.05284643422333469,
+    "seed_v2_imbalance_q25_median_q75": [
+      0.20410243468227018,
+      0.28174274994208043,
+      0.5455706103855057
+    ],
+    "seed_near_balance_q25_median_q75": [
+      0.0,
+      0.0,
+      0.2
+    ],
+    "zero_moment_frac": 0.0
+  },
+  {
+    "label": "snake_40",
+    "step": 0,
+    "pooled_v2_imbalance": 0.16624106006490397,
+    "seed_v2_imbalance_q25_median_q75": [
+      0.23138194060248057,
+      0.3709403750065461,
+      0.8159619048915023
+    ],
+    "seed_near_balance_q25_median_q75": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "zero_moment_frac": 0.0
+  },
+  {
+    "label": "snake_40",
+    "step": 1000000,
+    "pooled_v2_imbalance": 0.1130423972289331,
+    "seed_v2_imbalance_q25_median_q75": [
+      0.3293910794329301,
+      0.4973403289802082,
+      0.6546994640995418
+    ],
+    "seed_near_balance_q25_median_q75": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "zero_moment_frac": 0.0
+  },
+  {
+    "label": "snake_40",
+    "step": 5000000,
+    "pooled_v2_imbalance": 0.023085701267981172,
+    "seed_v2_imbalance_q25_median_q75": [
+      0.14184761204798876,
+      0.2999345639470621,
+      0.6043257178512763
+    ],
+    "seed_near_balance_q25_median_q75": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "zero_moment_frac": 0.0
+  },
+  {
+    "label": "snake_60",
+    "step": 0,
+    "pooled_v2_imbalance": 0.17283508377094997,
+    "seed_v2_imbalance_q25_median_q75": [
+      0.22555995306565205,
+      0.3718300459738542,
+      0.8126404927963689
+    ],
+    "seed_near_balance_q25_median_q75": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "zero_moment_frac": 0.0
+  },
+  {
+    "label": "snake_60",
+    "step": 1000000,
+    "pooled_v2_imbalance": 0.15830930677193078,
+    "seed_v2_imbalance_q25_median_q75": [
+      0.3321781564971705,
+      0.4016424128335356,
+      0.5821076985392258
+    ],
+    "seed_near_balance_q25_median_q75": [
+      0.0,
+      0.0,
+      0.2
+    ],
+    "zero_moment_frac": 0.0
+  },
+  {
+    "label": "snake_60",
+    "step": 5000000,
+    "pooled_v2_imbalance": 0.12881288570498076,
+    "seed_v2_imbalance_q25_median_q75": [
+      0.1980908515210004,
+      0.31313543363564933,
+      0.5569935865503278
+    ],
+    "seed_near_balance_q25_median_q75": [
+      0.0,
+      0.0,
+      0.2
+    ],
+    "zero_moment_frac": 0.0
+  },
+  {
+    "label": "snake_80",
+    "step": 0,
+    "pooled_v2_imbalance": 0.1232995981952745,
+    "seed_v2_imbalance_q25_median_q75": [
+      0.24837041435060928,
+      0.4876254304985941,
+      0.7722779790601696
+    ],
+    "seed_near_balance_q25_median_q75": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "zero_moment_frac": 0.0
+  },
+  {
+    "label": "snake_80",
+    "step": 1000000,
+    "pooled_v2_imbalance": 0.05984383152259794,
+    "seed_v2_imbalance_q25_median_q75": [
+      0.16531737906393237,
+      0.27009591930378873,
+      0.5931626738684275
+    ],
+    "seed_near_balance_q25_median_q75": [
+      0.0,
+      0.0,
+      0.05
+    ],
+    "zero_moment_frac": 0.0
+  },
+  {
+    "label": "snake_80",
+    "step": 5000000,
+    "pooled_v2_imbalance": 0.016979873995633128,
+    "seed_v2_imbalance_q25_median_q75": [
+      0.08187495141302113,
+      0.19677018515938993,
+      0.4778334578618809
+    ],
+    "seed_near_balance_q25_median_q75": [
+      0.0,
+      0.0,
+      0.2
+    ],
+    "zero_moment_frac": 0.0
+  },
+  {
+    "label": "leaky5x_0002",
+    "step": 0,
+    "pooled_v2_imbalance": 0.9812364694692715,
+    "seed_v2_imbalance_q25_median_q75": [
+      0.9449860814756142,
+      0.9815674339378169,
+      0.9891675626092771
+    ],
+    "seed_near_balance_q25_median_q75": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "zero_moment_frac": 0.0
+  },
+  {
+    "label": "leaky5x_0002",
+    "step": 1000000,
+    "pooled_v2_imbalance": 0.3266679554251473,
+    "seed_v2_imbalance_q25_median_q75": [
+      0.3309124490230773,
+      0.4635577075969026,
+      1.0
+    ],
+    "seed_near_balance_q25_median_q75": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "zero_moment_frac": 0.0
+  },
+  {
+    "label": "leaky5x_0002",
+    "step": 5000000,
+    "pooled_v2_imbalance": 0.508826026196762,
+    "seed_v2_imbalance_q25_median_q75": [
+      0.5333466908876214,
+      0.9993237027751974,
+      1.0
+    ],
+    "seed_near_balance_q25_median_q75": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "zero_moment_frac": 0.0
+  },
+  {
+    "label": "leaky5x_00037",
+    "step": 0,
+    "pooled_v2_imbalance": 0.9812364694692715,
+    "seed_v2_imbalance_q25_median_q75": [
+      0.9449860814756142,
+      0.9815674339378169,
+      0.9891675626092771
+    ],
+    "seed_near_balance_q25_median_q75": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "zero_moment_frac": 0.0
+  },
+  {
+    "label": "leaky5x_00037",
+    "step": 1000000,
+    "pooled_v2_imbalance": 0.5275465116982494,
+    "seed_v2_imbalance_q25_median_q75": [
+      0.4892232440400426,
+      0.6926524626869739,
+      0.8964314902231134
+    ],
+    "seed_near_balance_q25_median_q75": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "zero_moment_frac": 0.0
+  },
+  {
+    "label": "leaky5x_00037",
+    "step": 5000000,
+    "pooled_v2_imbalance": 0.5510839712534064,
+    "seed_v2_imbalance_q25_median_q75": [
+      0.5642297886999943,
+      0.8061541379548219,
+      1.0
+    ],
+    "seed_near_balance_q25_median_q75": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "zero_moment_frac": 0.0
+  }
+]

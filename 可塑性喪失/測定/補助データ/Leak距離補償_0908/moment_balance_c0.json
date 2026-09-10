@@ -1,0 +1,123 @@
+{
+  "scope": "c=0, a=0.1, 10 seeds, last 50 task endpoints 4.51M..5M, 100 units",
+  "by_seed": [
+    {
+      "file": "LRoff0_1216_seed0.npz",
+      "phi_mean_mean": -0.3041848988703301,
+      "phidphi_mean": 0.011786935475310659,
+      "weighted_phidphi_mean": 0.007148486973688205,
+      "positive_share": 0.0459125,
+      "max_moment_error": 1.1160969748402749e-07
+    },
+    {
+      "file": "LRoff0_1216_seed1.npz",
+      "phi_mean_mean": -0.3347290514816606,
+      "phidphi_mean": 0.0034720413357867508,
+      "weighted_phidphi_mean": 0.005677908153542505,
+      "positive_share": 0.03770625,
+      "max_moment_error": 7.438473392795686e-08
+    },
+    {
+      "file": "LRoff0_1216_seed2.npz",
+      "phi_mean_mean": -0.3052995373635607,
+      "phidphi_mean": 0.010825786106999627,
+      "weighted_phidphi_mean": 0.003953372019696623,
+      "positive_share": 0.04200625,
+      "max_moment_error": 6.451271472585063e-08
+    },
+    {
+      "file": "LRoff0_1216_seed3.npz",
+      "phi_mean_mean": -0.31337648295311954,
+      "phidphi_mean": 0.007563426772368838,
+      "weighted_phidphi_mean": 0.00874273886564185,
+      "positive_share": 0.03896875,
+      "max_moment_error": 1.748837532566938e-07
+    },
+    {
+      "file": "LRoff0_1216_seed4.npz",
+      "phi_mean_mean": -0.32874554043582993,
+      "phidphi_mean": 0.005680618046757648,
+      "weighted_phidphi_mean": 0.004200744906152996,
+      "positive_share": 0.03895625,
+      "max_moment_error": 7.458031170415325e-08
+    },
+    {
+      "file": "LRoff0_1216_seed5.npz",
+      "phi_mean_mean": -0.30244861945093965,
+      "phidphi_mean": 0.01896393075472943,
+      "weighted_phidphi_mean": 0.00820363726323996,
+      "positive_share": 0.04794375,
+      "max_moment_error": 6.245449180042328e-08
+    },
+    {
+      "file": "LRoff0_1216_seed6.npz",
+      "phi_mean_mean": -0.31613070913737995,
+      "phidphi_mean": 0.009198381121082115,
+      "weighted_phidphi_mean": 0.005114909681741022,
+      "positive_share": 0.04083125,
+      "max_moment_error": 9.389128541315017e-08
+    },
+    {
+      "file": "LRoff0_1216_seed7.npz",
+      "phi_mean_mean": -0.32627823470716893,
+      "phidphi_mean": 0.0066634265418553836,
+      "weighted_phidphi_mean": 0.008618225947178,
+      "positive_share": 0.03908125,
+      "max_moment_error": 6.869435309475591e-08
+    },
+    {
+      "file": "LRoff0_1216_seed8.npz",
+      "phi_mean_mean": -0.3122310263232919,
+      "phidphi_mean": 0.016990786074302364,
+      "weighted_phidphi_mean": 0.007999847399025328,
+      "positive_share": 0.047525,
+      "max_moment_error": 7.840804761016784e-08
+    },
+    {
+      "file": "LRoff0_1216_seed9.npz",
+      "phi_mean_mean": -0.3322566338134534,
+      "phidphi_mean": -0.000916451463534731,
+      "weighted_phidphi_mean": 0.005598120301013495,
+      "positive_share": 0.03348125,
+      "max_moment_error": 5.563721061641047e-08
+    }
+  ],
+  "groups": {
+    "all": {
+      "events": 50000,
+      "P_mean": 0.04531077269103684,
+      "N_mean": 3.6287884614471033,
+      "mean_balance_ratio_P_over_aN": 0.12486473976762927,
+      "self_moment_balance_ratio_P_over_a2N": 1.2486473976762928,
+      "weighted_self_balance_ratio": 1.3171249243002578,
+      "phi_mean_median": -0.3667314052581787,
+      "phidphi_median": -0.03575954968109727,
+      "fraction_self_up": 0.7724,
+      "zbar_mean": -3.5834776887560658
+    },
+    "crossing": {
+      "events": 18337,
+      "P_mean": 0.12355012458700125,
+      "N_mean": 2.686020416484174,
+      "mean_balance_ratio_P_over_aN": 0.4599746294881865,
+      "self_moment_balance_ratio_P_over_a2N": 4.599746294881866,
+      "weighted_self_balance_ratio": 4.9811587774883135,
+      "phi_mean_median": -0.23094875775277618,
+      "phidphi_median": 0.01292599994689226,
+      "fraction_self_up": 0.37939684790314665,
+      "zbar_mean": -2.5624702918971725
+    },
+    "all_negative": {
+      "events": 31663,
+      "P_mean": 0.0,
+      "N_mean": 4.174773922094711,
+      "mean_balance_ratio_P_over_aN": 0.0,
+      "self_moment_balance_ratio_P_over_a2N": 0.0,
+      "weighted_self_balance_ratio": 0.0,
+      "phi_mean_median": -0.4132382392883301,
+      "phidphi_median": -0.041323823928833006,
+      "fraction_self_up": 1.0,
+      "zbar_mean": -4.174773922094711
+    }
+  }
+}

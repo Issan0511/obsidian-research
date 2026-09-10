@@ -1,0 +1,326 @@
+[
+  {
+    "label": "leaky100",
+    "step": 0,
+    "path": "/home/issan/Projects/claude/proj_004_drift/results/p3_extend_0902/ckpts/LR_1216_step0.pt",
+    "sha256": "dcf3a8e22749556a43a2357ac618f1ed6d6b0103de02427437b59e5bdaffde31"
+  },
+  {
+    "label": "leaky100",
+    "step": 1000000,
+    "path": "/home/issan/Projects/claude/proj_004_drift/results/p3_extend_0902/ckpts/LR_1216_step1000000.pt",
+    "sha256": "784ac42023b02791684bb21d034dedef72d19ff9289f53ecee8c223fdf18787b"
+  },
+  {
+    "label": "leaky100",
+    "step": 5000000,
+    "path": "/home/issan/Projects/claude/proj_004_drift/results/p3_extend_0902/ckpts/LR_1216_step5000000.pt",
+    "sha256": "55e9a181b0d749884df34c86cd24e3dcd9481e30d707e626622e7524b92897c8"
+  },
+  {
+    "label": "elu100",
+    "step": 0,
+    "path": "/home/issan/Projects/claude/proj_004_drift/results/p3_extend_0902/ckpts/E_1216_step0.pt",
+    "sha256": "1a9c7267135879dc0662af5ac0a169cbfb4c8551a2134b36ea1ca4eef0ab9f95"
+  },
+  {
+    "label": "elu100",
+    "step": 1000000,
+    "path": "/home/issan/Projects/claude/proj_004_drift/results/p3_extend_0902/ckpts/E_1216_step1000000.pt",
+    "sha256": "a94a08984a81b7e63a325f37deb4c67d22ff8e80f56a60cc51436afa840cdb31"
+  },
+  {
+    "label": "elu100",
+    "step": 5000000,
+    "path": "/home/issan/Projects/claude/proj_004_drift/results/p3_extend_0902/ckpts/E_1216_step5000000.pt",
+    "sha256": "1505422f79f6a8241a8ed8f3b743221d14896f1235c3f2a38a78f27f2639bba4"
+  },
+  {
+    "label": "silu100",
+    "step": 0,
+    "path": "/home/issan/Projects/claude/proj_004_drift/results/p3_extend_0902/ckpts/S_b1_1216_step0.pt",
+    "sha256": "90db6e88080414743b6ceaed46491fcc894a1421c54cbb449ab2247ac513c3bd"
+  },
+  {
+    "label": "silu100",
+    "step": 1000000,
+    "path": "/home/issan/Projects/claude/proj_004_drift/results/p3_extend_0902/ckpts/S_b1_1216_step1000000.pt",
+    "sha256": "93be79dad39f1b5b34e01fad3098b445544dec86915ae850639c6869e4e657d6"
+  },
+  {
+    "label": "silu100",
+    "step": 5000000,
+    "path": "/home/issan/Projects/claude/proj_004_drift/results/p3_extend_0902/ckpts/S_b1_1216_step5000000.pt",
+    "sha256": "aff1b26c53f727df9808e59fc0d4345bcf152c2305574b678c163ef91225afc9"
+  },
+  {
+    "label": "silu100_gd",
+    "step": 0,
+    "path": "/home/issan/Projects/claude/proj_004_drift/results/gate_dial_0902/ckpts/S_b1_1216_step0.pt",
+    "sha256": "90db6e88080414743b6ceaed46491fcc894a1421c54cbb449ab2247ac513c3bd"
+  },
+  {
+    "label": "silu100_gd",
+    "step": 1000000,
+    "path": "/home/issan/Projects/claude/proj_004_drift/results/gate_dial_0902/ckpts/S_b1_1216_step1000000.pt",
+    "sha256": "93be79dad39f1b5b34e01fad3098b445544dec86915ae850639c6869e4e657d6"
+  },
+  {
+    "label": "silu100_gd",
+    "step": 5000000,
+    "path": "/home/issan/Projects/claude/proj_004_drift/results/gate_dial_0902/ckpts/S_b1_1216_step5000000.pt",
+    "sha256": "aff1b26c53f727df9808e59fc0d4345bcf152c2305574b678c163ef91225afc9"
+  },
+  {
+    "label": "gelu100",
+    "step": 0,
+    "path": "/home/issan/Projects/claude/proj_004_drift/results/gate_dial_0902/ckpts/G_b1_1216_step0.pt",
+    "sha256": "804bb17c80dd20d6f98579accb98913c69d9911348fc47b01b5e35b6fab5ceda"
+  },
+  {
+    "label": "gelu100",
+    "step": 1000000,
+    "path": "/home/issan/Projects/claude/proj_004_drift/results/gate_dial_0902/ckpts/G_b1_1216_step1000000.pt",
+    "sha256": "f3b5384c3a35cd5664cad9b026b89993be19b29dade9c3c22d711cf3c52909c0"
+  },
+  {
+    "label": "gelu100",
+    "step": 5000000,
+    "path": "/home/issan/Projects/claude/proj_004_drift/results/gate_dial_0902/ckpts/G_b1_1216_step5000000.pt",
+    "sha256": "7bfa2ab0ebd59374e63e011f6565b5478641a3b389f4554d256922c80f83f1ca"
+  },
+  {
+    "label": "leaky5",
+    "step": 0,
+    "path": "/home/issan/Projects/claude/proj_004_drift/results/width5_gate_b_0901/ckpts/LR5_step0.pt",
+    "sha256": "d1026a0369d39acc189d492f48e35ec933856ca013dc640a2506839965cf41d6"
+  },
+  {
+    "label": "leaky5",
+    "step": 1000000,
+    "path": "/home/issan/Projects/claude/proj_004_drift/results/width5_gate_b_0901/ckpts/LR5_step1000000.pt",
+    "sha256": "cd903a4170f53579e562c0da6a48c1a3747246106eed78db7915d5ad10a3e036"
+  },
+  {
+    "label": "leaky5",
+    "step": 5000000,
+    "path": "/home/issan/Projects/claude/proj_004_drift/results/width5_gate_b_0901/ckpts/LR5_step5000000.pt",
+    "sha256": "60af29c0570bd3081e740729abe8a667512cc2a01ed492cb08db53af747173b9"
+  },
+  {
+    "label": "snake_025",
+    "step": 0,
+    "path": "/home/issan/Projects/claude/snake_out_0904/results/_diag_w5_snake_0905/asweep_a025/ckpts/SN5_a1_step0.pt",
+    "sha256": "3450e528d489f4788a2c93967048d3c1f193f47ce2d8a44e29ba730ea35a3441"
+  },
+  {
+    "label": "snake_025",
+    "step": 1000000,
+    "path": "/home/issan/Projects/claude/snake_out_0904/results/_diag_w5_snake_0905/asweep_a025/ckpts/SN5_a1_step1000000.pt",
+    "sha256": "c1ef853164c2eae1d33fe1903d5a6c6e10eee78852ef3872fc36d01d56242ec6"
+  },
+  {
+    "label": "snake_025",
+    "step": 5000000,
+    "path": "/home/issan/Projects/claude/snake_out_0904/results/_diag_w5_snake_0905/asweep_a025/ckpts/SN5_a1_step5000000.pt",
+    "sha256": "e5e0d6d4d35215c805e0e4374e9f39f93c369b0708ac09737dd40759aacd31c7"
+  },
+  {
+    "label": "snake_05",
+    "step": 0,
+    "path": "/home/issan/Projects/claude/snake_out_0904/results/_diag_w5_snake_0905/asweep_a05/ckpts/SN5_a1_step0.pt",
+    "sha256": "d11195d441b71161e477a0ecc2959aa12024a6cdf1cd5d1f832725b191d3e072"
+  },
+  {
+    "label": "snake_05",
+    "step": 1000000,
+    "path": "/home/issan/Projects/claude/snake_out_0904/results/_diag_w5_snake_0905/asweep_a05/ckpts/SN5_a1_step1000000.pt",
+    "sha256": "45bf57f8f4008ca8c5cd459a14c0ba4701577f57cda18faf997adba1b19cf6fd"
+  },
+  {
+    "label": "snake_05",
+    "step": 5000000,
+    "path": "/home/issan/Projects/claude/snake_out_0904/results/_diag_w5_snake_0905/asweep_a05/ckpts/SN5_a1_step5000000.pt",
+    "sha256": "fb057599a56703fd7513cb6fb02af9f9970ce55f50c57a594fdd335bf852b8ce"
+  },
+  {
+    "label": "snake_075",
+    "step": 0,
+    "path": "/home/issan/Projects/claude/snake_out_0904/results/_diag_w5_snake_0905/asweep_a075/ckpts/SN5_a1_step0.pt",
+    "sha256": "c6d9aa08de138b8fea81af644eead4d490430190023ececc344b72939a6b7480"
+  },
+  {
+    "label": "snake_075",
+    "step": 1000000,
+    "path": "/home/issan/Projects/claude/snake_out_0904/results/_diag_w5_snake_0905/asweep_a075/ckpts/SN5_a1_step1000000.pt",
+    "sha256": "5d6f4bd1f28b5e733082034d14957f7d64708a5fc82915046186a025b12cb729"
+  },
+  {
+    "label": "snake_075",
+    "step": 5000000,
+    "path": "/home/issan/Projects/claude/snake_out_0904/results/_diag_w5_snake_0905/asweep_a075/ckpts/SN5_a1_step5000000.pt",
+    "sha256": "e9d1f48134712af2e71c09635b214dc5defd1f59a6ad55c07da0decde238e94f"
+  },
+  {
+    "label": "snake_10",
+    "step": 0,
+    "path": "/home/issan/Projects/claude/snake_out_0904/results/_diag_w5_snake_0905/asweep_a10/ckpts/SN5_a1_step0.pt",
+    "sha256": "065b83227beb0517451647440fc15b611e6cba959b3a4864389f7c8cd993533e"
+  },
+  {
+    "label": "snake_10",
+    "step": 1000000,
+    "path": "/home/issan/Projects/claude/snake_out_0904/results/_diag_w5_snake_0905/asweep_a10/ckpts/SN5_a1_step1000000.pt",
+    "sha256": "77e1eb4e2f0b7ada0395266021a6b9ed0bcd121f57e211dd9ad5446fc9ef66ac"
+  },
+  {
+    "label": "snake_10",
+    "step": 5000000,
+    "path": "/home/issan/Projects/claude/snake_out_0904/results/_diag_w5_snake_0905/asweep_a10/ckpts/SN5_a1_step5000000.pt",
+    "sha256": "3598d227672b77cae0994bb6d862afa58464803f1c9106d8b463f5a20080cc6c"
+  },
+  {
+    "label": "snake_15",
+    "step": 0,
+    "path": "/home/issan/Projects/claude/snake_out_0904/results/_diag_w5_snake_0905/asweep_a15/ckpts/SN5_a1_step0.pt",
+    "sha256": "39a2ab3332aca41aa55ad0ce6357376f6fe1d895a954277b1e06137cf5a384fd"
+  },
+  {
+    "label": "snake_15",
+    "step": 1000000,
+    "path": "/home/issan/Projects/claude/snake_out_0904/results/_diag_w5_snake_0905/asweep_a15/ckpts/SN5_a1_step1000000.pt",
+    "sha256": "d36b33b45c53c1dde7c1320fbce7ff42da5fccdbe6992a3a338844e1b21b7537"
+  },
+  {
+    "label": "snake_15",
+    "step": 5000000,
+    "path": "/home/issan/Projects/claude/snake_out_0904/results/_diag_w5_snake_0905/asweep_a15/ckpts/SN5_a1_step5000000.pt",
+    "sha256": "e829cd6c8f871642c4752a6e23dd3154ff4a8dca5e58c7faec256c21531581aa"
+  },
+  {
+    "label": "snake_20",
+    "step": 0,
+    "path": "/home/issan/Projects/claude/snake_out_0904/results/_diag_w5_snake_0905/asweep_a20/ckpts/SN5_a1_step0.pt",
+    "sha256": "3fdd132befebb0f723a1bdc28314882ca12bcecc3fda5b3ecd94a5d9863a5f5a"
+  },
+  {
+    "label": "snake_20",
+    "step": 1000000,
+    "path": "/home/issan/Projects/claude/snake_out_0904/results/_diag_w5_snake_0905/asweep_a20/ckpts/SN5_a1_step1000000.pt",
+    "sha256": "0ea1d8cffdce1555ed9cf17d2e4d60e6a887c63d19f4a05273682905460b5fa7"
+  },
+  {
+    "label": "snake_20",
+    "step": 5000000,
+    "path": "/home/issan/Projects/claude/snake_out_0904/results/_diag_w5_snake_0905/asweep_a20/ckpts/SN5_a1_step5000000.pt",
+    "sha256": "0998db118ab0aea626ecf06b29d181655673f8c2bf9dfcfc306dc544d0b7eec6"
+  },
+  {
+    "label": "snake_30",
+    "step": 0,
+    "path": "/home/issan/Projects/claude/snake_out_0904/results/_diag_w5_snake_0905/asweep_a30/ckpts/SN5_a1_step0.pt",
+    "sha256": "aed77bcc93a4cb1d3c8329d806b7137ad90fe5afc1ab96268c80f2d472854fbc"
+  },
+  {
+    "label": "snake_30",
+    "step": 1000000,
+    "path": "/home/issan/Projects/claude/snake_out_0904/results/_diag_w5_snake_0905/asweep_a30/ckpts/SN5_a1_step1000000.pt",
+    "sha256": "72246c98db122780e3d3b05f7157c65441d6d40e8fe188a7d61b06c22d60ba8a"
+  },
+  {
+    "label": "snake_30",
+    "step": 5000000,
+    "path": "/home/issan/Projects/claude/snake_out_0904/results/_diag_w5_snake_0905/asweep_a30/ckpts/SN5_a1_step5000000.pt",
+    "sha256": "9c8163f93ab70904738baf7f536b806b9276e52eab03d70372ac9b5fc67fd0d1"
+  },
+  {
+    "label": "snake_40",
+    "step": 0,
+    "path": "/home/issan/Projects/claude/snake_out_0904/results/_diag_w5_snake_0905/asweep_a40/ckpts/SN5_a1_step0.pt",
+    "sha256": "2880a3584ff549a8e743a6199d85839c6cc16d1d91eafd05102ad4fe8fc8a2d9"
+  },
+  {
+    "label": "snake_40",
+    "step": 1000000,
+    "path": "/home/issan/Projects/claude/snake_out_0904/results/_diag_w5_snake_0905/asweep_a40/ckpts/SN5_a1_step1000000.pt",
+    "sha256": "5eb43d9c5d5fb53bb619933cf6e5668aeccd3dd9e5158e2a8b73ba5e40ffde8b"
+  },
+  {
+    "label": "snake_40",
+    "step": 5000000,
+    "path": "/home/issan/Projects/claude/snake_out_0904/results/_diag_w5_snake_0905/asweep_a40/ckpts/SN5_a1_step5000000.pt",
+    "sha256": "7bffbb177c5d7df7f7fe43bcc45dedc1caf1e6661609cd152e8ef152a2b4857f"
+  },
+  {
+    "label": "snake_60",
+    "step": 0,
+    "path": "/home/issan/Projects/claude/snake_out_0904/results/_diag_w5_snake_0905/asweep_a60/ckpts/SN5_a1_step0.pt",
+    "sha256": "4cebbdc58b93f8f22680efe5df1dc83abc9d1bf2173b0ed0e3ae70b90727a70f"
+  },
+  {
+    "label": "snake_60",
+    "step": 1000000,
+    "path": "/home/issan/Projects/claude/snake_out_0904/results/_diag_w5_snake_0905/asweep_a60/ckpts/SN5_a1_step1000000.pt",
+    "sha256": "2ce1558e35c98446b3d82468d9d1ca52ae43dfec3414a66851267ddc47a987ed"
+  },
+  {
+    "label": "snake_60",
+    "step": 5000000,
+    "path": "/home/issan/Projects/claude/snake_out_0904/results/_diag_w5_snake_0905/asweep_a60/ckpts/SN5_a1_step5000000.pt",
+    "sha256": "09dc4bfcec9c35cacf840ed113521017f4d52fc3c8e4a6aab9dbe9474ec1162c"
+  },
+  {
+    "label": "snake_80",
+    "step": 0,
+    "path": "/home/issan/Projects/claude/snake_out_0904/results/_diag_w5_snake_0905/asweep_a80/ckpts/SN5_a1_step0.pt",
+    "sha256": "ed9b5af4b2ea0cd991f9c8769c33e26ef904984cce7f4c0af456dfdf46f0b38f"
+  },
+  {
+    "label": "snake_80",
+    "step": 1000000,
+    "path": "/home/issan/Projects/claude/snake_out_0904/results/_diag_w5_snake_0905/asweep_a80/ckpts/SN5_a1_step1000000.pt",
+    "sha256": "7603b9cd1fe3266c1ec5c28b53b7c166f4d308313e41f8f0f86da5a374990b2f"
+  },
+  {
+    "label": "snake_80",
+    "step": 5000000,
+    "path": "/home/issan/Projects/claude/snake_out_0904/results/_diag_w5_snake_0905/asweep_a80/ckpts/SN5_a1_step5000000.pt",
+    "sha256": "c666886c2c388a2639767a0043304a7f06986f8124c4a72484e16893c313cc0c"
+  },
+  {
+    "label": "leaky5x_0002",
+    "step": 0,
+    "path": "/home/issan/Projects/claude/snake_out_0904/results/_diag_w5_snake_0905/LR5x_lr0002/ckpts/LR5x_step0.pt",
+    "sha256": "524db1e5e9e7fe19e8d735e8ee536540cd36a5a89fdb063220f6b4db006d92a6"
+  },
+  {
+    "label": "leaky5x_0002",
+    "step": 1000000,
+    "path": "/home/issan/Projects/claude/snake_out_0904/results/_diag_w5_snake_0905/LR5x_lr0002/ckpts/LR5x_step1000000.pt",
+    "sha256": "626dd57b1641405171602507deaa5acd40c1b328e3a32e99f66a0e10cce603de"
+  },
+  {
+    "label": "leaky5x_0002",
+    "step": 5000000,
+    "path": "/home/issan/Projects/claude/snake_out_0904/results/_diag_w5_snake_0905/LR5x_lr0002/ckpts/LR5x_step5000000.pt",
+    "sha256": "b8310bfb6a4525e286a920ffc7e75ac0a6d5993a91985fe92f2296fc66fd65b9"
+  },
+  {
+    "label": "leaky5x_00037",
+    "step": 0,
+    "path": "/home/issan/Projects/claude/snake_out_0904/results/_diag_w5_snake_0905/LR5x_lr00037/ckpts/LR5x_step0.pt",
+    "sha256": "20149d1ab273896881f6b771db262453b25ce4642fc7062c1ba79c9fe6612888"
+  },
+  {
+    "label": "leaky5x_00037",
+    "step": 1000000,
+    "path": "/home/issan/Projects/claude/snake_out_0904/results/_diag_w5_snake_0905/LR5x_lr00037/ckpts/LR5x_step1000000.pt",
+    "sha256": "1c20582169c31a7201ceb22c9715bbcd746ad191ccfe2c01448d77db7b71e5f4"
+  },
+  {
+    "label": "leaky5x_00037",
+    "step": 5000000,
+    "path": "/home/issan/Projects/claude/snake_out_0904/results/_diag_w5_snake_0905/LR5x_lr00037/ckpts/LR5x_step5000000.pt",
+    "sha256": "d7b738e393406610cd7c6b0fd40a9ed3755aa9c1f5a476d77eec378da4c074aa"
+  }
+]
