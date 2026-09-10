@@ -1,5 +1,5 @@
 # 長い地平線での leaky と ELU の分岐 spec 0910
-状態: 検証中 / 更新: 2026-09-10
+状態: 実行済み / 更新: 2026-09-10
 親: [[駆動源問題_0909]] §10 / [[幅の規制は可塑性を買うか_0910]] / [[ELUの幅成長と沈下_結果_0909]]
 実装: lop_analysis repo `collective_kick_0908` ブランチ `specs/spec_long_horizon_0910.md`（spec 単独 commit `34f155e`・実装 `25d049e`・走行中）。
 run id: `long_horizon_0910`
