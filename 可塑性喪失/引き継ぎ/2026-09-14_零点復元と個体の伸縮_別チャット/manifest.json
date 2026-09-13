@@ -1,0 +1,692 @@
+{
+  "schema": "local-handoff-v1",
+  "download_urls": false,
+  "files": [
+    {
+      "path": "結果一覧_0914_群の寄与.md",
+      "sha256": "96ba4359ba3651b3d4c7608f51078896bd65136b04203a78b830022ed28b097d",
+      "bytes": 3035
+    },
+    {
+      "path": "セッション引き継ぎ_0914_零点復元と個体の伸縮.md",
+      "sha256": "fb59e40bdbb3077e8ee1c0f605831056c3ea0cb0faa36eef2bc1072ca8e83b8c",
+      "bytes": 17268
+    },
+    {
+      "path": "machine_state.json",
+      "sha256": "ca6adf57814897ac5f39cc80f546d1180703b2593396083a0b186bf170bef7c6",
+      "bytes": 8044
+    },
+    {
+      "path": "validation.json",
+      "sha256": "d7ca70ac7cf2707dfc688c88c7ed5b616f082bef76bea6a4958596fd6b751b3a",
+      "bytes": 5957
+    },
+    {
+      "path": "publication_status.json",
+      "sha256": "5c30c70da774d4c93cbc4776dd99feabd04fa95cb44edb8b2559cced3a4d93d0",
+      "bytes": 703
+    },
+    {
+      "path": "memory/会話上の判断と注意_0914.md",
+      "sha256": "04b953d1c343d7f5a7be9948b9aee81b690e0648f973bd0f362ee038f71e9492",
+      "bytes": 1494
+    },
+    {
+      "path": "results/retrospective_groups.csv",
+      "sha256": "6ac8c15ad2fc7d09fe88886151802f30856015b3448682cfaceff21099060fd5",
+      "bytes": 38399
+    },
+    {
+      "path": "results/flux.csv",
+      "sha256": "e443515d50225463b4142af46bead5a19bba75f0fd644e270df0a1aac57ae419",
+      "bytes": 3376823
+    },
+    {
+      "path": "results/verification.json",
+      "sha256": "d6212da86de319eb0a87809cbf543785a768d4e17634f42d09d81564a3ec7d4b",
+      "bytes": 7078
+    },
+    {
+      "path": "results/research_note.md",
+      "sha256": "c891bf0559f09a7bc36f10ad1af8fa8a0666c6aa0fec21f980516c938d319bba",
+      "bytes": 7793
+    },
+    {
+      "path": "results/summary.md",
+      "sha256": "c2b660f0e37cdd3b3fab648b67207fd16bec8cafdf6a88b3cd13ddbd3e787c68",
+      "bytes": 1118
+    },
+    {
+      "path": "results/unit_fates.pdf",
+      "sha256": "5bab2c374a425cff3d33f0628165c24da20d27b2eeff41cde73bc6f52894b02e",
+      "bytes": 46594
+    },
+    {
+      "path": "results/cohorts.csv",
+      "sha256": "54fdcba0b26566c35bb731b987c89568c29196054d0e0e4f6b70236c4e142a68",
+      "bytes": 80870
+    },
+    {
+      "path": "results/unit_fates.png",
+      "sha256": "33ec030b449d4feeae2f17c2017decc963f46fdb15b8438b6704999cfdcc51f0",
+      "bytes": 263044
+    },
+    {
+      "path": "results/population.csv",
+      "sha256": "6bc73dd69e5a1cac3d1528534473062f1d961404b173172d727a1e8916f035d1",
+      "bytes": 1626
+    },
+    {
+      "path": "results/backup_manifest.json",
+      "sha256": "b9d45cac25b466ad01c1d246225703efc5747dc322a0a57aaad4e716aad1c2a9",
+      "bytes": 3106
+    },
+    {
+      "path": "results/group_ablation_0914/verification.json",
+      "sha256": "83570974c92faaf249082013bb3a7bc1df0dbdaacf0dc9494ac894e44dbbc27a",
+      "bytes": 1139
+    },
+    {
+      "path": "results/group_ablation_0914/summary.md",
+      "sha256": "828f8c74ca26649db99acce63bdacfa4ac21a6dbffc0e5bd36e7af672538273c",
+      "bytes": 1784
+    },
+    {
+      "path": "results/group_ablation_0914/summary.json",
+      "sha256": "77251b6c6d6a3b2fff8a5935b70effaeeec305f79e75ee607ac4a9d49e4f91ff",
+      "bytes": 1530
+    },
+    {
+      "path": "results/group_ablation_0914/seed_results.csv",
+      "sha256": "50940e9ce4ff7512a6c36d6949ea7f9b102667d342bc4c785662f83733cc01b8",
+      "bytes": 5812
+    },
+    {
+      "path": "results/elu_reference/flux.csv",
+      "sha256": "ade00e1f6c4fea6c703b79514ee66640b626a250794ffba16f39d927f613075e",
+      "bytes": 793672
+    },
+    {
+      "path": "results/elu_reference/verification.json",
+      "sha256": "d51481e284cccd27247f3247ab0a87d9527a7f5c197788d43e2a740a6c1784ac",
+      "bytes": 2335
+    },
+    {
+      "path": "results/elu_reference/summary.md",
+      "sha256": "0bd70241af668db7acdf7c3da2515ffa07efe47adfccef184cca51118f738294",
+      "bytes": 579
+    },
+    {
+      "path": "results/elu_reference/checkpoints.csv",
+      "sha256": "1a4b7088cd9943a3d31ed7429e523e8ede13cc34bbf3436b44510e60fe797879",
+      "bytes": 3772
+    },
+    {
+      "path": "results/elu_reference/cohorts.csv",
+      "sha256": "a0b91f4730ccc37fd4bc2cfb210d072700a90c88acdc0c17fdb8e2e484fd3019",
+      "bytes": 10514
+    },
+    {
+      "path": "results/leaky_group_ablation_0914/summary.md",
+      "sha256": "3ee33a1180427ff63b373da9139916a473938660357e1e5766d9055e25c96232",
+      "bytes": 2268
+    },
+    {
+      "path": "results/leaky_group_ablation_0914/summary.json",
+      "sha256": "1953f460f5020158006668d1d5729bd0f5d183394005a35cdaaf3ff4774f7c68",
+      "bytes": 15066
+    },
+    {
+      "path": "results/grown_units/verification.json",
+      "sha256": "f9515f4967c4f58db471d56634476c8f50c96bb6046671ed26d3115a8e8d42fe",
+      "bytes": 159
+    },
+    {
+      "path": "results/grown_units/summary.md",
+      "sha256": "433096440fc16f84970967aea82934b0cb33529e3e448f396af63314f9b248b8",
+      "bytes": 2053
+    },
+    {
+      "path": "results/grown_units/units.csv",
+      "sha256": "78c9e97dab7c07df6eb8effcd23a608f5e83aa544beb21715e07ad8c9f455c1d",
+      "bytes": 174004
+    },
+    {
+      "path": "results/grown_units/groups.csv",
+      "sha256": "338540385a7ce41120b070391b73fa7815ab6b63ad2b8fc1415d007b78ab0ac9",
+      "bytes": 21467
+    },
+    {
+      "path": "results/grown_units/scope.json",
+      "sha256": "c6802d34f2af23d1e88d3ed99d2fab1e4c869258e75b1275527f661bfbbe5f37",
+      "bytes": 501
+    },
+    {
+      "path": "results/normal_snake_ablation_0914/growth.json",
+      "sha256": "e6c81b52a5e52f14118652760143bbdbefea1110c3e9e1bc65e3fd6880185c32",
+      "bytes": 6057
+    },
+    {
+      "path": "results/normal_snake_ablation_0914/verification.json",
+      "sha256": "ceb06b8fc3bc8038a2b846a2f1181191e2bfce4103884b38ba8669f5f4b8e76d",
+      "bytes": 1146
+    },
+    {
+      "path": "results/normal_snake_ablation_0914/summary.md",
+      "sha256": "960494a7187625bd1bbd037500f59f9417fef8aa268b5f07870a92635af47788",
+      "bytes": 1553
+    },
+    {
+      "path": "results/normal_snake_ablation_0914/summary.json",
+      "sha256": "db184541b889af51ba82e41d2db0600ad04b1aad0667819303c17dfaaf34d8ba",
+      "bytes": 1531
+    },
+    {
+      "path": "results/normal_snake_ablation_0914/seed_results.csv",
+      "sha256": "e5542f7be6c1452b68060ac18c4ae68cc6716e30bfbfd9c254287836da9c4aed",
+      "bytes": 5800
+    },
+    {
+      "path": "results/leaky_group_ablation_0914/LR_a0p1_qm05/verification.json",
+      "sha256": "d0151f6616b46824bbd3bb514fb8e949318225c14b50aa9c3b036748d41ad9ef",
+      "bytes": 1146
+    },
+    {
+      "path": "results/leaky_group_ablation_0914/LR_a0p1_qm05/summary.json",
+      "sha256": "00d0aaca2800f23f869a90b0011f421a632714b157210ba8c2c6ecabe638c839",
+      "bytes": 1692
+    },
+    {
+      "path": "results/leaky_group_ablation_0914/LR_a0p1_qm05/seed_results.csv",
+      "sha256": "fc858af53972365d48b9a1132ed3a8ff6a865ca6ce7744104fe9d8775c98aada",
+      "bytes": 5820
+    },
+    {
+      "path": "results/leaky_group_ablation_0914/LR_a0p1_q0/verification.json",
+      "sha256": "302d41fde16da9b89d33711e8dc59a53dd7e3fafe2a4b919da77af44708e3105",
+      "bytes": 1138
+    },
+    {
+      "path": "results/leaky_group_ablation_0914/LR_a0p1_q0/summary.json",
+      "sha256": "a0a845b3a5c1dd3988ced6718dde59171fe2e625322535359df438d79fe39cb5",
+      "bytes": 1678
+    },
+    {
+      "path": "results/leaky_group_ablation_0914/LR_a0p1_q0/seed_results.csv",
+      "sha256": "f8ceb8d45bd85c2318d034ee9d5a88e858995e8de2452a1b13f6d6c79af2de53",
+      "bytes": 5766
+    },
+    {
+      "path": "results/leaky_group_ablation_0914/LR_a0p3_qp05/verification.json",
+      "sha256": "088f1e116f2310e798e05d3b48a93441ae86c8f548767546677576ba44001d2f",
+      "bytes": 1146
+    },
+    {
+      "path": "results/leaky_group_ablation_0914/LR_a0p3_qp05/summary.json",
+      "sha256": "162236a3d55403a0d658fe13b6e43008f9dec3a59742c3c217e0854ee233cbb6",
+      "bytes": 1682
+    },
+    {
+      "path": "results/leaky_group_ablation_0914/LR_a0p3_qp05/seed_results.csv",
+      "sha256": "9114f83634fff1280987ff535f393f51087ac278753d43b85b2efdfc634d5732",
+      "bytes": 5713
+    },
+    {
+      "path": "results/leaky_group_ablation_0914/LR_a0p7_qp05/verification.json",
+      "sha256": "43a401936678c52fe2f116d26ad75cc59cd19e46e5ea48eabe9886dfdd44f870",
+      "bytes": 1146
+    },
+    {
+      "path": "results/leaky_group_ablation_0914/LR_a0p7_qp05/summary.json",
+      "sha256": "7e9728ead4c32112285188c2a7b7aa7e2a88de5e4e236aff808fe60da284d38f",
+      "bytes": 1668
+    },
+    {
+      "path": "results/leaky_group_ablation_0914/LR_a0p7_qp05/seed_results.csv",
+      "sha256": "b57a712b9e3594d685f7f9d22e55c8d4072de3cf2a7149e4bb12333e94185f37",
+      "bytes": 5501
+    },
+    {
+      "path": "results/leaky_group_ablation_0914/LR_a0p3_qm05/verification.json",
+      "sha256": "788e60017892c33b4eb6e2cc6b603cca2360d63351c32ef331b5420de27a13b6",
+      "bytes": 1146
+    },
+    {
+      "path": "results/leaky_group_ablation_0914/LR_a0p3_qm05/summary.json",
+      "sha256": "7858acb918c5e7de8b13a898765f93c54d5c15d565125ef0195fda346be57590",
+      "bytes": 1696
+    },
+    {
+      "path": "results/leaky_group_ablation_0914/LR_a0p3_qm05/seed_results.csv",
+      "sha256": "dcad53408e1e31016b2afdf248a863c90e6ea67d30d5bb120663def5a7872f60",
+      "bytes": 5809
+    },
+    {
+      "path": "results/leaky_group_ablation_0914/LR_a0p3_q0/verification.json",
+      "sha256": "6135aced18a1bd3cf9e29349abf97b04535140dbed671f354862f7b40383d6bf",
+      "bytes": 1139
+    },
+    {
+      "path": "results/leaky_group_ablation_0914/LR_a0p3_q0/summary.json",
+      "sha256": "4bb44a81e2133c5e001c249065008cbdfe0bf540ae1e2d351d0b8189370d2985",
+      "bytes": 1684
+    },
+    {
+      "path": "results/leaky_group_ablation_0914/LR_a0p3_q0/seed_results.csv",
+      "sha256": "35fa50e310511eb8809ccf01ae526f50cc12b837ff67be127f478aef3d88dd1f",
+      "bytes": 5858
+    },
+    {
+      "path": "results/leaky_group_ablation_0914/LR_a0p7_qm05/verification.json",
+      "sha256": "cbc606aad0bc4179412fcc09f74331dde1ed0df0dd5601072d6416bdd781dbe1",
+      "bytes": 1146
+    },
+    {
+      "path": "results/leaky_group_ablation_0914/LR_a0p7_qm05/summary.json",
+      "sha256": "4b651dff913be32a3debedf61e2ca833465463184d7f34979c4ade731f387164",
+      "bytes": 1664
+    },
+    {
+      "path": "results/leaky_group_ablation_0914/LR_a0p7_qm05/seed_results.csv",
+      "sha256": "465f1ff77103d1765d7579fa2823c8e4e257039752b1eb7518b098e22e53bf95",
+      "bytes": 5484
+    },
+    {
+      "path": "results/leaky_group_ablation_0914/LR_a0p1_qp05/verification.json",
+      "sha256": "cec3f4aa4f1e7a948efa77d43a234d8f84154285afd3779fbee55c8342fcf694",
+      "bytes": 1147
+    },
+    {
+      "path": "results/leaky_group_ablation_0914/LR_a0p1_qp05/summary.json",
+      "sha256": "bbb088c064305de0fc0d4bc95f213a071d39cf73a96aa5bc6f05dd8229d639d2",
+      "bytes": 1663
+    },
+    {
+      "path": "results/leaky_group_ablation_0914/LR_a0p1_qp05/seed_results.csv",
+      "sha256": "322573a81967e2da8ebe595953922f24442acab288c7f62d697a53b0001a37a7",
+      "bytes": 5557
+    },
+    {
+      "path": "results/leaky_group_ablation_0914/LR_a0p7_q0/verification.json",
+      "sha256": "22a4412f3178067acf06b59ad635f7ff930308b224375900933b874f294334bd",
+      "bytes": 1138
+    },
+    {
+      "path": "results/leaky_group_ablation_0914/LR_a0p7_q0/summary.json",
+      "sha256": "7bfcef364637d8a7fcb92accecf23c1f3c6188d7b74bc85cca911dd7e1614627",
+      "bytes": 1655
+    },
+    {
+      "path": "results/leaky_group_ablation_0914/LR_a0p7_q0/seed_results.csv",
+      "sha256": "89483885e79e9e0e3b2f92cb5281aea21a8572dfd15f719ee79130b29c22eb65",
+      "bytes": 5518
+    }
+  ],
+  "result_copies": [
+    {
+      "source": "/home/issan/Projects/claude/zero_attraction_analysis_0913/results/unit_fates_0913/retrospective_groups.csv",
+      "copy": "results/retrospective_groups.csv",
+      "sha256": "6ac8c15ad2fc7d09fe88886151802f30856015b3448682cfaceff21099060fd5",
+      "bytes": 38399
+    },
+    {
+      "source": "/home/issan/Projects/claude/zero_attraction_analysis_0913/results/unit_fates_0913/flux.csv",
+      "copy": "results/flux.csv",
+      "sha256": "e443515d50225463b4142af46bead5a19bba75f0fd644e270df0a1aac57ae419",
+      "bytes": 3376823
+    },
+    {
+      "source": "/home/issan/Projects/claude/zero_attraction_analysis_0913/results/unit_fates_0913/verification.json",
+      "copy": "results/verification.json",
+      "sha256": "d6212da86de319eb0a87809cbf543785a768d4e17634f42d09d81564a3ec7d4b",
+      "bytes": 7078
+    },
+    {
+      "source": "/home/issan/Projects/claude/zero_attraction_analysis_0913/results/unit_fates_0913/research_note.md",
+      "copy": "results/research_note.md",
+      "sha256": "c891bf0559f09a7bc36f10ad1af8fa8a0666c6aa0fec21f980516c938d319bba",
+      "bytes": 7793
+    },
+    {
+      "source": "/home/issan/Projects/claude/zero_attraction_analysis_0913/results/unit_fates_0913/summary.md",
+      "copy": "results/summary.md",
+      "sha256": "c2b660f0e37cdd3b3fab648b67207fd16bec8cafdf6a88b3cd13ddbd3e787c68",
+      "bytes": 1118
+    },
+    {
+      "source": "/home/issan/Projects/claude/zero_attraction_analysis_0913/results/unit_fates_0913/unit_fates.pdf",
+      "copy": "results/unit_fates.pdf",
+      "sha256": "5bab2c374a425cff3d33f0628165c24da20d27b2eeff41cde73bc6f52894b02e",
+      "bytes": 46594
+    },
+    {
+      "source": "/home/issan/Projects/claude/zero_attraction_analysis_0913/results/unit_fates_0913/cohorts.csv",
+      "copy": "results/cohorts.csv",
+      "sha256": "54fdcba0b26566c35bb731b987c89568c29196054d0e0e4f6b70236c4e142a68",
+      "bytes": 80870
+    },
+    {
+      "source": "/home/issan/Projects/claude/zero_attraction_analysis_0913/results/unit_fates_0913/unit_fates.png",
+      "copy": "results/unit_fates.png",
+      "sha256": "33ec030b449d4feeae2f17c2017decc963f46fdb15b8438b6704999cfdcc51f0",
+      "bytes": 263044
+    },
+    {
+      "source": "/home/issan/Projects/claude/zero_attraction_analysis_0913/results/unit_fates_0913/population.csv",
+      "copy": "results/population.csv",
+      "sha256": "6bc73dd69e5a1cac3d1528534473062f1d961404b173172d727a1e8916f035d1",
+      "bytes": 1626
+    },
+    {
+      "source": "/home/issan/Projects/claude/zero_attraction_analysis_0913/results/unit_fates_0913/backup_manifest.json",
+      "copy": "results/backup_manifest.json",
+      "sha256": "b9d45cac25b466ad01c1d246225703efc5747dc322a0a57aaad4e716aad1c2a9",
+      "bytes": 3106
+    },
+    {
+      "source": "/home/issan/Projects/claude/zero_attraction_analysis_0913/results/unit_fates_0913/group_ablation_0914/verification.json",
+      "copy": "results/group_ablation_0914/verification.json",
+      "sha256": "83570974c92faaf249082013bb3a7bc1df0dbdaacf0dc9494ac894e44dbbc27a",
+      "bytes": 1139
+    },
+    {
+      "source": "/home/issan/Projects/claude/zero_attraction_analysis_0913/results/unit_fates_0913/group_ablation_0914/summary.md",
+      "copy": "results/group_ablation_0914/summary.md",
+      "sha256": "828f8c74ca26649db99acce63bdacfa4ac21a6dbffc0e5bd36e7af672538273c",
+      "bytes": 1784
+    },
+    {
+      "source": "/home/issan/Projects/claude/zero_attraction_analysis_0913/results/unit_fates_0913/group_ablation_0914/summary.json",
+      "copy": "results/group_ablation_0914/summary.json",
+      "sha256": "77251b6c6d6a3b2fff8a5935b70effaeeec305f79e75ee607ac4a9d49e4f91ff",
+      "bytes": 1530
+    },
+    {
+      "source": "/home/issan/Projects/claude/zero_attraction_analysis_0913/results/unit_fates_0913/group_ablation_0914/seed_results.csv",
+      "copy": "results/group_ablation_0914/seed_results.csv",
+      "sha256": "50940e9ce4ff7512a6c36d6949ea7f9b102667d342bc4c785662f83733cc01b8",
+      "bytes": 5812
+    },
+    {
+      "source": "/home/issan/Projects/claude/zero_attraction_analysis_0913/results/unit_fates_0913/elu_reference/flux.csv",
+      "copy": "results/elu_reference/flux.csv",
+      "sha256": "ade00e1f6c4fea6c703b79514ee66640b626a250794ffba16f39d927f613075e",
+      "bytes": 793672
+    },
+    {
+      "source": "/home/issan/Projects/claude/zero_attraction_analysis_0913/results/unit_fates_0913/elu_reference/verification.json",
+      "copy": "results/elu_reference/verification.json",
+      "sha256": "d51481e284cccd27247f3247ab0a87d9527a7f5c197788d43e2a740a6c1784ac",
+      "bytes": 2335
+    },
+    {
+      "source": "/home/issan/Projects/claude/zero_attraction_analysis_0913/results/unit_fates_0913/elu_reference/summary.md",
+      "copy": "results/elu_reference/summary.md",
+      "sha256": "0bd70241af668db7acdf7c3da2515ffa07efe47adfccef184cca51118f738294",
+      "bytes": 579
+    },
+    {
+      "source": "/home/issan/Projects/claude/zero_attraction_analysis_0913/results/unit_fates_0913/elu_reference/checkpoints.csv",
+      "copy": "results/elu_reference/checkpoints.csv",
+      "sha256": "1a4b7088cd9943a3d31ed7429e523e8ede13cc34bbf3436b44510e60fe797879",
+      "bytes": 3772
+    },
+    {
+      "source": "/home/issan/Projects/claude/zero_attraction_analysis_0913/results/unit_fates_0913/elu_reference/cohorts.csv",
+      "copy": "results/elu_reference/cohorts.csv",
+      "sha256": "a0b91f4730ccc37fd4bc2cfb210d072700a90c88acdc0c17fdb8e2e484fd3019",
+      "bytes": 10514
+    },
+    {
+      "source": "/home/issan/Projects/claude/zero_attraction_analysis_0913/results/unit_fates_0913/leaky_group_ablation_0914/summary.md",
+      "copy": "results/leaky_group_ablation_0914/summary.md",
+      "sha256": "3ee33a1180427ff63b373da9139916a473938660357e1e5766d9055e25c96232",
+      "bytes": 2268
+    },
+    {
+      "source": "/home/issan/Projects/claude/zero_attraction_analysis_0913/results/unit_fates_0913/leaky_group_ablation_0914/summary.json",
+      "copy": "results/leaky_group_ablation_0914/summary.json",
+      "sha256": "1953f460f5020158006668d1d5729bd0f5d183394005a35cdaaf3ff4774f7c68",
+      "bytes": 15066
+    },
+    {
+      "source": "/home/issan/Projects/claude/zero_attraction_analysis_0913/results/unit_fates_0913/grown_units/verification.json",
+      "copy": "results/grown_units/verification.json",
+      "sha256": "f9515f4967c4f58db471d56634476c8f50c96bb6046671ed26d3115a8e8d42fe",
+      "bytes": 159
+    },
+    {
+      "source": "/home/issan/Projects/claude/zero_attraction_analysis_0913/results/unit_fates_0913/grown_units/summary.md",
+      "copy": "results/grown_units/summary.md",
+      "sha256": "433096440fc16f84970967aea82934b0cb33529e3e448f396af63314f9b248b8",
+      "bytes": 2053
+    },
+    {
+      "source": "/home/issan/Projects/claude/zero_attraction_analysis_0913/results/unit_fates_0913/grown_units/units.csv",
+      "copy": "results/grown_units/units.csv",
+      "sha256": "78c9e97dab7c07df6eb8effcd23a608f5e83aa544beb21715e07ad8c9f455c1d",
+      "bytes": 174004
+    },
+    {
+      "source": "/home/issan/Projects/claude/zero_attraction_analysis_0913/results/unit_fates_0913/grown_units/groups.csv",
+      "copy": "results/grown_units/groups.csv",
+      "sha256": "338540385a7ce41120b070391b73fa7815ab6b63ad2b8fc1415d007b78ab0ac9",
+      "bytes": 21467
+    },
+    {
+      "source": "/home/issan/Projects/claude/zero_attraction_analysis_0913/results/unit_fates_0913/grown_units/scope.json",
+      "copy": "results/grown_units/scope.json",
+      "sha256": "c6802d34f2af23d1e88d3ed99d2fab1e4c869258e75b1275527f661bfbbe5f37",
+      "bytes": 501
+    },
+    {
+      "source": "/home/issan/Projects/claude/zero_attraction_analysis_0913/results/unit_fates_0913/normal_snake_ablation_0914/growth.json",
+      "copy": "results/normal_snake_ablation_0914/growth.json",
+      "sha256": "e6c81b52a5e52f14118652760143bbdbefea1110c3e9e1bc65e3fd6880185c32",
+      "bytes": 6057
+    },
+    {
+      "source": "/home/issan/Projects/claude/zero_attraction_analysis_0913/results/unit_fates_0913/normal_snake_ablation_0914/verification.json",
+      "copy": "results/normal_snake_ablation_0914/verification.json",
+      "sha256": "ceb06b8fc3bc8038a2b846a2f1181191e2bfce4103884b38ba8669f5f4b8e76d",
+      "bytes": 1146
+    },
+    {
+      "source": "/home/issan/Projects/claude/zero_attraction_analysis_0913/results/unit_fates_0913/normal_snake_ablation_0914/summary.md",
+      "copy": "results/normal_snake_ablation_0914/summary.md",
+      "sha256": "960494a7187625bd1bbd037500f59f9417fef8aa268b5f07870a92635af47788",
+      "bytes": 1553
+    },
+    {
+      "source": "/home/issan/Projects/claude/zero_attraction_analysis_0913/results/unit_fates_0913/normal_snake_ablation_0914/summary.json",
+      "copy": "results/normal_snake_ablation_0914/summary.json",
+      "sha256": "db184541b889af51ba82e41d2db0600ad04b1aad0667819303c17dfaaf34d8ba",
+      "bytes": 1531
+    },
+    {
+      "source": "/home/issan/Projects/claude/zero_attraction_analysis_0913/results/unit_fates_0913/normal_snake_ablation_0914/seed_results.csv",
+      "copy": "results/normal_snake_ablation_0914/seed_results.csv",
+      "sha256": "e5542f7be6c1452b68060ac18c4ae68cc6716e30bfbfd9c254287836da9c4aed",
+      "bytes": 5800
+    },
+    {
+      "source": "/home/issan/Projects/claude/zero_attraction_analysis_0913/results/unit_fates_0913/leaky_group_ablation_0914/LR_a0p1_qm05/verification.json",
+      "copy": "results/leaky_group_ablation_0914/LR_a0p1_qm05/verification.json",
+      "sha256": "d0151f6616b46824bbd3bb514fb8e949318225c14b50aa9c3b036748d41ad9ef",
+      "bytes": 1146
+    },
+    {
+      "source": "/home/issan/Projects/claude/zero_attraction_analysis_0913/results/unit_fates_0913/leaky_group_ablation_0914/LR_a0p1_qm05/summary.json",
+      "copy": "results/leaky_group_ablation_0914/LR_a0p1_qm05/summary.json",
+      "sha256": "00d0aaca2800f23f869a90b0011f421a632714b157210ba8c2c6ecabe638c839",
+      "bytes": 1692
+    },
+    {
+      "source": "/home/issan/Projects/claude/zero_attraction_analysis_0913/results/unit_fates_0913/leaky_group_ablation_0914/LR_a0p1_qm05/seed_results.csv",
+      "copy": "results/leaky_group_ablation_0914/LR_a0p1_qm05/seed_results.csv",
+      "sha256": "fc858af53972365d48b9a1132ed3a8ff6a865ca6ce7744104fe9d8775c98aada",
+      "bytes": 5820
+    },
+    {
+      "source": "/home/issan/Projects/claude/zero_attraction_analysis_0913/results/unit_fates_0913/leaky_group_ablation_0914/LR_a0p1_q0/verification.json",
+      "copy": "results/leaky_group_ablation_0914/LR_a0p1_q0/verification.json",
+      "sha256": "302d41fde16da9b89d33711e8dc59a53dd7e3fafe2a4b919da77af44708e3105",
+      "bytes": 1138
+    },
+    {
+      "source": "/home/issan/Projects/claude/zero_attraction_analysis_0913/results/unit_fates_0913/leaky_group_ablation_0914/LR_a0p1_q0/summary.json",
+      "copy": "results/leaky_group_ablation_0914/LR_a0p1_q0/summary.json",
+      "sha256": "a0a845b3a5c1dd3988ced6718dde59171fe2e625322535359df438d79fe39cb5",
+      "bytes": 1678
+    },
+    {
+      "source": "/home/issan/Projects/claude/zero_attraction_analysis_0913/results/unit_fates_0913/leaky_group_ablation_0914/LR_a0p1_q0/seed_results.csv",
+      "copy": "results/leaky_group_ablation_0914/LR_a0p1_q0/seed_results.csv",
+      "sha256": "f8ceb8d45bd85c2318d034ee9d5a88e858995e8de2452a1b13f6d6c79af2de53",
+      "bytes": 5766
+    },
+    {
+      "source": "/home/issan/Projects/claude/zero_attraction_analysis_0913/results/unit_fates_0913/leaky_group_ablation_0914/LR_a0p3_qp05/verification.json",
+      "copy": "results/leaky_group_ablation_0914/LR_a0p3_qp05/verification.json",
+      "sha256": "088f1e116f2310e798e05d3b48a93441ae86c8f548767546677576ba44001d2f",
+      "bytes": 1146
+    },
+    {
+      "source": "/home/issan/Projects/claude/zero_attraction_analysis_0913/results/unit_fates_0913/leaky_group_ablation_0914/LR_a0p3_qp05/summary.json",
+      "copy": "results/leaky_group_ablation_0914/LR_a0p3_qp05/summary.json",
+      "sha256": "162236a3d55403a0d658fe13b6e43008f9dec3a59742c3c217e0854ee233cbb6",
+      "bytes": 1682
+    },
+    {
+      "source": "/home/issan/Projects/claude/zero_attraction_analysis_0913/results/unit_fates_0913/leaky_group_ablation_0914/LR_a0p3_qp05/seed_results.csv",
+      "copy": "results/leaky_group_ablation_0914/LR_a0p3_qp05/seed_results.csv",
+      "sha256": "9114f83634fff1280987ff535f393f51087ac278753d43b85b2efdfc634d5732",
+      "bytes": 5713
+    },
+    {
+      "source": "/home/issan/Projects/claude/zero_attraction_analysis_0913/results/unit_fates_0913/leaky_group_ablation_0914/LR_a0p7_qp05/verification.json",
+      "copy": "results/leaky_group_ablation_0914/LR_a0p7_qp05/verification.json",
+      "sha256": "43a401936678c52fe2f116d26ad75cc59cd19e46e5ea48eabe9886dfdd44f870",
+      "bytes": 1146
+    },
+    {
+      "source": "/home/issan/Projects/claude/zero_attraction_analysis_0913/results/unit_fates_0913/leaky_group_ablation_0914/LR_a0p7_qp05/summary.json",
+      "copy": "results/leaky_group_ablation_0914/LR_a0p7_qp05/summary.json",
+      "sha256": "7e9728ead4c32112285188c2a7b7aa7e2a88de5e4e236aff808fe60da284d38f",
+      "bytes": 1668
+    },
+    {
+      "source": "/home/issan/Projects/claude/zero_attraction_analysis_0913/results/unit_fates_0913/leaky_group_ablation_0914/LR_a0p7_qp05/seed_results.csv",
+      "copy": "results/leaky_group_ablation_0914/LR_a0p7_qp05/seed_results.csv",
+      "sha256": "b57a712b9e3594d685f7f9d22e55c8d4072de3cf2a7149e4bb12333e94185f37",
+      "bytes": 5501
+    },
+    {
+      "source": "/home/issan/Projects/claude/zero_attraction_analysis_0913/results/unit_fates_0913/leaky_group_ablation_0914/LR_a0p3_qm05/verification.json",
+      "copy": "results/leaky_group_ablation_0914/LR_a0p3_qm05/verification.json",
+      "sha256": "788e60017892c33b4eb6e2cc6b603cca2360d63351c32ef331b5420de27a13b6",
+      "bytes": 1146
+    },
+    {
+      "source": "/home/issan/Projects/claude/zero_attraction_analysis_0913/results/unit_fates_0913/leaky_group_ablation_0914/LR_a0p3_qm05/summary.json",
+      "copy": "results/leaky_group_ablation_0914/LR_a0p3_qm05/summary.json",
+      "sha256": "7858acb918c5e7de8b13a898765f93c54d5c15d565125ef0195fda346be57590",
+      "bytes": 1696
+    },
+    {
+      "source": "/home/issan/Projects/claude/zero_attraction_analysis_0913/results/unit_fates_0913/leaky_group_ablation_0914/LR_a0p3_qm05/seed_results.csv",
+      "copy": "results/leaky_group_ablation_0914/LR_a0p3_qm05/seed_results.csv",
+      "sha256": "dcad53408e1e31016b2afdf248a863c90e6ea67d30d5bb120663def5a7872f60",
+      "bytes": 5809
+    },
+    {
+      "source": "/home/issan/Projects/claude/zero_attraction_analysis_0913/results/unit_fates_0913/leaky_group_ablation_0914/LR_a0p3_q0/verification.json",
+      "copy": "results/leaky_group_ablation_0914/LR_a0p3_q0/verification.json",
+      "sha256": "6135aced18a1bd3cf9e29349abf97b04535140dbed671f354862f7b40383d6bf",
+      "bytes": 1139
+    },
+    {
+      "source": "/home/issan/Projects/claude/zero_attraction_analysis_0913/results/unit_fates_0913/leaky_group_ablation_0914/LR_a0p3_q0/summary.json",
+      "copy": "results/leaky_group_ablation_0914/LR_a0p3_q0/summary.json",
+      "sha256": "4bb44a81e2133c5e001c249065008cbdfe0bf540ae1e2d351d0b8189370d2985",
+      "bytes": 1684
+    },
+    {
+      "source": "/home/issan/Projects/claude/zero_attraction_analysis_0913/results/unit_fates_0913/leaky_group_ablation_0914/LR_a0p3_q0/seed_results.csv",
+      "copy": "results/leaky_group_ablation_0914/LR_a0p3_q0/seed_results.csv",
+      "sha256": "35fa50e310511eb8809ccf01ae526f50cc12b837ff67be127f478aef3d88dd1f",
+      "bytes": 5858
+    },
+    {
+      "source": "/home/issan/Projects/claude/zero_attraction_analysis_0913/results/unit_fates_0913/leaky_group_ablation_0914/LR_a0p7_qm05/verification.json",
+      "copy": "results/leaky_group_ablation_0914/LR_a0p7_qm05/verification.json",
+      "sha256": "cbc606aad0bc4179412fcc09f74331dde1ed0df0dd5601072d6416bdd781dbe1",
+      "bytes": 1146
+    },
+    {
+      "source": "/home/issan/Projects/claude/zero_attraction_analysis_0913/results/unit_fates_0913/leaky_group_ablation_0914/LR_a0p7_qm05/summary.json",
+      "copy": "results/leaky_group_ablation_0914/LR_a0p7_qm05/summary.json",
+      "sha256": "4b651dff913be32a3debedf61e2ca833465463184d7f34979c4ade731f387164",
+      "bytes": 1664
+    },
+    {
+      "source": "/home/issan/Projects/claude/zero_attraction_analysis_0913/results/unit_fates_0913/leaky_group_ablation_0914/LR_a0p7_qm05/seed_results.csv",
+      "copy": "results/leaky_group_ablation_0914/LR_a0p7_qm05/seed_results.csv",
+      "sha256": "465f1ff77103d1765d7579fa2823c8e4e257039752b1eb7518b098e22e53bf95",
+      "bytes": 5484
+    },
+    {
+      "source": "/home/issan/Projects/claude/zero_attraction_analysis_0913/results/unit_fates_0913/leaky_group_ablation_0914/LR_a0p1_qp05/verification.json",
+      "copy": "results/leaky_group_ablation_0914/LR_a0p1_qp05/verification.json",
+      "sha256": "cec3f4aa4f1e7a948efa77d43a234d8f84154285afd3779fbee55c8342fcf694",
+      "bytes": 1147
+    },
+    {
+      "source": "/home/issan/Projects/claude/zero_attraction_analysis_0913/results/unit_fates_0913/leaky_group_ablation_0914/LR_a0p1_qp05/summary.json",
+      "copy": "results/leaky_group_ablation_0914/LR_a0p1_qp05/summary.json",
+      "sha256": "bbb088c064305de0fc0d4bc95f213a071d39cf73a96aa5bc6f05dd8229d639d2",
+      "bytes": 1663
+    },
+    {
+      "source": "/home/issan/Projects/claude/zero_attraction_analysis_0913/results/unit_fates_0913/leaky_group_ablation_0914/LR_a0p1_qp05/seed_results.csv",
+      "copy": "results/leaky_group_ablation_0914/LR_a0p1_qp05/seed_results.csv",
+      "sha256": "322573a81967e2da8ebe595953922f24442acab288c7f62d697a53b0001a37a7",
+      "bytes": 5557
+    },
+    {
+      "source": "/home/issan/Projects/claude/zero_attraction_analysis_0913/results/unit_fates_0913/leaky_group_ablation_0914/LR_a0p7_q0/verification.json",
+      "copy": "results/leaky_group_ablation_0914/LR_a0p7_q0/verification.json",
+      "sha256": "22a4412f3178067acf06b59ad635f7ff930308b224375900933b874f294334bd",
+      "bytes": 1138
+    },
+    {
+      "source": "/home/issan/Projects/claude/zero_attraction_analysis_0913/results/unit_fates_0913/leaky_group_ablation_0914/LR_a0p7_q0/summary.json",
+      "copy": "results/leaky_group_ablation_0914/LR_a0p7_q0/summary.json",
+      "sha256": "7bfcef364637d8a7fcb92accecf23c1f3c6188d7b74bc85cca911dd7e1614627",
+      "bytes": 1655
+    },
+    {
+      "source": "/home/issan/Projects/claude/zero_attraction_analysis_0913/results/unit_fates_0913/leaky_group_ablation_0914/LR_a0p7_q0/seed_results.csv",
+      "copy": "results/leaky_group_ablation_0914/LR_a0p7_q0/seed_results.csv",
+      "sha256": "89483885e79e9e0e3b2f92cb5281aea21a8572dfd15f719ee79130b29c22eb65",
+      "bytes": 5518
+    }
+  ],
+  "external_manifest_paths": [
+    "/home/issan/Projects/obsidian-research-data/zero_attraction_0913/training_backup_manifest.json",
+    "/home/issan/Projects/obsidian-research-data/zero_attraction_0913/analysis_backup_manifest.json"
+  ],
+  "source_archive": {
+    "path": "/home/issan/Projects/obsidian-research-data/zero_attraction_0913/analysis_source_8854049.tar.gz",
+    "sha256": "6c237a804b1b600f5dc9d5b1af91dc9dff43db2381be9ac04348bacb2a18d43e",
+    "included_paths": [
+      "src",
+      "configs",
+      "specs",
+      "README.md",
+      ".gitignore"
+    ],
+    "bytes": 2089755
+  }
+}

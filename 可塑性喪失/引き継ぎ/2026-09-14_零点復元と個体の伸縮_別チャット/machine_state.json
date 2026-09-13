@@ -1,0 +1,112 @@
+{
+  "captured_utc": "2026-09-13T16:09:51.896692+00:00",
+  "repositories": {
+    "/home/issan/Projects/claude/zero_attraction_analysis_0913": {
+      "head": "8854049f26bc1e741653915eef7c693a06df5219",
+      "branch": "codex/zero-attraction-analysis-0913",
+      "status": [],
+      "recent_commits": [
+        "8854049 Measure normal Snake unit growth and group output dependence",
+        "4c5a679 Compare group ablations across Leaky slopes and offsets",
+        "fcc52fd Measure fixed-checkpoint dependence on grown and shrunk Snake groups",
+        "caa12af Describe preactivation destinations of large Snake units",
+        "22433c5 Analyze center population turnover and retrospective unit growth",
+        "ae74ef7 Measure center occupancy and cohort destinations in saved CondA ELU logs",
+        "71cf232 Specify matched center-count diagnostics for an available CondA ELU reference",
+        "1e4d6da Track unit identities, center flux, and final growth cohorts"
+      ]
+    },
+    "/home/issan/Projects/claude/zero_attraction_0913": {
+      "head": "0ba13e8da0c164603c5f82f83e377556d0c93bae",
+      "branch": "codex/zero-attraction-0913",
+      "status": [
+        "?? results/_preflight_zero_attraction_learning_0913/LIN_q0.stdout.log",
+        "?? results/_preflight_zero_attraction_learning_0913/LR_a0p1_q0.stdout.log",
+        "?? results/_preflight_zero_attraction_learning_0913/LR_a0p1_qm05.stdout.log",
+        "?? results/_preflight_zero_attraction_learning_0913/LR_a0p1_qp05.stdout.log",
+        "?? results/_preflight_zero_attraction_learning_0913/LR_a0p3_q0.stdout.log",
+        "?? results/_preflight_zero_attraction_learning_0913/LR_a0p3_qm05.stdout.log",
+        "?? results/_preflight_zero_attraction_learning_0913/LR_a0p3_qp05.stdout.log",
+        "?? results/_preflight_zero_attraction_learning_0913/LR_a0p7_q0.stdout.log",
+        "?? results/_preflight_zero_attraction_learning_0913/LR_a0p7_qm05.stdout.log",
+        "?? results/_preflight_zero_attraction_learning_0913/LR_a0p7_qp05.stdout.log",
+        "?? results/_preflight_zero_attraction_learning_0913/SN_normal_q0.stdout.log",
+        "?? results/_preflight_zero_attraction_learning_0913/SN_normal_qm05.stdout.log",
+        "?? results/_preflight_zero_attraction_learning_0913/SN_normal_qp05.stdout.log",
+        "?? results/_preflight_zero_attraction_learning_0913/SN_peak_q0.stdout.log",
+        "?? results/_preflight_zero_attraction_learning_0913/SN_peak_qm05.stdout.log",
+        "?? results/_preflight_zero_attraction_learning_0913/SN_peak_qp05.stdout.log",
+        "?? results/_preflight_zero_attraction_learning_0913/SN_valley_q0.stdout.log",
+        "?? results/_preflight_zero_attraction_learning_0913/SN_valley_qm05.stdout.log",
+        "?? results/_preflight_zero_attraction_learning_0913/SN_valley_qp05.stdout.log",
+        "?? results/_preflight_zero_attraction_learning_0913/arm_status/",
+        "?? results/_preflight_zero_attraction_repeat_0913/",
+        "?? results/zero_attraction_learning_0913/",
+        "?? src/zero_attraction_mechanism_0913.py",
+        "?? src/zero_attraction_report_0913.py"
+      ],
+      "recent_commits": [
+        "0ba13e8 Verify all 19 learning conditions and freeze main-run readiness",
+        "89521b3 Implement phase-shifted Snake grid with derivative and gradient-accounting checks",
+        "1689251 Register Snake phase and Leaky offset learning grid before implementation",
+        "109a00c Analyze existing offset trajectories and document zero-attraction tests",
+        "7d0b9fe Register descriptive zero-attraction weight reanalysis before implementation",
+        "b50f127 Merge branch 'worktree-act_offset_0906' into main",
+        "cfa0c70 Merge branch 'collective_kick_0908' into main",
+        "29f81a3 [budget_ladder_0912] 本走（12 走・B1 は elu_growth を 1.8e−15 で再現・全腕で実更新数 = 設計値・系列非汚染）。減衰は予算に依らず 1.8 pt で一定（625/1250/2500/5000 で 1.80/1.89/2.01/1.76・U1 DECLINE_FLAT 比 1.01/0.97/0.98・U2 DECLINE_SURVIVES_COMPUTE）。予算は曲線を持ち上げるだけで傾きに触れず 4 倍で頭打ち。8 倍で t120 に着く先は 1 倍で t20 にいた場所と同じ（U3 差 ≈ 0）。W は 8 倍で 2.9 倍（U4 COMPOUNDING）。turn_budget の「回転は計算量で買い戻せる」は目減り L が予算の違う窓を比べていた偏りで、撤回。Claude 3/5"
+      ]
+    },
+    "/home/issan/Projects/obsidian-research": {
+      "head": "d9c1643dc6f978a6e289195a0159f9aed8c30f4c",
+      "branch": "main",
+      "status": [
+        " M 可塑性喪失/spec/実行済み/ELUの沈下と学習余力を分ける_spec_0913.md",
+        " M 可塑性喪失/spec/実行済み/初期出力を揃えてELUの応答を戻す_spec_0913.md",
+        " M 可塑性喪失/spec/実行済み/自然に沈んだ個体の追跡と救済_spec_0913.md",
+        "?? 可塑性喪失/spec/自己項から侵食角cまで_自然更新追跡_spec_0913.md",
+        "?? 可塑性喪失/spec/零点への復元はW増大を抑えるか_検証設計_0913.md",
+        "?? 可塑性喪失/spec/零点復元と重み収縮_学習実験_spec_0913.md",
+        "?? 可塑性喪失/引き継ぎ/2026-09-14_零点復元と個体の伸縮_別チャット/",
+        "?? 可塑性喪失/測定/中心群の出入りと発育_事後解析_0913.md",
+        "?? 可塑性喪失/測定/補助データ/中心群の出入り_0913/",
+        "?? 可塑性喪失/測定/補助データ/零点復元_新規学習_0913/",
+        "?? 可塑性喪失/測定/補助データ/零点着座と重み収縮_0913/",
+        "?? 可塑性喪失/測定/零点復元と重み収縮_新規学習結果_0913.md",
+        "?? 可塑性喪失/測定/零点着座と重み収縮_事後再解析_0913.md"
+      ],
+      "recent_commits": [
+        "d9c1643 [Issan/MNIST実験の劣化確認]:W病理とL2系の論点を別チャットへ引き継ぐ",
+        "2772633 [Issan/L2Init中間実験_0913_Claude]:[shell_l2_rlmnist_0913] Shell正則化でL2-Initを分解した結果・spec写し・走の履歴・現在地。R=D NORM_MATCH_FAIL（W3 0.8975）／SNA=D EQUIV_GAIN_UNRESOLVED。登録 repo f83d246・結果 e00656c",
+        "c04f672 [Issan/ELU沈下と学習余力_0913_Codex]:初期出力を揃えたELU応答回復の登録走・独立監査結果を記録",
+        "a917f29 [Issan/ELU沈下と学習余力_0913_Codex]:初期出力一致の応答介入18継続走を事前登録",
+        "13f9c0f [Issan/ELU沈下と学習余力_0913_Codex]:自然沈降の追跡と一度の救済396継続走の結果・監査・限定を記録",
+        "0f5b762 [Issan/ELU沈下と学習余力_0913_Codex]:自然に沈んだELU個体の追跡と一度だけの救済を事前登録",
+        "fd89273 [Issan/ELU沈下と学習余力_0913_Codex]:ELUの沈下・W増大・学習余力3実験の結果と独立監査を記録",
+        "bda9fa8 [Issan/ELU沈下と学習余力_0913_Codex]:ELUの集団凍結・深さ幅要因・環境比較3本の事前登録を記録"
+      ]
+    }
+  },
+  "scope": "Read-only repository snapshot for this handoff; unrelated running work is not modified.",
+  "matching_session_processes": [],
+  "training_arm_status": {
+    "LR_a0p3_qm05_done.json": "COMPLETE",
+    "SN_peak_qm05_done.json": "COMPLETE",
+    "LR_a0p1_qp05_done.json": "COMPLETE",
+    "SN_normal_q0_done.json": "COMPLETE",
+    "LR_a0p7_qm05_done.json": "COMPLETE",
+    "SN_peak_q0_done.json": "COMPLETE",
+    "LR_a0p1_q0_done.json": "COMPLETE",
+    "LR_a0p3_qp05_done.json": "COMPLETE",
+    "LR_a0p7_qp05_done.json": "COMPLETE",
+    "SN_peak_qp05_done.json": "COMPLETE",
+    "LR_a0p7_q0_done.json": "COMPLETE",
+    "SN_normal_qm05_done.json": "COMPLETE",
+    "SN_valley_qp05_done.json": "COMPLETE",
+    "SN_normal_qp05_done.json": "COMPLETE",
+    "LR_a0p1_qm05_done.json": "COMPLETE",
+    "LR_a0p3_q0_done.json": "COMPLETE",
+    "SN_valley_q0_done.json": "COMPLETE",
+    "LIN_q0_done.json": "COMPLETE",
+    "SN_valley_qm05_done.json": "COMPLETE"
+  }
+}

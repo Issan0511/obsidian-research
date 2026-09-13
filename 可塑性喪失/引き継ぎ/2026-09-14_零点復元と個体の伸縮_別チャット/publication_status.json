@@ -1,0 +1,20 @@
+{
+  "code_branches": "PUSH_VERIFIED",
+  "vault": "This file is included with the handoff vault commit; publication is verified after commit.",
+  "analysis_source_archive": {
+    "path": "/home/issan/Projects/obsidian-research-data/zero_attraction_0913/analysis_source_8854049.tar.gz",
+    "sha256": "6c237a804b1b600f5dc9d5b1af91dc9dff43db2381be9ac04348bacb2a18d43e",
+    "included_paths": [
+      "src",
+      "configs",
+      "specs",
+      "README.md",
+      ".gitignore"
+    ],
+    "bytes": 2089755
+  },
+  "verified_code_heads": {
+    "codex/zero-attraction-0913": "0ba13e8da0c164603c5f82f83e377556d0c93bae",
+    "codex/zero-attraction-analysis-0913": "8854049f26bc1e741653915eef7c693a06df5219"
+  }
+}
