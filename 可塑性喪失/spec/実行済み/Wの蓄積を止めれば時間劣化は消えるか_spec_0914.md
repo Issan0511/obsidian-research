@@ -1,8 +1,8 @@
 # タスクをまたぐ W の蓄積を止めれば時間劣化は消えるか — Random Label MNIST で隠れ層のユニット別中心化ノルムに上限を置く（8 腕 × 10 seed）
 
-> **vault 写し**。事前登録の正本は repo `specs/spec_wcap_rlmnist_0914.md` @ `2a039f0`（branch `claude/wcap_rlmnist_0914`・2026-09-14 01:58 JST push・実装前・走る前）。実装 `0b8ef53`・検査 `184b92e`（all_pass・mutation 23/23 検出）の後、2026-09-14 02:07 JST に white-san で本走を起動（並列 10）。本文は登録版から変更しない。結果は [[Wの蓄積を止めれば時間劣化は消えるか_結果_0914]]（作成予定）。
+> **vault 写し**。事前登録の正本は repo `specs/spec_wcap_rlmnist_0914.md` @ `2a039f0`（branch `claude/wcap_rlmnist_0914`・2026-09-14 01:58 JST push・実装前・走る前）。実装 `0b8ef53`・検査 `184b92e`（all_pass・mutation 23/23 検出）の後、2026-09-14 02:07 JST に white-san で本走を起動（並列 10）。本文は登録版から変更しない。結果は [[Wの蓄積を止めれば時間劣化は消えるか_結果_0914]]。
 
-親: vault [[セッション引き継ぎ_0914_W病理とL2系]]・[[L2Initの利点を分解するShell正則化_結果_0913]]・[[RandomLabelMNIST結果_0906]]・[[幅の規制は可塑性を買うか_0910]]・[[回る速さが幅の正体か_結果_0912]] / 状態: **事前登録（実装前・本走前）** / 作成 2026-09-14 JST / チャット: `W病理とL2系_0914` / 実行: white-san（CPU のみ）
+親: vault [[セッション引き継ぎ_0914_W病理とL2系]]・[[L2Initの利点を分解するShell正則化_結果_0913]]・[[RandomLabelMNIST結果_0906]]・[[幅の規制は可塑性を買うか_0910]]・[[回る速さが幅の正体か_結果_0912]] / 状態: **実行済み**（2026-09-14 08:35 完走・結果 [[Wの蓄積を止めれば時間劣化は消えるか_結果_0914]]・repo `05c38ed`） / 作成 2026-09-14 JST / チャット: `W病理とL2系_0914` / 実行: white-san（CPU のみ）
 
 > **run id: `wcap_rlmnist_0914`**。新しい runner `src/wcap_rlmnist_0914.py` を置く。宿主 `src/pmnist_0905.py`・0906 runner `src/pmnist_rlmnist_0906.py`・0913 runner `src/shell_l2_rlmnist_0913.py` は **1 バイトも変えずに import** する（blob の sha256 を検査する）。
 > 順序: **本 spec と §1 の事後集計を commit・push** → 実装＋検査（各検査に変異対照）＋煙試験＋費用測定 → 実装を commit・push → 本走 → 集計 → 結果を commit・push。
