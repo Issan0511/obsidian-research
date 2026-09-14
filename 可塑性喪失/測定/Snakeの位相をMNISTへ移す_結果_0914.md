@@ -121,6 +121,10 @@ M1（Φ = 2|sin(Δθ/2)|·medianᵢ Aᵢ − IQRᵢ ḡᵢ^ref）: 6 対 × 2 �
 3. 水準を揃えた比較（初期の精度を合わせる lr や更新数の調整）で、固定 α の LESS_DECLINE が残るか。
 4. 後段に回した群除去（CT2）・根への着座（CT3）・群の将来学習は、保存済みの snapshot t20/t60/t120 から行える（本結果を見た後の登録になることを明記する）。
 
+## 後続
+
+- SGD 橋（optimizer だけを SGD に替えた 5 腕）→ [[SGD橋_箱Bのoptimizerだけを替える_結果_0914]]
+
 ## 所在
 
 - repo main: `specs/spec_snake_phase_mnist_0914.md`・`specs/addendum_1_snake_phase_mnist_0914.md`・`src/snake_phase_{acts_,}mnist_0914.py`・`analysis/snake_phase_mnist_0914/`（checks・verdict・launch・resources）・`results/snake_phase_mnist_0914/`（verdict.csv/json・summary.md・全 340 走の rows.csv と provenance.json・錨 12 走の units.npz・launch_log・g1_full.json）。ブランチ `claude/snake_phase_mnist_0914` は main 統合後に削除。
