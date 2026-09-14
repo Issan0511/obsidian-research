@@ -2,7 +2,7 @@
 
 # snake_phase_mnist_0914 spec：Snake の位相と定数オフセットを Permuted MNIST 箱 B へ移す（登録版・第 1 段）
 
-状態: **事前登録（実装前・走る前）** / 更新: 2026-09-14 03:40 JST / 起草: Claude（Opus 5）
+状態: **実行済み**（2026-09-14 09:35 完走・追補 1 は repo specs/addendum_1・結果 → [[Snakeの位相をMNISTへ移す_結果_0914]]）／登録時の状態 事前登録（実装前・走る前） / 更新: 2026-09-14 03:40 JST / 起草: Claude（Opus 5）
 親: vault [[W増大メカニズム_0909]] §5.4 / 姉妹: [[零点復元と重み収縮_学習実験_spec_0913]]（CondA 側）
 発端: Issa（2026-09-14 01:3x）「CondA で snake の議論がうまくできないので、これらの活性化を RandomLabel とか Permuted の MNIST でやるべきだよね」→「寝るので測定は全自動でお願い」「実行もして」
 run id: `snake_phase_mnist_0914` / worktree `wt/snake_phase_mnist_0914` / branch `claude/snake_phase_mnist_0914`（origin/main 94ed49a から）
