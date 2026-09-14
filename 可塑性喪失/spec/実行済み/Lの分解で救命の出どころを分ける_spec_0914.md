@@ -2,7 +2,7 @@
 
 > **vault 写し**。事前登録の正本は repo `specs/spec_l2split_rlmnist_0914.md` @ `c72eb6c`（branch `claude/l2split_rlmnist_0914`・2026-09-14 09:40 JST push・実装前・走る前）。実装 `e0a3db5`・検査 `7c73e9e`（all_pass・mutation 19/19・煙試験で REUSE_OK）の後、09:47 JST に white-san で本走を起動（並列 11）。本文は登録版から変更しない。前の走: [[Wの蓄積を止めれば時間劣化は消えるか_結果_0914]]。
 
-親: vault [[Wの蓄積を止めれば時間劣化は消えるか_結果_0914]]（`wcap_rlmnist_0914`・同じ箱）・[[セッション引き継ぎ_0914_W病理とL2系]] / 状態: **事前登録（実装前・本走前）** / 作成 2026-09-14 JST / チャット: `W病理とL2系_0914` / 実行: white-san（CPU のみ）
+親: vault [[Wの蓄積を止めれば時間劣化は消えるか_結果_0914]]（`wcap_rlmnist_0914`・同じ箱）・[[セッション引き継ぎ_0914_W病理とL2系]] / 状態: **実行済み**（2026-09-14 12:49 完走・結果 [[Lの分解で救命の出どころを分ける_結果_0914]]・repo `9d4f33b`） / 作成 2026-09-14 JST / チャット: `W病理とL2系_0914` / 実行: white-san（CPU のみ）
 
 > **run id: `l2split_rlmnist_0914`**。新しい runner `src/l2split_rlmnist_0914.py` を置く。宿主 `src/pmnist_0905.py`・0906 runner・0913 runner・**wcap runner `src/wcap_rlmnist_0914.py`** は 1 バイトも変えずに import する（blob の sha256 を検査）。
 > 順序: **本 spec を commit・push** → 実装＋検査（各検査に変異対照）＋煙試験＋費用測定 → 実装を commit・push → 本走 → 集計 → 結果を commit・push。
