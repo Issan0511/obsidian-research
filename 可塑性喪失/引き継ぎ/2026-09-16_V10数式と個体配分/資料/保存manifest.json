@@ -1,0 +1,54 @@
+{
+  "purpose": "会話内容に対応する結果資料の固定保存版",
+  "files": [
+    {
+      "source_commit": "301f3d5",
+      "source": "results/unit_label_demand_0916/summary.md",
+      "vault_file": "資料/unit_label_demand_0916_summary.md",
+      "bytes": 14038,
+      "sha256": "c56dc07b32223abbc4dd764cb050a1bdfcaf5036b3f9bb17d562cb4d3b22b425"
+    },
+    {
+      "source_commit": "301f3d5",
+      "source": "results/unit_label_demand_0916/verdict.csv",
+      "vault_file": "資料/unit_label_demand_0916_verdict.csv",
+      "bytes": 11245,
+      "sha256": "78beeb3fbb59c28b1347214f0b731f71edd575169c1c54ef40604d91e39d77ad"
+    },
+    {
+      "source_commit": "301f3d5",
+      "source": "results/unit_label_demand_0916/group_summary.csv",
+      "vault_file": "資料/unit_label_demand_0916_group_summary.csv",
+      "bytes": 541067,
+      "sha256": "37fd47cc7762d3543f23842837c2e7c3e81f8d9d556ea7674f869a2539117e6b"
+    },
+    {
+      "source_commit": "301f3d5",
+      "source": "results/unit_label_demand_0916/unit_summary.csv",
+      "vault_file": "資料/unit_label_demand_0916_unit_summary.csv",
+      "bytes": 1217531,
+      "sha256": "ffe5a47cc3374b6b40312506e0ee165883e364bc77b02466e3f3adb8a86b541b"
+    },
+    {
+      "source_commit": "301f3d5",
+      "source": "results/unit_label_demand_0916/unit_group_summary.csv",
+      "vault_file": "資料/unit_label_demand_0916_unit_group_summary.csv",
+      "bytes": 2995202,
+      "sha256": "5ec965f82bd0c73270f2a38f4bd3749d27c6b1108ca6855ba0c03a9825a53235"
+    },
+    {
+      "source_commit": "301f3d5",
+      "source": "results/unit_label_demand_0916/allocation_at_switch.png",
+      "vault_file": "資料/unit_label_demand_0916_切替時の配分.png",
+      "bytes": 174019,
+      "sha256": "9d59bf7d536a2696b8a84c9c3d8fa37b257656b13a4cfd9e5078e4263a8bf96e"
+    },
+    {
+      "source_commit": "301f3d5",
+      "source": "results/unit_label_demand_0916/allocation_over_time.png",
+      "vault_file": "資料/unit_label_demand_0916_時間変化.png",
+      "bytes": 274965,
+      "sha256": "bf9331330ead75badae336d39ddf8370e12e49c409ab6118469accfc0bd06435"
+    }
+  ]
+}
