@@ -2,7 +2,7 @@
 
 親: [[飽和からLoPへ_LilloCheneyとの照合と補完_0917]] / [[中心主張v10作業リスト_0916]] **H4**（機能的な死の定義・押しの持続）・**H5**（条件表: 学習率と α）・**A8**（文献との位置づけ）
 同じ箱の前の走: [[第2層の応答の場を移植して再学習を比べる_結果_0917]]・[[動く場の移植_応答低下からLoPへ_結果_0917]]・[[cap12とrefの網で第2層の場を入れ替える_結果_0917]]・[[機能的応答を他の箱で予測に使う_結果_0917]]
-状態: **実装・検査・repo登録済み（C1–C3本走は未開始、C4算術は実行済み）** / 作成: 2026-09-17 / 起草: Claude / 実装: Codex（2026-09-17）
+状態: **C1–C3本走実行中（C4算術は実行済み）** / 作成: 2026-09-17 / 起草: Claude / 実装: Codex（2026-09-17）
 依頼: Issa「飽和 → LoP って自明だと思ってたけど案外骨がある。補完できるところはしたい」
 
 ## 0. 決めたいこと
@@ -151,3 +151,14 @@ Issa「実装しましょう」を受け、C1–C4の実行コード・集計器
 4. **C4訂正**: 一歩の上限が与えるのは回復時間の**下限**。一般の勾配履歴で3.16ηは一様上界でなく、Cauchy–Schwarzから係数7.27029の一様上界を得る。[C4算術結果](https://github.com/Issan0511/lop_analysis/blob/abf087c/results/lc_complement_0917/c4/summary.md)。μ固定・外部衝撃なしという条件で必要時間を下から抑えるだけで、有限時間で戻れる保証にはならない。第2層では動くμの項も別に必要。
 
 Issaの予測欄は未記入のまま。
+
+
+## 本走開始（2026-09-17・Codex）
+
+Issa「走らせて」により、登録済みのC1–C3を開始。実験コード・判定基準は変更なし。走行commit `f3ad706`（順次実行・自動集計・結果保存の起動スクリプトだけ追加）。C1 CPU10seed → C1 GPU150task → C2の10seed → C3の5腕×3seed。各部の全shard完了後だけ集計する。
+
+- systemd user unit: `lc-complement-0917.service`（端末切断後も継続）
+- 状態: `/home/issan/Projects/obsidian-research-data/lc_complement_0917/main/status.json`
+- ログ: 同フォルダの `supervisor.log` と各jobの `.log`
+- worktree: `/home/issan/Projects/claude/wt/lc_complement_0917`
+- 途中エラーはFAILEDとしてキューを停止。全成功時に集計・生データmanifest・結果commit・mainへpush・自分のworktree片付けを行う。結果の解釈は完了後に記録する。
