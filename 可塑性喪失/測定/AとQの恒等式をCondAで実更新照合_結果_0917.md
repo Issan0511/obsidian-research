@@ -92,3 +92,5 @@ float32の別演算順で起きた100個の不一致は、順伝播出力の最�
 - 元データ: ~/Projects/obsidian-research-data/zero_attraction_0913/training/ckpts/
 - 本検証の全配列・ログ: ~/Projects/obsidian-research-data/aq_identity_0917/。42ファイルのSHA256をbackup_manifest.jsonで検証済み。
 - 実行コード・checkpoint hash・実装hashはprovenance.json。追加の長期学習は行っていない。
+
+- 事後 0918（Claude）: [[AとQの恒等式_学習率依存とラチェットは両立する_事後_0918]] — 「学習率で W が増える」と「勾配の大きい側が侵食される」は同じ帳簿の別の項（一次の輸送の向き／二次の注入の累積）。一更新の越え出しは 0.5% 未満、1 タスクでは E≈R が相殺して J と競う。
