@@ -162,3 +162,10 @@ Issa「走らせて」により、登録済みのC1–C3を開始。実験コー
 - ログ: 同フォルダの `supervisor.log` と各jobの `.log`
 - worktree: `/home/issan/Projects/claude/wt/lc_complement_0917`
 - 途中エラーはFAILEDとしてキューを停止。全成功時に集計・生データmanifest・結果commit・mainへpush・自分のworktree片付けを行う。結果の解釈は完了後に記録する。
+
+
+### 09/17 本走の停止と再開（Codex）
+
+C1 CPU10seedと集計は完了。19:56 JSTにC1 GPUのtask26で照合が停止し、20:33のIssa「まだ？」で検知した。online精度は一致していたが、前活性平均にfloat64末尾の差があった。原因は照合側がモデルを1本ずつmeanしており、元のneff_predの全モデルをまとめた `mean(dim=(1,2))` とGPU縮約順序が異なること。合成の同一float32配列で差を再現し、元の診断関数との一致を回帰検査した。
+
+修正commit `0a2dd82`。照合側を元と同じ計算順序に揃えた。完全一致の基準・訓練・登録判定は変更なし。完了済みC1 CPUを再利用し、失敗GPUデータとログを `main/failed_attempts/` に残してGPUから明示的resumeで再開。C2・C3はこの時点で未着手。以後はこのタスクの15分間隔heartbeatで停止・完了を確認する（進捗が変わらないときは通知しない）。
