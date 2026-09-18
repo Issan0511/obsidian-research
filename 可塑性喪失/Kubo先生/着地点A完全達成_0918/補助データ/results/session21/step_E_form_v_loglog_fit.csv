@@ -1,0 +1,5 @@
+kp_group,loglog_exponent,C_constant,mean_R2,note
+kp1,1.05,9177,0.850,form (v) Y_i = c(eta)*v*Sum_delta_prime_on
+kp2,1.04,8427,0.932,form (v) Y_i = c(eta)*v*Sum_delta_prime_on
+kp3-5,1.02,7038,0.974,form (v) Y_i = c(eta)*v*Sum_delta_prime_on
+kp6+,1.01,6172,0.997,form (v) Y_i = c(eta)*v*Sum_delta_prime_on
