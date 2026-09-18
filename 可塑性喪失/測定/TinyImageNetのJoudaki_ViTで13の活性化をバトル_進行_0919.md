@@ -41,3 +41,12 @@
 - 完走後、launcherが `summary.md` / `verdict.csv` / `verdict.json` / `paired_tests.csv` / `comparison.png` を自動生成する。Obsidianの結果転記・main統合・worktree片付けはその後に行う。
 
 **ここには性能順位・可塑性についての結論はまだない。**
+
+
+## 同一GPU並列の実測（2026-09-19）
+
+ユーザーの質問を受け、本走をSNA seed0のtask22終了で一時停止して、KKA・seed100・batch128の合成入力を通常の独立CUDAプロセス1/2/4本で測定した。各10更新warmup後、各200更新の全体処理量は1本14.30更新/秒、2本13.16、4本13.92。4本まで実行可能だが、今回の学習部分では高速化なし。最終モデル・適応Vは全プロセスで1本実行とbit一致。
+
+通常の複数プロセス化は採用せず、1本で本走をcheckpointから再開。実画像読込・保存を含む並列やMPSは未測定。本走精度・順位を判断に使用していない。追補7とbenchmarkをcommit/push（89fedb1）。凍結学習ソース変更なし。
+
+結果: `/home/issan/Projects/claude/wt/joudaki_vit_battle_0919/results/joudaki_vit_battle_0919/parallel_benchmark.json`
