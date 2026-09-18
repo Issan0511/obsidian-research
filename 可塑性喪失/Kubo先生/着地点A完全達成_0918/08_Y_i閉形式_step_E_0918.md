@@ -141,7 +141,7 @@ $$\Delta \bar z_i^{\rm alive} = T_0 + T_1^{\rm true} + T_4 + T_5 + c(\eta) \cdot
 
 - **source-result**:
   - `~/project/Nakatsuka/claude/hole1_scripts/session21_out/step_E_yi_functional_form.md` (Step E の 6 関数形比較レポート・Claude Code 生成)
-  - `~/project/Nakatsuka/claude/hole1_scripts/session21_out/step_E_yi_fit_results.npz` (form (v) の fit 結果)
+  - `~/project/Nakatsuka/claude/hole1_scripts/session21_out/step_E_yi_fits.json` (form (v) の fit 結果・67.75 KB・turn 8-a で file name 訂正)
   - `~/project/Nakatsuka/claude/hole1_scripts/session21_out/mt_U1_bareK1_dprime_v3_lr*.npz` (5 arm × 250 tasks の δ' 付き npz)
 - **source-commit**: 本ノート起票時の teacher branch head
 - **verified-on**: 2026-09-18

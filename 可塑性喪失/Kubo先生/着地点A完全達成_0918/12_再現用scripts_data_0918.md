@@ -23,37 +23,38 @@ description: Landing A 完全達成の記録に使われた scripts と data の
 ```
 可塑性喪失/Kubo先生/着地点A完全達成_0918/補助データ/
 ├── scripts/
-│   ├── session21_scripts/     # Claude Code session 21 の全 scripts (実物コピー)
+│   ├── session21_scripts/     # Claude Code session 21 の主要 scripts (実物コピー・6 files)
 │   │   ├── mtM_v3.py                          # Step A: δ' 保存版シミュレータ
-│   │   ├── mtM_v3_variants.py                 # Step B: 4 変種分解 (SKIP)
-│   │   ├── run_step_A_all.sh                  # Step A shell
-│   │   ├── run_step_B_variants.sh             # Step B shell (SKIP)
 │   │   ├── step_C_t1_theory.py                # Step C: T_1 theory per-event
 │   │   ├── step_D_yi_extract.py               # Step D: Y_i per-event 抽出
 │   │   ├── step_E_yi_fit.py                   # Step E: 6 関数形 fit
 │   │   ├── step_F_markov.py                   # Step F: Markov 遷移確率
 │   │   └── step_G_model_m4_theory_driven.py   # Step G: Model M4-A / M4-B
-│   ├── session20_scripts/     # Chat 第 20 回で使用した Claude Code scripts (実物コピー)
+│   │   # NOTE (turn 9 訂正): mtM_v3_variants.py (Step B・SKIP)・run_step_A_all.sh・
+│   │   # run_step_B_variants.sh は元 Nakatsuka repo (session21_out/) にあるが補助データに未コピー
+│   ├── session20_scripts/     # Chat 第 20 回で使用した Claude Code scripts (実物コピー・5 files)
 │   │   ├── mtM_500task.py                     # Step U: 500 tasks trajectory
-│   │   ├── sf_analyze_plus.py                 # Step Q': κ analyze
-│   │   ├── sf_sweep_plus.py                   # Step Q': κ sweep (450 chain × T=3e4)
-│   │   ├── sf_vfrozen.py                      # Step R: v 凍結 SGD
-│   │   ├── sf_vfrozen_analyze.py              # Step R: c analyze
 │   │   ├── step_T_T0_joint.py                 # Step T: T_0 joint 分布
 │   │   ├── step_U_stationarity.py             # Step U: 500 tasks 定常性判定
 │   │   ├── step_V_T1_theory.py                # Step V: T_1 理論式検証
 │   │   └── v3g_full_theoretical.py            # Step W: v3g 完全理論駆動 sim
+│   │   # NOTE (turn 9 訂正): sf_analyze_plus.py・sf_sweep_plus.py (Step Q')・
+│   │   # sf_vfrozen.py・sf_vfrozen_analyze.py (Step R) は元 Nakatsuka repo
+│   │   # (session20_out/) にあるが補助データに未コピー
 │   └── chat_scripts_reconstruction/  # Chat container で第 20 回に実行した分析 (実物なし・再構築必要)
 │       └── README_reconstruction.md  # 再構築の手順と Chat 第 20 回の分析内容
 ├── results/                   # session21_out/ と session20_out/ の md/csv/json (実物コピー)
-│   ├── session21/
+│   ├── session21/                             # 実物コピー・8 files (4 md + 4 csv)
 │   │   ├── report.md                          # Session 21 総まとめ
 │   │   ├── step_E_yi_functional_form.md       # Step E report
-│   │   ├── step_E_yi_fits.json                # Step E fit 結果 (5 arm × 6 form)
-│   │   ├── step_F_markov_transitions.csv      # Step F 遷移確率
 │   │   ├── step_F_report.md                   # Step F report
 │   │   ├── step_G_alive_branch_theory_driven.md  # Step G report (M4-A/B)
-│   │   └── logs/                              # 実行ログ (mtM_v3_*.log, step_C_log.txt, etc.)
+│   │   ├── step_F_markov_transitions.csv      # Step F 遷移確率
+│   │   ├── step_E_form_v_slope_by_arm_kp.csv  # Step E form (v) の per-arm per-kp slope 抽出
+│   │   ├── step_E_form_v_r2_by_arm_kp.csv     # Step E form (v) の per-arm per-kp R² 抽出
+│   │   └── step_E_form_v_loglog_fit.csv       # Step E form (v) の log-log fit 抽出
+│   │   # NOTE (turn 9 訂正): step_E_yi_fits.json (67 KB) は補助データに未コピー・
+│   │   # 3 抽出 csv で代替。実行ログ (mtM_v3_*.log, step_C_log.txt 等) も未コピー
 │   └── session20/
 │       ├── report.md                          # Session 20 総まとめ
 │       ├── step_Q_prime_kappa_5point.csv      # Step Q' κ 5 点
