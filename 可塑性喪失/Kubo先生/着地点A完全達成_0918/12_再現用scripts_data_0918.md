@@ -81,12 +81,17 @@ description: Landing A 完全達成の記録に使われた scripts と data の
 - `session20_out/step_R_sf_vfrozen_lr*.npz` (5 files × ~ 3.3 MB = 16 MB)
 - `session20_out/step_T_T0_joint_distribution.npz` (~ 22 KB・small のためコピー可)
 
-**合計** (Obsidian vault にコピーする分):
-- scripts: ~ 130 KB
-- results (md/csv/json/log): ~ 200 KB
-- **総計 ~ 330 KB** (Obsidian vault へ)
+**合計** (turn 8-h で Obsidian vault に commit した分・turn 9-2 実測値に更新):
+- 14 Landing A ノート: ~ 400 KB
+- 補助データ/scripts/: ~ 106 KB (session20 5 files + session21 6 files + chat_scripts_reconstruction 1 file = 12 files)
+- 補助データ/results/: ~ 157 KB (session20 8 files + session21 8 files = 16 files)
+- 補助データ/references/: ~ 15 KB (large_data_reference.md)
+- **総計 ~ 678 KB** (Landing A 全体・14 ノート + 補助データ 30 files・turn 8-h の commit hash 11bec7a・turn 9 と turn 9-2 の修正で微増)
 
-**元の場所に残す分** (reference のみ): ~ 420 MB
+**元の場所に残す分** (reference のみ・詳細 [[large_data_reference]]): ~ 620 MB
+- session19_out/: 198.10 MB (49 files)
+- session20_out/: 153.31 MB (55 files)
+- session21_out/: 268.17 MB (22 files)
 
 ## 3. Claude Code session 21 scripts の役割
 
@@ -212,14 +217,16 @@ Chat 第 20 回で以下の分析が実施された (memory summary より):
 
 ### 5.2 再構築の手順
 
-`chat_scripts_reconstruction/README_reconstruction.md` に、各分析の再構築手順を記述する (実装は Landing B の Step 0 で予定):
+turn 8-h で作成した [[README_reconstruction]] (`補助データ/scripts/chat_scripts_reconstruction/`・14.28 KB) に、Chat container で第 20 回に実施した 6 項目の再構築手順を具体的な python code snippet 付きで記述済み (実装は Landing B の Step 0 で予定):
 
-1. Nakatsuka repo の `session21_scripts/mtM_v3.py` を基点とする
-2. 5M ckpt の初期状態から $\mathcal K$ を対角化する短い script を作成
-3. Step E の $c(\eta)^{\rm fit}$ を使い、$\|\tilde\mu\|^2$ から ratio を計算
-4. Term I/II 分解は session 21 の Step C/D の per-event 分解を elaborate
+1. **K spectrum 対角化** ($\mathcal K = X_c X_c^\top / 32$ の対角化) — 5M ckpt から $\|\tilde\mu\|^2$・非零固有値の decay pattern を数値検証
+2. **段 0 分析 (Kubo 決着)** — Y_i の閉形式 $c(\eta)^{\rm fit}$ と正しい理論値 $(2\eta T/32) \cdot \|\tilde\mu\|^2 = (2\eta T/32) \cdot 9.24$ の ratio 1.008 ± 0.009 の narrow band 一致を再現 (詳細 [[09_Y_iの物理的正体_bias_mode_cancellation_0918]] §5)
+3. **V-a 真の版** ($\Sigma_{XX} = 0.25 \cdot \mathrm{diag}(0_{15}, 1_5)$ の解析導出と数値検算・詳細 [[02_V-a真の版_有界性_0918]])
+4. **V-b 真の版** (σ 中央値変化の 5 arm 実測・詳細 [[03_V-b真の版_wnorm不動性_0918]])
+5. **Term I / Term II 分解** (leaky ReLU 恒等式による decomposition・詳細 [[04_Term_I_II分解と3レジーム_0918]])
+6. **v3i_joint Model M4 統合** (joint 分布 $(k_{\rm on\_kick}, \bar z_{\rm kick})$ 条件付けで Spearman +0.900・詳細 [[06_Model_M4_v3i_joint_3判定_0918]])
 
-これらの分析結果は本ノート群 ([[02_V-a真の版_有界性_0918]] - [[10_Markov遷移確率_a二乗scaling_0918]]) に記録されているので、再構築は Landing B の作業として実施可能。
+分析結果は本ノート群 ([[02_V-a真の版_有界性_0918]] - [[10_Markov遷移確率_a二乗scaling_0918]]) に記録されているので、再構築は Landing B の作業として実施可能。
 
 ## 6. 実行環境要件
 
