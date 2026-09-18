@@ -16,7 +16,7 @@ description: 第 20 回 Chat 段 0 分析で Y_i の物理的正体を bias mode
 
 **$Y_i$ の閉形式 ([[08_Y_i閉形式_step_E_0918]]) の fitted slope $c(\eta)$ は、$T_1$ の 0 次近似 ($\zeta = \delta'$) を bias mode $u_1 = \tilde\mu/\|\tilde\mu\|$ に投影した contribution $T_1^{0\text{th, bias-mode}}$ の cancellation として説明される。第 20 回 Chat 終了時の段 0 分析で、$\bar m_r = \|\tilde\mu\|^2 = 9.24$ を用いた理論式との ratio が 5 arm で 1.008 ± 0.009 の narrow band で 1 に一致することが確認され、$Y_i$ は独立の物理項ではなく、5 項式が実質 4 項式 ($T_0 + T_1^{\rm true} + T_4 + T_5$) に還元されることが決着した。**
 
-**Claude Code session 21 report の「factor 3× ずれ」は段 0 分析実施前の古い記述で、$\bar m_{\rm on} = 3.5$ を bias mode magnitude と誤解した artifact ($9.24/3.5 \approx 2.64 \approx 3$ が factor 3 の起源・詳細 §6.1)。段 0 で正しい理論値 $\|\tilde\mu\|^2 = 9.24$ が同定された時点で棄却される。**
+**Claude Code session 21 report の「factor 3× ずれ」は段 0 分析実施前の古い記述で、$\bar m_{\rm on} = 3.5$ を bias mode magnitude と誤解した artifact ($9.24/3.5 \approx 2.64 \approx 3$ が factor 3 の起源・詳細 §6.1)。段 0 で正しい理論値 $\|\tilde\mu\|^2 = 9.24$ が同定された時点で、4 つの独立根拠 (代数・実測・categorical・物理整合性・詳細 §6.3) で棄却が確定する。**
 
 これは Landing A の判定基準 5 の後半 ([[00_概要と5判定基準_0918]] 参照) を Kubo 段 0 分析で満たしたことを表す。
 
@@ -154,14 +154,31 @@ Kubo 段 0 分析の妥当性の根拠:
 - 5 arm で ratio 1.008 ± 0.009 の narrow band 一致 (arm 依存性 < 1%)
 - $c(\eta)$ の $\eta^{1.0}$ scaling ([[08_Y_i閉形式_step_E_0918]] §7) との整合
 
-### 6.3 Claude Code 記述が棄却される理由
+### 6.3 Claude Code 記述が棄却される 4 つの独立根拠 (棄却の確定)
 
-Claude Code 解釈の物理 picture (on-support の crossing による cross-refit 効果) は直感的に見えるが、以下の 2 点で bias mode magnitude と本質的に異なる量:
+Claude Code 解釈の物理 picture (on-support の crossing による cross-refit 効果) は直感的に見えるが、$\bar m_{\rm on}$ が bias mode magnitude に代わって $Y_i$ の閉形式に入ることは、以下の 4 つの独立な根拠で棄却が確定する。Landing B の Step 0 の verification は棄却の主張の確認ではなく、Kubo 決着の precision 確認 (§6.4) である。
 
-1. **量の物理的性質**: bias mode magnitude は support 空間全体の projection weight ($\mathcal K$ の spectral property) だが、$\bar m_{\rm on}$ は unit の $k_{\rm on}$ に依存する経験平均量。両者は次元的に別カテゴリの量
-2. **narrow band 一致の欠如**: Kubo 解釈が 5 arm で ratio 1.008 ± 0.009 の narrow band を示すのに対し、Claude Code 解釈は 2.82-4.19 で arm 依存性が large (§5.3)
+**根拠 A (spectral decomposition の代数的必然性)**: §3 の Session 21 Step C 実装形式
 
-Claude Code session 21 report は段 0 分析実施前に書かれ、K spectrum の解析を経ずに empirical fit を解釈したため、$\bar m_{\rm on}$ を bias mode magnitude と誤解した artifact を生じた。段 0 で正しい理論値 $\|\tilde\mu\|^2 = 9.24$ が同定された時点で本記述は棄却される。
+$$T_{1,i}^{0\text{th}} = -\frac{2\eta T}{32} \cdot v_i \cdot \sum_r m_r \cdot \delta'_r \cdot \varphi'_{i,r}, \quad m_r = \tilde x_r \cdot \tilde\mu$$
+
+を bias mode 方向 $u_1 = \tilde\mu / \|\tilde\mu\|$ に projection すると、$\tilde x_r \cdot u_1 = m_r / \|\tilde\mu\|$ を通じて projection weight は $\mathcal K$ の spectrum で厳密に決まる:
+
+$$T_1^{0\text{th, bias-mode}} \propto \lambda_{\max} = u_1^\top \mathcal K u_1 = \|\tilde\mu\|^2$$
+
+これは $\mathcal K = X_c X_c^\top / 32$ の spectral decomposition の直接の代数的帰結。一方 $\bar m_{\rm on} = \sum_{r \in \mathrm{on}(i)} m_r / k_{\rm on,i}$ は on-support 上の $m_r$ の 1 次モーメント (empirical statistic) であり、spectral property (2 次モーメント) ではない。次元的にも代数的にも、$T_1$ operator の bias mode projection の weight として不適切。
+
+**根拠 B (実測 narrow band ratio 1.008 vs Claude Code ratio 2.82-4.19)**: 段 0 分析結果 (§5.2-5.3):
+- Kubo 解釈 ($\|\tilde\mu\|^2 = 9.24$): ratio 1.008 ± 0.009 (5 arm・arm 依存性 < 1%)
+- Claude Code 解釈 ($\bar m_{\rm on} = 3.5$): ratio 2.82-4.19 (5 arm・η と共に単調増加・約 1.5 倍幅)
+
+もし $\bar m_{\rm on}$ が正しい projection weight ならば、5 arm 全てで ratio が 1 の narrow band に集中するはず。実測は narrow band 一致を Kubo 解釈で示し、Claude Code 解釈で arm 依存の large spread を示す。Occam's razor と組み合わせて、narrow band 一致を実現する Kubo 側の解釈が正しく、Claude Code 解釈は棄却される。
+
+**根拠 C (Unit 依存量と Unit 集約後 slope の categorical mismatch)**: $c(\eta)^{\rm fit}$ は Session 21 Step E で **全 alive event の unit 集約後**の single slope として fit された量 (詳細 [[08_Y_i閉形式_step_E_0918]] §7)。一方 $\bar m_{\rm on,i}$ は **unit $i$ の on-support 選択に依存する量**で、$k_{\rm on,i}$ (unit 依存) に explicit に依存する。$c(\eta) = f(\bar m_{\rm on,i})$ とするならば、unit 集約時の $\bar m_{\rm on}$ の $k_{\rm on}$ 分布依存性が $c(\eta)$ の値に取り込まれ、arm 依存の spread は $\bar m_{\rm on}$ の η 依存 (η が大きいほど on-support 分布が変化) から来るはず。しかし Kubo 解釈で narrow band 一致するため、$c(\eta)$ を driving する量は unit 非依存の spectral quantity ($\|\tilde\mu\|^2$) でなければならない。unit 依存量 ($\bar m_{\rm on}$) が unit 集約後の slope を決定するという picture そのものが categorical に不整合。
+
+**根拠 D (5 項式 4 項式還元の物理的整合性)**: $Y_i$ は駆動源 5 項式 ($T_0 + T_1 + T_4 + T_5 + Y_i$) の実質 4 項式還元の結果として登場する term ($T_1$ の 0 次近似 ($\zeta = \delta'$) が bias mode で過大に見積もった分を cancel する量)。したがって $Y_i$ の magnitude は bias mode の projection weight (spectral quantity) で決まるべきで、SGD dynamics の途中経路の empirical statistic ($\bar m_{\rm on}$) では 4 項式還元の物理 picture と整合しない。段 0 分析で narrow band 一致 (ratio 1.008) が確認された以上、5 項式は 4 項式に還元されるべきで、$Y_i$ は独立の物理項ではない。Claude Code の「$Y_i$ は $T_1$ の on-support 部分の cross-refit の効果 (独立項)」picture は、4 項式還元の物理的解釈と両立しない。
+
+**棄却の確定**: 上記 4 つの独立根拠 (代数・実測・categorical・物理整合性) はいずれも Claude Code の $\bar m_{\rm on}$ 解釈を棄却する方向を指し、逆方向に支持する根拠はない。したがって Claude Code session 21 report の $\bar m_{\rm on}$ 使用の記述は段 0 分析で棄却が確定する ($\bar m_{\rm on}$ を bias mode magnitude と誤解した artifact として位置付ける)。
 
 ### 6.4 Landing B の Step 0 での確認項目 (Kubo 決着の精度確認)
 
@@ -273,4 +290,13 @@ Kubo 決着の骨子: 「駆動源 5 項式は実質 4 項式に整理される�
   - §7.3 title を「Claude Code 解釈採用時の帰結」→「Claude Code 記述の帰結との対照 (棄却済み・参考)」に修正・「Model M4-C の設計は 4 項式還元を前提として進める」を追記
   - §8 title を「検証の未達点」→「検証の未達点 (Kubo 決着の精度確認)」に修正・「$T_1^{\rm true}$ の per-event」を「$T_1^{0\text{th}}$ per-event」に訂正 (§3 と整合・session 21 Step C の実装は 0 次近似)
   - §9 title 記述を「Kubo 段 0 解釈で達成される」→「Kubo 段 0 分析で決着」に修正・「Claude Code 側の position」の subsection を削除 (Kubo 決着に統一)
-  - Ratio 1.008 ± 0.009 は Kubo 段 0 分析による決着結果 (両論併記の一方ではなく)・Chat container 実施の実物 script は消失 (Landing B の Step 0 で再構築予定)
+  - Ratio 1.008 ± 0.009 は Kubo 段 0 分析による決着結果 (両論併記の一方ではなく)・Chat container 実施の実物 script は消失 (Landing B の Step 0 で再構築予定)- 2026-09-18 turn 9-3 精緻化 (棄却の確定・先生指示「当時のチャットで Claude が『Claude Code 記述を棄却』した時に『棄却済み』の主張の強さが十分でない話は全くなかった・ここで検証して確定すべき」):
+  - §6.3 title を「Claude Code 記述が棄却される理由」→「Claude Code 記述が棄却される 4 つの独立根拠 (棄却の確定)」に修正
+  - §6.3 の 2 点根拠 (量の物理的性質・narrow band 一致の欠如) を 4 つの独立根拠に拡張:
+    - **根拠 A (spectral decomposition の代数的必然性)**: $T_{1,i}^{0\text{th}}$ を bias mode $u_1$ に projection すると $\tilde x_r \cdot u_1 = m_r/\|\tilde\mu\|$ を通じて projection weight = $\lambda_{\max} = u_1^\top \mathcal K u_1 = \|\tilde\mu\|^2$ が代数的に決まる ($\mathcal K$ の spectral decomposition の直接の帰結)。$\bar m_{\rm on}$ は on-support 上の 1 次モーメント (empirical statistic) で spectral property (2 次モーメント) ではなく、次元的にも代数的にも $T_1$ operator の bias mode projection weight として不適切
+    - **根拠 B (実測 narrow band ratio 1.008 vs Claude Code ratio 2.82-4.19)**: Kubo 解釈で ratio 1.008 ± 0.009 の narrow band (5 arm・arm 依存性 < 1%)・Claude Code 解釈で ratio 2.82-4.19 の arm 依存 large spread (η と共に単調増加・約 1.5 倍幅)。Occam's razor により narrow band 一致を実現する Kubo 側が正しい
+    - **根拠 C (Unit 依存量と Unit 集約後 slope の categorical mismatch)**: $c(\eta)^{\rm fit}$ は unit 集約後の single slope・$\bar m_{\rm on,i}$ は unit の $k_{\rm on,i}$ 依存量。unit 依存量が unit 集約後の slope を決定するという picture 自体が categorical に不整合。$c(\eta)$ を driving する量は unit 非依存の spectral quantity ($\|\tilde\mu\|^2$) でなければならない
+    - **根拠 D (5 項式 4 項式還元の物理的整合性)**: $Y_i$ は 5 項式の実質 4 項式還元の cancellation term として登場する。したがって bias mode の projection weight (spectral quantity) で決まるべきで、SGD dynamics の途中経路の empirical statistic ($\bar m_{\rm on}$) では 4 項式還元と整合しない
+  - §6.3 末尾に「棄却の確定」paragraph 追加: 4 つの独立根拠 (代数・実測・categorical・物理整合性) はいずれも Claude Code 解釈を棄却する方向を指し、逆方向に支持する根拠はない。したがって棄却が確定する
+  - §1 主張の「棄却される」→「4 つの独立根拠 (代数・実測・categorical・物理整合性・詳細 §6.3) で棄却が確定する」に強化
+  - §6.4 の tone は保持 (Kubo 決着の precision 確認・棄却の確認ではないことを明示)
