@@ -131,13 +131,12 @@ V-a と V-b の関係:
 
 ## 8. Provenance
 
-- **source-result**: 
-  - `~/project/Nakatsuka/claude/hole1_scripts/session20_out/mt_U1_bareK1_500tasks_v2_lr*.npz`
-  - `~/project/Nakatsuka/claude/hole1_scripts/session20_out/all5arm_sigma_d.npz`
-  - `~/project/Nakatsuka/claude/hole1_scripts/session20_out/verify_and_t500.npz` (Chat container で第 20 回に生成)
+- **source-result**:
+  - **元 Nakatsuka repo で実在**: `~/project/Nakatsuka/claude/hole1_scripts/session20_out/mt_U1_bareK1_500tasks_v2_lr*.npz` (詳細 [[large_data_reference]])
+  - **Chat container 生成 (container リセットで実物なし)**: `all5arm_sigma_d.npz`・`verify_and_t500.npz` (第 20 回で Chat container で生成)
 - **source-commit**: 本ノート起票時の teacher branch head
 - **verified-on**: 2026-09-18
-- **script**: [[12_再現用scripts_data_0918]] の `補助データ/scripts/chat_scripts/` の以下:
+- **script**: Chat container で第 20 回に生成した以下 2 script (container リセットで実物なし・再構築手順は [[README_reconstruction]] を参照・turn 9-4 訂正):
   - `verify_and_t500.py` — task 0 vs task 500 の σ, ‖w‖ 中央値比較 (5 arm)
   - `all5arm_sigma_d.py` — 5 arm 集計 (σ の CV, cos 統計)
 
@@ -146,3 +145,4 @@ V-a と V-b の関係:
 - 2026-09-18 起票 (第 20 回・V-b 真の版検証結果)
 - σ 中央値変化の 5 arm 実測は第 20 回で Chat container で生成
 - 6-7 倍差の解剖は Σ_XX の解析形 ([[02_V-a真の版_有界性_0918]] §3) と w の free subspace 集中 (cos ≈ 0.9) から導出
+- 2026-09-18 turn 9-4 訂正: §8 Provenance の `chat_scripts/` folder 参照を削除・script/data を「元 Nakatsuka repo で実在」と「Chat container 生成 (container リセットで実物なし・[[README_reconstruction]] を参照)」に分けて明示。Chat container で第 20 回に生成した 2 script (verify_and_t500.py・all5arm_sigma_d.py) は実物なし

@@ -178,15 +178,14 @@ $$Y_i^{\rm try(v²)} = \alpha(\eta) \cdot v_i^2$$
 
 ## 8. Provenance
 
-- **source-result**: 
-  - `~/project/Nakatsuka/claude/hole1_scripts/session20_out/per_unit_5term_verification_lr*.npz` (5 arm × 100 unit × 500 tasks の 5 項式 decomposition)
-  - `~/project/Nakatsuka/claude/hole1_scripts/session20_out/kappa_c_scaling.csv` ($\kappa(\eta), c(\eta)$ の 5 arm fit)
+- **source-result**:
+  - **Chat container 生成 (container リセットで実物なし)**: `per_unit_5term_verification_lr*.npz` (第 19 回の 5 arm × 100 unit × 500 tasks の 5 項式 decomposition・Chat container で生成)・`kappa_c_scaling.csv` ($\kappa(\eta), c(\eta)$ の 5 arm fit・第 20 回で Chat container で生成)
 - **source-commit**: 本ノート起票時の teacher branch head
 - **verified-on**: 2026-09-18
-- **script**: [[12_再現用scripts_data_0918]] の `補助データ/scripts/session20_scripts/` の以下:
-  - `per_unit_5term_verification.py` — 5 arm × per-unit で $\Delta \bar z_i$ decomposition
-  - `kappa_c_scaling_fit.py` — $\kappa(\eta), c(\eta)$ の η scaling fit
-  - `alive_branch_decomp.py` — kp1, kp2 branch の R decomposition
+- **script**: Chat container で第 19-20 回に生成した以下 3 script (container リセットで実物なし・再構築手順は [[README_reconstruction]] を参照・turn 9-4 訂正):
+  - `per_unit_5term_verification.py` — 5 arm × per-unit で $\Delta \bar z_i$ decomposition (第 19 回)
+  - `kappa_c_scaling_fit.py` — $\kappa(\eta), c(\eta)$ の η scaling fit (第 20 回)
+  - `alive_branch_decomp.py` — kp1, kp2 branch の R decomposition (第 20 回)
 
 ## 9. Log
 
@@ -195,3 +194,4 @@ $$Y_i^{\rm try(v²)} = \alpha(\eta) \cdot v_i^2$$
 - kp0 branch の 3 項式還元は第 19 回で per-event R² > 0.914 確認
 - $Y_i$ の $v^2$ モデルは第 20 回で R² < 0.03 で棄却・正しい閉形式は Claude Code session 21 Step E で発見 (詳細 [[08_Y_i閉形式_step_E_0918]])
 - kp2 branch の R systematic negative は Y_i の η 依存と整合 ([[08]] の $c(\eta) \propto \eta$)
+- 2026-09-18 turn 9-4 訂正: §8 Provenance の `session20_scripts/` folder 参照を削除・script/data を「Chat container 生成 (container リセットで実物なし・[[README_reconstruction]] を参照)」に統一。Chat container で第 19-20 回に生成した 3 script (per_unit_5term_verification.py・kappa_c_scaling_fit.py・alive_branch_decomp.py) は実物なし

@@ -183,12 +183,12 @@ K spectrum の解剖は Landing A の中核発見であり、以下を直接支�
 
 ## 8. Provenance
 
-- **source-result**: 
-  - Chat container で第 20 回に生成した spectrum data (`/home/claude/k_spectrum.py` の出力)
-  - 5M ckpt (seed 0) の $\tilde\mu$ と $g$ の実測値
+- **source-result**:
+  - **元 Nakatsuka repo で実在**: 5M ckpt (seed 0) の $\tilde\mu$ と $g$ の実測値 (元 Nakatsuka repo・LRa0p03_1216_step5000000.pt から抽出可能)
+  - **Chat container 生成 (container リセットで実物なし)**: Chat container で第 20 回に生成した spectrum data (`/home/claude/k_spectrum.py` の出力)
 - **source-commit**: 本ノート起票時の teacher branch head
 - **verified-on**: 2026-09-18
-- **script**: [[12_再現用scripts_data_0918]] の `補助データ/scripts/chat_scripts/` の以下:
+- **script**: Chat container で第 20 回に生成した以下 2 script (container リセットで実物なし・再構築手順は [[README_reconstruction]] を参照・turn 9-4 訂正):
   - `k_spectrum.py` — $\mathcal K$ 対角化と非零固有値抽出
   - `check_tautology.py` — bias mode $u_1 = \tilde\mu/\|\tilde\mu\|$ の数値検算
 
@@ -198,3 +198,4 @@ K spectrum の解剖は Landing A の中核発見であり、以下を直接支�
 - 固有値の解析形 ($\lambda_{\max} = \|\tilde\mu\|^2$・free = 0.25) は第 20 回で数値検証済み
 - Trace 整合性は誤差 0.04 (g の精密値による)
 - Bias mode の完全消滅は Y_i の cancellation ([[09_Y_iの物理的正体_bias_mode_cancellation_0918]]) の起源として第 20 回段 0 で同定
+- 2026-09-18 turn 9-4 訂正: §8 Provenance の `chat_scripts/` folder 参照を削除・script/data を「元 Nakatsuka repo で実在 (5M ckpt の tilde mu と g)」と「Chat container 生成 (container リセットで実物なし・[[README_reconstruction]] を参照)」に分けて明示。Chat container で第 20 回に生成した 2 script (k_spectrum.py・check_tautology.py) は実物なし

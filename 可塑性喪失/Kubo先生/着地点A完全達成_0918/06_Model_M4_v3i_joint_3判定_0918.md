@@ -212,12 +212,12 @@ joint 条件付けが 3 判定達成の critical factor。**$\bar z_{\rm kick}$ 
 
 ## 11. Provenance
 
-- **source-result**: 
-  - `~/project/Nakatsuka/claude/hole1_scripts/session20_out/model_m4_v3i_joint_*.npz` (Model M4 v3i_joint の 5 arm 予測)
-  - `~/project/Nakatsuka/claude/hole1_scripts/session20_out/mt_U1_bareK1_500tasks_v2_lr*.npz` (実測 500 tasks trajectory)
+- **source-result**:
+  - **元 Nakatsuka repo で実在**: `~/project/Nakatsuka/claude/hole1_scripts/session20_out/mt_U1_bareK1_500tasks_v2_lr*.npz` (実測 500 tasks trajectory・詳細 [[large_data_reference]])
+  - **Chat container 生成 (container リセットで実物なし)**: `model_m4_v3i_joint_*.npz` (Model M4 v3i_joint の 5 arm 予測・§2 注参照)
 - **source-commit**: 本ノート起票時の teacher branch head
 - **verified-on**: 2026-09-18
-- **script**: [[12_再現用scripts_data_0918]] の `補助データ/scripts/session20_scripts/` の以下:
+- **script**: Chat container で第 20 回に生成した以下 3 script (container リセットで実物なし・再構築手順は [[README_reconstruction]] を参照・turn 9-4 訂正):
   - `model_m4_v3i_joint.py` — Model M4 (v3i_joint 版) の 2 branch シミュレーション
   - `v3i_joint_bin_table_builder.py` — empirical joint distribution の bin 化
   - `landing_a_3criteria_verify.py` — 3 判定の実測
@@ -231,4 +231,4 @@ joint 条件付けが 3 判定達成の critical factor。**$\bar z_{\rm kick}$ 
   - 3 判定基準表の直下に「260 tasks tail 窓での測定」の注記を追加
   - Session 20 Step U の 500 tasks 定常性問題 (W5 で peak η 0.0002→0.000156 移動・Spearman +0.900→+0.700 低下) を明示
   - v3i_joint 実装は Chat container で第 20 回に生成・実物 script なし・Landing B の Step 0 で再構築予定を明記
-  - Provenance の script リストは [[12_再現用scripts_data_0918]] を参照 (session 20 scripts の実物 name は sf_analyze_plus.py・v3g_full_theoretical.py 等・v3g は Step W の別 branch で v3i_joint とは異なる Chat container 実装)
+  - Provenance の script リストは [[12_再現用scripts_data_0918]] を参照 (session 20 scripts の実物 name は sf_analyze_plus.py・v3g_full_theoretical.py 等・v3g は Step W の別 branch で v3i_joint とは異なる Chat container 実装)- 2026-09-18 turn 9-4 訂正: §11 Provenance の `session20_scripts/` folder 参照を削除・script/data を「元 Nakatsuka repo で実在 (mt_U1_bareK1_500tasks_v2_lr*.npz)」と「Chat container 生成 (container リセットで実物なし・[[README_reconstruction]] を参照)」に分けて明示。Chat container で第 20 回に生成した 3 script (model_m4_v3i_joint.py・v3i_joint_bin_table_builder.py・landing_a_3criteria_verify.py) は実物なし。§2 注「v3i_joint 実装の実物 script は残っていない」と §11 の整合を回復
