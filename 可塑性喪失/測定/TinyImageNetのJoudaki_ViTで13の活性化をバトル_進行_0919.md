@@ -50,3 +50,12 @@
 通常の複数プロセス化は採用せず、1本で本走をcheckpointから再開。実画像読込・保存を含む並列やMPSは未測定。本走精度・順位を判断に使用していない。追補7とbenchmarkをcommit/push（89fedb1）。凍結学習ソース変更なし。
 
 結果: `/home/issan/Projects/claude/wt/joudaki_vit_battle_0919/results/joudaki_vit_battle_0919/parallel_benchmark.json`
+
+
+## 停止・別マシン引き継ぎ（2026-09-19）
+
+他作業への負荷を避けたいというユーザー依頼により元マシンを停止。KKA23 seed1 task31終了で保存・正常終了済み。18/130 run、751/5200 task完了。checkpointをCPUで読んでtask31と凍結source hash一致を確認した。STOPを残し、自動再開はしない。
+
+コード・仕様・検査結果・小さな実行記録・環境・転送manifest・引き継ぎMDを実験ブランチ `codex/joudaki_vit_battle_0919` に保存。引き継ぎ: https://github.com/Issan0511/lop_analysis/blob/codex/joudaki_vit_battle_0919/specs/HANDOFF_joudaki_vit_battle_0919.md
+
+raw約48.83GiB、Tiny ImageNet展開済み約481MiBとzip約237MiBはGit外に保持。別マシンへの転送は未実施。引き継ぎMDにrsync・ハッシュ検証・新環境検査・再開コマンドを記載した。次はKKA23 seed1 task32。別GPUをまたぐbit一致は保証せず、切替位置と環境を記録する。実験終了・main統合はまだ行わない。
