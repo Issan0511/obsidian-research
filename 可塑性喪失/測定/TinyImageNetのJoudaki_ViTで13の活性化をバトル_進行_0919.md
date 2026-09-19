@@ -59,3 +59,10 @@
 コード・仕様・検査結果・小さな実行記録・環境・転送manifest・引き継ぎMDを実験ブランチ `codex/joudaki_vit_battle_0919` に保存。引き継ぎ: https://github.com/Issan0511/lop_analysis/blob/codex/joudaki_vit_battle_0919/specs/HANDOFF_joudaki_vit_battle_0919.md
 
 raw約48.83GiB、Tiny ImageNet展開済み約481MiBとzip約237MiBはGit外に保持。別マシンへの転送は未実施。引き継ぎMDにrsync・ハッシュ検証・新環境検査・再開コマンドを記載した。次はKKA23 seed1 task32。別GPUをまたぐbit一致は保証せず、切替位置と環境を記録する。実験終了・main統合はまだ行わない。
+
+
+## 方針更新：新マシンでは最初から（2026-09-19、上の途中再開案を置換）
+
+ユーザーとの相談により、新マシンでは全13活性化×seed0–9を最初から実行する。全条件のGPU・実行環境を揃えるため、旧試行18完了run・751 taskの途中データは新本走に混ぜない。旧データは元マシンに保存し、STOPを維持。旧49GiB rawの転送は不要で、データセットのみ再利用する。
+
+引き継ぎMD・README・仕様追補9を更新（commit 3bdefe8）。新マシンで検査後、空のraw/runsからSNA seed0 task1を開始する手順に変更した。旧checkpointからKKA23 seed1 task32へ進める手順は削除。コード・高速化・学習条件・判定はそのまま。新本走はまだ開始していない。
