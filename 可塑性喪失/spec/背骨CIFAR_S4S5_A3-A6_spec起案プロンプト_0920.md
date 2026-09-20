@@ -267,3 +267,12 @@ Codexの主予測: A2下向き優勢 .55、A5第1層全8条件が予測帯内 .5
 ### A2・A5 実装着手（2026-09-20 / Codex）
 
 Issa「とりあえず実装して」によりA2 `drive_cifar_c_0920`・A5 `initgeom_cifar_0920`の実装と検査用seedでの検証を開始。本走GO・Issa本人の数値予測は未記録であり、科学seedは実行していない。A2は100–109のR10で宿主との2課題×400epochの完全一致を検査、A5は100–101で全条件・再開を検査する。A2では宿主clampのz=0微分が1（spec初稿の0は誤記）であるため、宿主を維持する訂正をrepo spec末尾に記録した。検査中の失敗fixtureも保持する。
+
+### A2・A5 実装と検査完了（2026-09-20 / Codex）
+
+Issa「とりあえず実装して」の範囲を完了。科学seedによる本走は開始していない。Issa本人の予測は未記入のまま。
+
+- A2 `drive_cifar_c_0920`: C腕の毎更新・全1200枚による自己/上流/全移動、Adamの十分条件、conf/label/history、較正窓と主判定、epoch保存/再開・失敗fixtureを実装。検査seed100–109、R10、2課題×400epochで無改変宿主のP/m/v/tc・label/batch RNG・既存列がbit一致。13検査項目と最初/最後epoch計4区間の再計算がPASS。観測付き800epochは573.8秒、宿主照合を含む検査全体637.9秒（この検査箱の計時）。実装commit `c66c5ad`、数値修正 `8624c57`、検査結果 `c3871bd`。旧ラベル確率が1に丸められる際のepsilon誤差を合成fixtureで検証して修正し、修正前の失敗状態も退避対象に含めた。
+- A5 `initgeom_cifar_0920`: CPU初期幾何、入力予測の先行保存、厳密な離散中央値予測帯、raw/gamma100 alias、条件付きL2、bias0副診断、seed境界再開を実装。検査seed100–101で全8条件×2層を連続/再開実行し、初期P・予測・応答・raw配列が一致。12検査項目PASS。2seed一巡の実処理は計6.44秒、合成検査と連続/再開を含む全体23.42秒。実装 `e54e08e`、検査 `f1e5ed4`、退避/main `9638c50`。
+
+正本はrepo `results/drive_cifar_c_0920/implementation.json` と `results/initgeom_cifar_0920/implementation.json`、操作手順は各`analysis/<run>/README.md`。git外の検査データ/ログは`obsidian-research-data/<run>/`へサイズ・SHA256付きmanifestで退避。これは実装資格の結果であり、A2の科学判定やA5の未使用20–39seedの予測検証結果ではない。独立監査なし。
