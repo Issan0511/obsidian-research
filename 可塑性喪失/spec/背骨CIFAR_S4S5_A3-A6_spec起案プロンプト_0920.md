@@ -199,3 +199,7 @@ Issa の判断が要る分岐: 幅の揃え方、DF の尺度、L&C の RReLU（
 - **S5 の腕**: A6 だけでは cap1/cap2 の一方に絞れない（ELU/std の主窓は交差項 60%・自己 23%・上流 16.5%）。cap1・cap2・cap12・cap12_bfix の 4 腕を保つ。cap1 の理由づけ「‖µ₂‖ の伸びを抑える」は、上流項の 91% が ‖μ₂‖ の伸びという A6 の R3 と整合するが、主窓では上流項自体が小さい。
 - **再利用の規則**: A6 は元の R=20 で再生した。S4・S5 は R=10 の新規 ref を走らせる方針のまま。
 
+
+## S4・S5 起案済み（2026-09-20・Codex）
+
+IssaがS4→S5の順を採用。S4は `specs/spec_resp_cifar_ee_0920.md`（[273a6bc](https://github.com/Issan0511/lop_analysis/blob/273a6bc/specs/spec_resp_cifar_ee_0920.md)）、S5は `specs/spec_cap_cifar_ee_0920.md`（[f524cac](https://github.com/Issan0511/lop_analysis/blob/f524cac/specs/spec_cap_cifar_ee_0920.md)）としてmainへ統合した。上の「S4・S5のspecはまだ無い」は起案前の状態。現在は設計・予測の登録案で、Issaの設計裁定・予測・実装GO欄を残している。実装・本走は未実施。推奨案と起案文の訂正点は [[中心主張v11作業リスト_0920]] 末尾と各repo specを参照。A3–A5は今回扱っていない。
