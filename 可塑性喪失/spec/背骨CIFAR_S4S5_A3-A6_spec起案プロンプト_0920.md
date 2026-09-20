@@ -276,3 +276,9 @@ Issa「とりあえず実装して」の範囲を完了。科学seedによる本
 - A5 `initgeom_cifar_0920`: CPU初期幾何、入力予測の先行保存、厳密な離散中央値予測帯、raw/gamma100 alias、条件付きL2、bias0副診断、seed境界再開を実装。検査seed100–101で全8条件×2層を連続/再開実行し、初期P・予測・応答・raw配列が一致。12検査項目PASS。2seed一巡の実処理は計6.44秒、合成検査と連続/再開を含む全体23.42秒。実装 `e54e08e`、検査 `f1e5ed4`、退避/main `9638c50`。
 
 正本はrepo `results/drive_cifar_c_0920/implementation.json` と `results/initgeom_cifar_0920/implementation.json`、操作手順は各`analysis/<run>/README.md`。git外の検査データ/ログは`obsidian-research-data/<run>/`へサイズ・SHA256付きmanifestで退避。これは実装資格の結果であり、A2の科学判定やA5の未使用20–39seedの予測検証結果ではない。独立監査なし。
+
+### A2・A5 本走GO（2026-09-20 / Issa→Codex）
+
+Issa「予測このままで実行初めて」「３０分おきとかで監視して」により、登録した推奨設計・予測の内容とCodexの確率を変更せず本走を承認。本人が別の数値確率を提示した記録ではない。A2はseed0–9のR10、主0–4/較正5–9、5課題×400epochをGPUで開始（起動commit `bc81066`、2026-09-20 22:24:17 JST）。A5は未使用seed20–39をローカルの40件のseedメタデータで再確認してCLEAR、CPU全8条件×2層を開始する。起動承認・source/check/specのhashは各`results/<run>/production_authorization.json`、本走出力は各`results/<run>/run/`。監視頻度はこの本走について30分に変更し、既存予測・判定を変更せず、途中の科学的集計を開かない。アプリの同一タスク監視 `a2-a5-30` をACTIVEで作成し、完了・失敗・要対応の変化のみ通知する。A2は全件完了→較正窓commit→主report、A5は全seed完了→reportの順を維持する。
+
+A5起動記録追記: 初回 `be985bb` はsystemdのPATHにrgが無く、seedメタデータ監査の開始時に停止した（科学seedの初期化・応答は未測定）。失敗ログを保持し、launcherだけで検証済みのrgディレクトリをPATHに追加して `04305ad` から再起動。数値計測/判定コード・登録source hash・予測・seedは不変。起動時に改めて既使用seed監査CLEARを確認する。
