@@ -282,3 +282,12 @@ Issa「とりあえず実装して」の範囲を完了。科学seedによる本
 Issa「予測このままで実行初めて」「３０分おきとかで監視して」により、登録した推奨設計・予測の内容とCodexの確率を変更せず本走を承認。本人が別の数値確率を提示した記録ではない。A2はseed0–9のR10、主0–4/較正5–9、5課題×400epochをGPUで開始（起動commit `bc81066`、2026-09-20 22:24:17 JST）。A5は未使用seed20–39をローカルの40件のseedメタデータで再確認してCLEAR、CPU全8条件×2層を開始する。起動承認・source/check/specのhashは各`results/<run>/production_authorization.json`、本走出力は各`results/<run>/run/`。監視頻度はこの本走について30分に変更し、既存予測・判定を変更せず、途中の科学的集計を開かない。アプリの同一タスク監視 `a2-a5-30` をACTIVEで作成し、完了・失敗・要対応の変化のみ通知する。A2は全件完了→較正窓commit→主report、A5は全seed完了→reportの順を維持する。
 
 A5起動記録追記: 初回 `be985bb` はsystemdのPATHにrgが無く、seedメタデータ監査の開始時に停止した（科学seedの初期化・応答は未測定）。失敗ログを保持し、launcherだけで検証済みのrgディレクトリをPATHに追加して `04305ad` から再起動。数値計測/判定コード・登録source hash・予測・seedは不変。起動時に改めて既使用seed監査CLEARを確認する。
+
+### A2・A5 本走完了（2026-09-20 / Codex）
+
+上の実装/本走待ち・実行中の記録を更新する追補。Issaが採用した予測・確率・判定・seedを変更せず、両実験は正常終了した。
+
+- **A2完了** [[CIFAR課題間のAdam駆動_A2_結果_0920]]。R10 seed0–9・5課題×400epoch。全件検証と固定10区間の完全再計算一致を確認し、較正seed5–9の窓（先頭1epoch=75更新）を `757ca4d` でcommitした後に主seed0–4を開いた。主M1xは **NOT_SUPPORTED**（全5seedで下向き条件6.59–9.05% < 上向き17.17–22.31%、登録片側p=1）。M2xはCERTIFICATE_CONSISTENT（違反0）、M3xはBOUNDARY_ENRICHED（境界50.46–57.14% vs 後続6.48–8.94%、片側p=.03125）。実自己S・上流U・全移動の正味総和は全5seed負。条件の頻度と移動量を混同しない。共通Adam分母のconf/labelは巨大な相殺があり、因果効果や寄与率にはしない。旧Cのtask0–2パラメータ180tensorとtask1–2共通列がbit一致（REPORT_ONLY）。主予測の低確率.05のNOT_SUPPORTEDが実現、multiclass Brier=1.365。**「課題間を常時下向きに押す条件が優勢」とは書けず、境界集中と負の収支を分けた限定段落にする。**
+- **A5完了** [[CIFAR初期配置のr予測_A5_結果_0920]]。未使用seed20–39×8条件×2層、訓練なし。第1層raw=.22、std=0、C=0は予測帯内、ダイヤル標本中央値は単調。ただしγ=.75は帯より低く、γ=1.5は高いため **L1_MODEL_MISS**（6/8帯内）。第2層は全8条件で高く **L2_CONDITIONAL_MODEL_MISS**。bias0副診断はCのL2中央値を.12→0へ変え、近似のbias省略という限界と整合するが、単独原因の確定ではない。5登録予測のBrier平均=.1015。初期片側率はLoP自体の検証ではない。
+
+結果commit A2 `cf27046` / A5 `3b5fb93`、最終main統合 `70b292a`。全git外データ・ログ・失敗fixtureは `obsidian-research-data/drive_cifar_c_0920/`（検査込み6,070ファイル・2,712,472,933 bytes）と `initgeom_cifar_0920/`（871ファイル・1,211,592,498 bytes）へ退避し、SHA256/サイズmanifestをcommit。自分のworktreeとローカル/remoteブランチは片付け済み。独立監査なし。正本はrepo各 `results/<run>/interpretation.md` と `report/`。
