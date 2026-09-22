@@ -83,3 +83,5 @@ LR raw は同じ順で top −0.991 / mid1 −0.895 / mid2 −0.729 / low −0.3
 ## 8. 所在
 
 `~/Projects/obsidian-research-data/rl_ledger_posthoc_0922/`: `PREDICTIONS.md`（計算前の予測）・`band_ledger.py`（解析・62 秒・CPU）・`per_task_bands.csv`（21,420 行）・`summary.csv`・`summary.md`（全表）・`basis_diag.json`・`theory_check_codex.md`・`theory_check_prompt.txt`・`SHA256SUMS`。スナップショット本体は `obsidian-research-data/rlcifar_mlp_battle_0918/`。repo は触っていない。
+
+**0922 夜 追記:** 帯別の侵食率を PC ごとに分けると入力分散に対して 5 桁で滑らかに減る（PC 1 −0.96 → PC 1001–1199 −0.09、境目なし）。λ 重みの帳簿では幅（Var z1）の侵食率は −0.90 で、堆積 ∝ V^0.44・侵食 ∝ V^0.61 から σ* ≈ 92 の定常状態が見える → [[RL-CIFAR第1層の幅を広げる者_消し残りと収束後の増幅_事後_0922]] §3・§4。
