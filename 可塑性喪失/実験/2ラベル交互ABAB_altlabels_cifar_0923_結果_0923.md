@@ -120,3 +120,15 @@ LR_iid の t48: next 4,150・C 4,050（比 0.98、SAVINGS_NOT_ESTABLISHED = IID 
 - コード・spec・帳簿・判定: lop_analysis `specs/spec_altlabels_cifar_0923.md`・`src/altlabels_cifar_0923.py`（CLI と fork）・`src/rlcifar_mlp_battle_0918.py`（エンジン、schedule/trace/stop/ckpts 追加）・`analysis/altlabels_cifar_0923/`（launch.py・checks.py 22 検査・ledger.py・report.py・synthetic_checks.py 7 検査）・`results/altlabels_cifar_0923/`（summary.md・verdict.json・ledger/cycle/lags/growth/stop/forks_scored/forks_bands/trace_phases.csv・checks.json・backup_manifest.json）。結果 commit 0a4cbfa、退避 fe28465。
 - 生データ（snap・ckpts・trace・hist・fork 束、4,436 ファイル 14.6 GB、sha256）: `~/Projects/obsidian-research-data/altlabels_cifar_0923/`（`results/altlabels_cifar_0923/backup_manifest.json` で source → backup）。同じフォルダに `spec_review/`（Codex の spec 批評）・`impl_review/`（Codex の実装レビュー、diff 付き）。
 - 理論の前置きと Codex 全文: [[2ラベル交互ABAB_WとV幅の予測_理論解析_0923]]・`obsidian-research-data/rl_altlabels_theory_0923/`。
+
+## 9. 追記 1（0923 朝、Issa の問い「新しいことなどないはずなのになんで伸びてるのか」・trace の 100 更新刻みで読んだ事後）
+
+**伸びの正体は「毎課題 1 回の Adam の暴発」＋「収束後の静かな漂流」で、ラベルの新しさは要らない。** 数値は seed 中央値、trace の n1 = ‖W₁‖²。
+
+- **課題内の形（ABAB t40、2,000 更新ブロックごとの ΔN）**: 58 / 14 / 14 / 14 / 14 / 15 / 15 / 14 / 13 / 8 / 12 / **554** / 1 / 1 / 1。CE は 6e−4 → 9e−9 まで 2,000 更新ごとに ×0.3 で幾何減衰し、**平均 CE が ~1e−8（float32 の分解能 6e−8 の下）に着いた 22,000–24,000 更新目に 1 回だけ暴発**する。暴発の 100–200 更新で CE は 6e−9 → 1.9〜4.8、正解数は 1,200 → 856〜981（2〜3 割を忘れる）、ΔN は +480〜600。その後 ~500 更新で戻る。
+- **課題ごとの内訳（ABAB、hit+500 以降）**: 暴発（100 更新で +100 超）の合計 383（t3）→ 512（t30–40）→ 563（t50）、暴発の位置は 22,700–24,500 更新目で一定、回数 1〜2。静かな漂流は 458（t3）→ 210（t50）と減る。合計 ≈ 760/課題。
+- **IID との差は静かな漂流**: IID の暴発は 360–440（ABAB と同じ大きさ）、静かな漂流が 1,200–2,500（fit が浅く CE が 40 倍高い時間が長い。2k 更新目の CE 2.5e−2 対 6e−4）。
+- **AAAA が凍る理由**: 暴発の引き金は「float32 で残差 1−p が 0 でない画像が 1 枚は要る」。AAAA では余白の中央値が 10 → 27（t10）→ 59（t20）→ 85（t50）と単調に上がり（暴発のたびの再当てはめが余白を押し上げ、リセットが無い）、**t20 以降は課題の全行で CE が厳密に 0.0** → 引き金が来ない → v̂ と m が減衰し切って歩幅 0 → 凍結（ΔN 0.02/課題）。t5–15 は課題の頭から床にいるので 1 課題に 2〜3 回暴発する（t5 は 877）。
+- **切替の役目**: 新しいラベルを書くことではなく、**A の余白を B の間に潰して残差を float32 で見える大きさに戻すこと**。戻れば「幾何減衰 → 床 → 暴発」が毎課題繰り返す。これが「新しいことは無いのに伸びる」の答え。
+- **線形（t² でない）理由**: 暴発の向きは引き金の画像と batch 順で毎回違う（増分は互いにほぼ直交、β_all 0.83）。AAAA の増分だけが全ラグで余弦 +0.8（同じ画像が毎回引き金）。
+- **測っていないこと**: 暴発の 1 更新の歩幅（3η/座標の上限、[[RL-CIFAR第1層の漏れ検査_Adamの三つの歩幅_事後_0922]] の「全座標 3η の一撃」）と、暴発直前の √v̂ が ε 以下に落ちていること。ckpt t39 からの再生で 1 更新ごとに ‖ΔW₁‖・max|ΔW₁|・非零残差の枚数・min √v̂ を記録すれば決まる（未実施）。
