@@ -160,3 +160,7 @@ B の checkpoint から **A と fresh C を同じ重み・Adam 状態で fork** 
 - Codex の全文・プロンプト・コマンド・ログ: `obsidian-research-data/rl_altlabels_theory_0923/`（SHA256SUMS。theory_altlabels_codex.md 35.5 KB）
 - 渡した事実の出典: §0 の 6 ノート＋ `rl_mid2_budget_0922/`・`rl_dims_posthoc_0922/`
 - 走は無い。走ったらこのノートは「事後」ではなく `実験/` に結果ノートを作り、§11 の閾値で採点する
+
+## 追記 1（0923 早朝、走った）
+
+走の結果は [[2ラベル交互ABAB_altlabels_cifar_0923_結果_0923]]。§5 の 3 択は「D は有界・中心 M は IID の 6 割で伸び続ける」で決着（ρ_mid2 0.59 = IID_SCALE_GROWTH、D_j² の傾き ≈ 0）。§6 の Adam だけの帰無 83–124k は AAAA の実測 20.4k（t25 で凍る）に 4〜6 倍外れ。判別量の実測: mid2 C₂ +0.19（閾値 +0.077）、r_top 0.059（閾値 0.064）、comp 4.7/課題、再訪 400 更新（fresh 2,450）、σ 55.2。Brier は Codex 0.173・Claude 0.225。
