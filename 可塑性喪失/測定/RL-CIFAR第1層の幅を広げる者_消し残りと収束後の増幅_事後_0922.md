@@ -166,3 +166,5 @@ elu_growth_0909（PM、none、3 seed、課題 5–120、課題末）の指数: *
 - データ・script・図・Codex 原文: `~/Projects/obsidian-research-data/rl_width_posthoc_0922/`（`ledger/` λ 帳簿、`replay2/` 課題内再生と止める連結、`theory/` Codex、`_mine/` 予測と PC ごとの侵食率、`SHA256SUMS`）。
 - 前段: `obsidian-research-data/rl_leak_posthoc_0922/`・`rl_ledger_posthoc_0922/`。
 - PM の脇検査: `proj_004_drift/results/elu_growth_0909/*_none_s*_rows.csv`（sigma_cur・cnorm、phase=end）。
+
+**0923 追記（訂正を含む）:** 「残滓は固定されている」の検査 → [[残滓は溶接されている_当てはめの前なら外せる_事後_0923]]。**本ノートで引いた「mid2+low を抜くと −31 pt」は古い残滓の担い手性の証拠にならない**（古い分だけなら −16.2 pt）。課題 50 の更新 ΔW は解でなく差分で、top 帯で ΔW だけ残すと帯ごとゼロより悪い（−60.8 対 −53.9）。収束点は残滓の量に対する極小（両側で損失増）だが一次の押し返しは無い。**当てはめの前に抜けば無料どころか速く、抜いた帯は 1 課題では再建されない。**
