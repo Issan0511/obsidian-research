@@ -173,3 +173,24 @@ Codex の監査（[[V11中心主張_沈下機構を主軸にした改稿案_0923
 
 - lop_analysis（ブランチ `claude/sgd_postfit_cifar_0923`、main に統合予定）: `src/rlcifar_mlp_battle_0918.py`（postfit フック）、`src/sgd_postfit_cifar_0923.py`、`analysis/sgd_postfit_cifar_0923/`（analyze・abab_center・checks・score_predictions・posthoc_layers・posthoc_speed_state）、`results/sgd_postfit_cifar_0923/`（verdict.json・abab_center.json・prediction_scores.json・posthoc_layers_speed.txt・theory_check_codex/・各腕の per_task.csv と provenance.json）。
 - 生データ（trace・snap・ckpts・試走・検査・spec 批評）: `~/Projects/obsidian-research-data/sgd_postfit_cifar_0923/`（sha256 の backup_manifest.json）。
+
+## 8. 追記（0923 夜・事後）: 戻りは押しの逆ではない — 交差 fork の切替時点の重みで分解
+
+Issa の問い「示さないといけないのは、なぜ戻りが止まるかというより、なぜ戻りの半分以上も積むのか」。交差 fork のために保存した切替時点の重み（LR_iid、t ∈ {10, 20, 30, 40, 48} × 10 seed）で、押し P = W_end(t) − W_sw(t)（収束後の Adam）と戻り R = W_sw(t+1) − W_end(t)（次の課題の衝撃＋当てはめ＋保持）を、W1 のベクトルとして分けた。`analysis/sgd_postfit_cifar_0923/posthoc_push_return.py`、`results/sgd_postfit_cifar_0923/posthoc_push_return*.{csv,txt}`。数値は 50 組の中央値。
+
+| 量 | 値 |
+|---|---|
+| 押しのノルム増分 = 一次 2⟨W_sw, P⟩ + 二乗 ‖P‖² | +2,269 = 1,440 + 794 |
+| P と W_sw の cos／P のうち W_sw に直交する割合 | 0.14／98% |
+| 戻りのノルム増分 = 古い重みへの一次 2⟨W_sw, R⟩ + 押しへの一次 2⟨P, R⟩ + 自分の二乗 ‖R‖² | −688 = −2,614 − 351 + 2,217 |
+| 戻りが押しのベクトルを打ち消す割合 −⟨P, R⟩/‖P‖²（cos(P, R)） | 0.22（−0.13） |
+| 帯別の打ち消し割合 top / mid1 / mid2 / low / 補空間 | 0.26–0.42 / 0.22–0.27 / 0.15–0.18 / 0.11 / 0.01 |
+| 押しの帯別の分担 top / mid1 / mid2 / low | 9% / 53% / 31% / 6% |
+| 押しの無い対照（W_sw から同じ課題）と比べ、当てはめ後に残る押しのノルム増分の割合 | 0.80（t10 0.84 → t48 0.77、50 組全部で正） |
+| 押しの無い当てはめだけの収支 | +239（t10）→ −878（t48） |
+
+**読み。**
+1. **戻りは押しを狙っていない。** 次の課題の当てはめは、押しとほぼ直交する自分の変位で（cos −0.13）、古い解に対して内向きに働き（−2,614）、自分の変位の二乗を足す（+2,217）。押しのベクトルを打ち消すのは 2 割だけ。
+2. **だから「戻りが半分で止まる」ではなく「当てはめは押しの 8 割を見ない」。** 押しは mid1・mid2 に 84% が落ち、打ち消される割合は入力の見えやすさの順（top 3〜4 割 → 補空間 1%）。帯別帳簿の侵食率の順と同じ。
+3. **押しが無ければ当てはめはほぼ収支ゼロで、後期は減らす側。** F が +346/課題で止まりかけるのと整合。W1 の伸びは「押し × 0.8」で、押しは ‖W1‖ とともに増える（t10 1,651 → t48 2,899）一方、残る割合が少し落ち（0.84 → 0.77）、当てはめだけの収支が負に傾く（+239 → −878）ので、切替をまたいだ正味は 1,650 → 1,390 とほぼ平ら。この 3 つの傾きが釣り合う理由は未導出。
+4. **示すべきこと（言い直し）。** (a) 押しが ‖W‖ に比例して出ること（Adam の歩幅一定＋外向き成分。§4.3）、(b) 次の当てはめが押しの 2 割しか見ないこと（見えやすさ ∝ 入力分散の勾配の作用。帯別帳簿の線形代用モデルの形）、(c) 押しの無い当てはめは収支ゼロ以下（F・SGD 腕）。(b) の機構が本質で、未導出。
