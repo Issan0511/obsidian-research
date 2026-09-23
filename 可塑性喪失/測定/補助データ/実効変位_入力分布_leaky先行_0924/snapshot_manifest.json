@@ -1,0 +1,72 @@
+{
+  "status": "interim results snapshot; full130-series analysis pending",
+  "training_git_hash": "0277e4db04e6d09efd5c9ae9b4992e9289636781",
+  "files": [
+    {
+      "source": "/home/issan/Projects/claude/wt/effdisp_inputscope_0924/results/effdisp_inputscope_0924/non_snake_interim/summary.md",
+      "vault_copy": "可塑性喪失/測定/補助データ/実効変位_入力分布_leaky先行_0924/summary.md",
+      "bytes": 36176,
+      "sha256": "346afb11a2956cc33dc73890ea5d4cc3dc81835ba6f287a7929902d605f0a4cd"
+    },
+    {
+      "source": "/home/issan/Projects/claude/wt/effdisp_inputscope_0924/results/effdisp_inputscope_0924/non_snake_interim/verdict.csv",
+      "vault_copy": "可塑性喪失/測定/補助データ/実効変位_入力分布_leaky先行_0924/verdict.csv",
+      "bytes": 16676,
+      "sha256": "1fb87e275a9dc8bf926dee135a9d46bd73cc8eff3ba2acd93203c11fc53ca73b"
+    },
+    {
+      "source": "/home/issan/Projects/claude/wt/effdisp_inputscope_0924/results/effdisp_inputscope_0924/non_snake_interim/threshold_relation_posthoc.csv",
+      "vault_copy": "可塑性喪失/測定/補助データ/実効変位_入力分布_leaky先行_0924/threshold_relation_posthoc.csv",
+      "bytes": 4183,
+      "sha256": "b167b740d48a65c62b59ee3de844571f1f678999223264ef4115b858e1861345"
+    },
+    {
+      "source": "/home/issan/Projects/claude/wt/effdisp_inputscope_0924/results/effdisp_inputscope_0924/non_snake_interim/threshold_relation_posthoc_groups.csv",
+      "vault_copy": "可塑性喪失/測定/補助データ/実効変位_入力分布_leaky先行_0924/threshold_relation_posthoc_groups.csv",
+      "bytes": 995,
+      "sha256": "0c81a5b5163c85268790c01ba0ab87f97fb5458a85be67065372efd5b7675088"
+    },
+    {
+      "source": "/home/issan/Projects/claude/wt/effdisp_inputscope_0924/results/effdisp_inputscope_0924/non_snake_interim/threshold_components_posthoc.csv",
+      "vault_copy": "可塑性喪失/測定/補助データ/実効変位_入力分布_leaky先行_0924/threshold_components_posthoc.csv",
+      "bytes": 3648,
+      "sha256": "11450397d347ecb47945da06cf475e22fabfdffd401be270275f373b61443735"
+    },
+    {
+      "source": "/home/issan/Projects/claude/wt/effdisp_inputscope_0924/results/effdisp_inputscope_0924/non_snake_interim/original_rlcifar_threshold_posthoc.csv",
+      "vault_copy": "可塑性喪失/測定/補助データ/実効変位_入力分布_leaky先行_0924/original_rlcifar_threshold_posthoc.csv",
+      "bytes": 15374,
+      "sha256": "7f3ba8888b4295f450519b09146fd2a6419a7a14d89e597c29f6eea52082fbbf"
+    },
+    {
+      "source": "/home/issan/Projects/claude/wt/effdisp_inputscope_0924/results/effdisp_inputscope_0924/non_snake_interim/original_rlcifar_plateau_posthoc.csv",
+      "vault_copy": "可塑性喪失/測定/補助データ/実効変位_入力分布_leaky先行_0924/original_rlcifar_plateau_posthoc.csv",
+      "bytes": 3190,
+      "sha256": "6bb713aa051cbe246cb7d9a7e85b8675e31e10cf1c6a389505db35c6bbb75d11"
+    },
+    {
+      "source": "/home/issan/Projects/claude/wt/effdisp_inputscope_0924/results/effdisp_inputscope_0924/non_snake_interim/original_rlcifar_posthoc_provenance.json",
+      "vault_copy": "可塑性喪失/測定/補助データ/実効変位_入力分布_leaky先行_0924/original_rlcifar_posthoc_provenance.json",
+      "bytes": 671,
+      "sha256": "43eb177be878fb2da576c61cd0901dfff91c3c5ba260abf235a49ccf1e1b1392"
+    },
+    {
+      "source": "/home/issan/Projects/claude/wt/effdisp_inputscope_0924/results/effdisp_inputscope_0924/non_snake_interim/prior_conda_sgd_threshold_posthoc.csv",
+      "vault_copy": "可塑性喪失/測定/補助データ/実効変位_入力分布_leaky先行_0924/prior_conda_sgd_threshold_posthoc.csv",
+      "bytes": 987,
+      "sha256": "01b2635ef1deb06c8c9ac9580cc9cf0088a87fa87d2b716dd100dad4a34c429d"
+    },
+    {
+      "source": "/home/issan/Projects/claude/wt/effdisp_inputscope_0924/results/effdisp_inputscope_0924/non_snake_interim/growth_all_mnist.png",
+      "vault_copy": "可塑性喪失/測定/補助データ/実効変位_入力分布_leaky先行_0924/growth_all_mnist.png",
+      "bytes": 152284,
+      "sha256": "41cd3e6191596934f933b268bc2ccc2518d77219c882a7f444374f578f45154e"
+    },
+    {
+      "source": "/home/issan/Projects/claude/wt/effdisp_inputscope_0924/results/effdisp_inputscope_0924/non_snake_interim/growth_all_conda.png",
+      "vault_copy": "可塑性喪失/測定/補助データ/実効変位_入力分布_leaky先行_0924/growth_all_conda.png",
+      "bytes": 254507,
+      "sha256": "e1bba3c2d49e0176f9439adbfcc6b0d78da316bc0216348faa29a99346727a25"
+    }
+  ]
+}
