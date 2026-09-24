@@ -1,0 +1,44 @@
+[
+  {
+    "source": "/home/issan/Projects/obsidian-research-data/effdisp_imagegeom_0924/interim_task30/group_summary.csv",
+    "backup": "/home/issan/Projects/obsidian-research/可塑性喪失/測定/補助データ/実効変位_画像比較_途中task30_0924/group_summary.csv",
+    "bytes": 3364,
+    "sha256": "af5a6a1170963dac809ebce207b71fc8007bb3cbad21500524cc7ef56727fe55"
+  },
+  {
+    "source": "/home/issan/Projects/obsidian-research-data/effdisp_imagegeom_0924/interim_task30/metadata.json",
+    "backup": "/home/issan/Projects/obsidian-research/可塑性喪失/測定/補助データ/実効変位_画像比較_途中task30_0924/metadata.json",
+    "bytes": 1849,
+    "sha256": "502121718e9866eedcb471237de2c9106b40fe0d23546868aa4f8a4cc424dfa9"
+  },
+  {
+    "source": "/home/issan/Projects/obsidian-research-data/effdisp_imagegeom_0924/interim_task30/paired_ratios.csv",
+    "backup": "/home/issan/Projects/obsidian-research/可塑性喪失/測定/補助データ/実効変位_画像比較_途中task30_0924/paired_ratios.csv",
+    "bytes": 27625,
+    "sha256": "9500ed04ffb6c9b80715042211144fc4191325596250dde51d7666ef343f2a0d"
+  },
+  {
+    "source": "/home/issan/Projects/obsidian-research-data/effdisp_imagegeom_0924/interim_task30/series_summary.csv",
+    "backup": "/home/issan/Projects/obsidian-research/可塑性喪失/測定/補助データ/実効変位_画像比較_途中task30_0924/series_summary.csv",
+    "bytes": 8219,
+    "sha256": "83fa3843e72ee86a5e1e304750c6266c21f167741cb716fbeef8207874c11759"
+  },
+  {
+    "source": "/home/issan/Projects/obsidian-research-data/effdisp_imagegeom_0924/interim_task30/task_points.csv",
+    "backup": "/home/issan/Projects/obsidian-research/可塑性喪失/測定/補助データ/実効変位_画像比較_途中task30_0924/task_points.csv",
+    "bytes": 14048,
+    "sha256": "e8a63ea44f2c0dfce3a872e78277d066b21c3bc83edf4f3b27b279343764b21c"
+  },
+  {
+    "source": "/home/issan/Projects/obsidian-research-data/effdisp_imagegeom_0924/interim_task30/training_metadata_at_interim.json",
+    "backup": "/home/issan/Projects/obsidian-research/可塑性喪失/測定/補助データ/実効変位_画像比較_途中task30_0924/training_metadata_at_interim.json",
+    "bytes": 11059,
+    "sha256": "0225ef56000053d17838c9afb10133b62efeefccf79f0b659fc1d121a4e7c943"
+  },
+  {
+    "source": "/home/issan/Projects/obsidian-research-data/effdisp_imagegeom_0924/interim_task30/window_transitions.csv",
+    "backup": "/home/issan/Projects/obsidian-research/可塑性喪失/測定/補助データ/実効変位_画像比較_途中task30_0924/window_transitions.csv",
+    "bytes": 69961,
+    "sha256": "af168e01e2afb1f4ea76f5e3f47b87fbdc1d25abc621e7ad3fed3241e4c21205"
+  }
+]
