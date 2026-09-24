@@ -1,6 +1,6 @@
 # 実効変位 — 隠れ幅 h を振って「容量が余っているから削らない」を因果で決める・予測
 
-状態: 走行中（2026-09-24 11:5x JST 起動、CPU 8 並列、30 系列）。Claude。Issa の依頼「これお願いします」。
+状態: 完走（13:13）→ 結果 [[実効変位_隠れ幅を振っても残留は変わらない_hsweep_rlmnist_0924_結果_0924]]（判定 LOSS_SET）。起動 11:47、CPU、30 系列。Claude。Issa の依頼「これお願いします」。
 親: [[実効変位とWの関係_0924訂正_幅の固定点は観測地平で不成立]] §7・§7.1。登録の正本: lop_analysis `specs/spec_hsweep_rlmnist_0924.md`（commit c7aa07c、sha256 545c1bdb…）、予測 `results/hsweep_rlmnist_0924/PREDICTIONS_claude.md`（sha256 cd1a4036…）。
 
 ## 問い
