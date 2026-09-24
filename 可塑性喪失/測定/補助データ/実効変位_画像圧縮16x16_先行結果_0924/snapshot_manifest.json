@@ -1,0 +1,92 @@
+[
+  {
+    "source": "/home/issan/Projects/obsidian-research-data/effdisp_imagegeom_0924/priority_avg16/analysis/audit.json",
+    "backup": "/home/issan/Projects/obsidian-research/可塑性喪失/測定/補助データ/実効変位_画像圧縮16x16_先行結果_0924/audit.json",
+    "bytes": 917,
+    "sha256": "6b78a4c0ccf5acad04ee7e68f6b708ed8146eb0297513f6e632e563f94639654"
+  },
+  {
+    "source": "/home/issan/Projects/obsidian-research-data/effdisp_imagegeom_0924/priority_avg16/analysis/checkpoint_pairs.csv",
+    "backup": "/home/issan/Projects/obsidian-research/可塑性喪失/測定/補助データ/実効変位_画像圧縮16x16_先行結果_0924/checkpoint_pairs.csv",
+    "bytes": 18720,
+    "sha256": "a29426e389aacdabee68174592cf83188b9fe0af1d9e09d921a21a9c300d5321"
+  },
+  {
+    "source": "/home/issan/Projects/obsidian-research-data/effdisp_imagegeom_0924/priority_avg16/analysis/checkpoint_points.csv",
+    "backup": "/home/issan/Projects/obsidian-research/可塑性喪失/測定/補助データ/実効変位_画像圧縮16x16_先行結果_0924/checkpoint_points.csv",
+    "bytes": 8913,
+    "sha256": "9347c86fb207873805f1260d291b6455fcb2539d9b6a87b557e8ee95cd3b4cd7"
+  },
+  {
+    "source": "/home/issan/Projects/obsidian-research-data/effdisp_imagegeom_0924/priority_avg16/analysis/covstats.csv",
+    "backup": "/home/issan/Projects/obsidian-research/可塑性喪失/測定/補助データ/実効変位_画像圧縮16x16_先行結果_0924/covstats.csv",
+    "bytes": 1590,
+    "sha256": "e6654bee636f4ac2895af337b575ee7ec48f619c781d5c53c9676b8b1a5b5758"
+  },
+  {
+    "source": "/home/issan/Projects/obsidian-research-data/effdisp_imagegeom_0924/priority_avg16/analysis/matched_inputs.csv",
+    "backup": "/home/issan/Projects/obsidian-research/可塑性喪失/測定/補助データ/実効変位_画像圧縮16x16_先行結果_0924/matched_inputs.csv",
+    "bytes": 1474,
+    "sha256": "8be2a76b70836c17c4c9586e46cefb429fff2520e623692643cb15d7aece2047"
+  },
+  {
+    "source": "/home/issan/Projects/obsidian-research-data/effdisp_imagegeom_0924/priority_avg16/analysis/metadata.json",
+    "backup": "/home/issan/Projects/obsidian-research/可塑性喪失/測定/補助データ/実効変位_画像圧縮16x16_先行結果_0924/metadata.json",
+    "bytes": 3282,
+    "sha256": "504c36e042513314a037483216910588aa1b3d1f729ac9708c065cc206c9fcbe"
+  },
+  {
+    "source": "/home/issan/Projects/obsidian-research-data/effdisp_imagegeom_0924/priority_avg16/analysis/p_groups.csv",
+    "backup": "/home/issan/Projects/obsidian-research/可塑性喪失/測定/補助データ/実効変位_画像圧縮16x16_先行結果_0924/p_groups.csv",
+    "bytes": 408,
+    "sha256": "c05d752aba15ef422b36aaa0abb3bd59c5ff99d700ebd90d041d67426ed633a5"
+  },
+  {
+    "source": "/home/issan/Projects/obsidian-research-data/effdisp_imagegeom_0924/priority_avg16/analysis/paired_avg16_over_rgb32.csv",
+    "backup": "/home/issan/Projects/obsidian-research/可塑性喪失/測定/補助データ/実効変位_画像圧縮16x16_先行結果_0924/paired_avg16_over_rgb32.csv",
+    "bytes": 19714,
+    "sha256": "ac91e5a2814ad85c16c76af3bb13fc727ed6fb71793190048008542cd26737df"
+  },
+  {
+    "source": "/home/issan/Projects/obsidian-research-data/effdisp_imagegeom_0924/priority_avg16/analysis/paired_groups.csv",
+    "backup": "/home/issan/Projects/obsidian-research/可塑性喪失/測定/補助データ/実効変位_画像圧縮16x16_先行結果_0924/paired_groups.csv",
+    "bytes": 7085,
+    "sha256": "a9177aae3a4b713db05e9858587f49a3375b47324b9631faba28efb7a1f5e748"
+  },
+  {
+    "source": "/home/issan/Projects/obsidian-research-data/effdisp_imagegeom_0924/priority_avg16/analysis/projection_variance.csv",
+    "backup": "/home/issan/Projects/obsidian-research/可塑性喪失/測定/補助データ/実効変位_画像圧縮16x16_先行結果_0924/projection_variance.csv",
+    "bytes": 1135,
+    "sha256": "e671891d6201dd064da635e5c90441091783c1b8052d79daf34f2e0f39130b03"
+  },
+  {
+    "source": "/home/issan/Projects/obsidian-research-data/effdisp_imagegeom_0924/priority_avg16/analysis/seed_summary.csv",
+    "backup": "/home/issan/Projects/obsidian-research/可塑性喪失/測定/補助データ/実効変位_画像圧縮16x16_先行結果_0924/seed_summary.csv",
+    "bytes": 6948,
+    "sha256": "f562700de9a9957ca3e720b03bd5dae887a4edd94d7211b69982c529ad595737"
+  },
+  {
+    "source": "/home/issan/Projects/obsidian-research-data/effdisp_imagegeom_0924/priority_avg16/analysis/spectrum.csv",
+    "backup": "/home/issan/Projects/obsidian-research/可塑性喪失/測定/補助データ/実効変位_画像圧縮16x16_先行結果_0924/spectrum.csv",
+    "bytes": 347407,
+    "sha256": "461d8cabff42cdd750acf780e7887fd4be9ac9cbba7813b41b069c8ad5ea869b"
+  },
+  {
+    "source": "/home/issan/Projects/obsidian-research-data/effdisp_imagegeom_0924/priority_avg16/analysis/summary.md",
+    "backup": "/home/issan/Projects/obsidian-research/可塑性喪失/測定/補助データ/実効変位_画像圧縮16x16_先行結果_0924/summary.md",
+    "bytes": 5012,
+    "sha256": "969a19d6dc091668e1413125eb60dbc0ba083a3b22e7b5d7a49a319f0b705bf7"
+  },
+  {
+    "source": "/home/issan/Projects/obsidian-research-data/effdisp_imagegeom_0924/priority_avg16/analysis/transitions.csv",
+    "backup": "/home/issan/Projects/obsidian-research/可塑性喪失/測定/補助データ/実効変位_画像圧縮16x16_先行結果_0924/transitions.csv",
+    "bytes": 815180,
+    "sha256": "bddd4e46b072843f3c93a5ee20cfcce828209862fd8614a271ead6d7200b2519"
+  },
+  {
+    "source": "/home/issan/Projects/obsidian-research-data/effdisp_imagegeom_0924/priority_avg16/analysis/windows.csv",
+    "backup": "/home/issan/Projects/obsidian-research/可塑性喪失/測定/補助データ/実効変位_画像圧縮16x16_先行結果_0924/windows.csv",
+    "bytes": 10220,
+    "sha256": "7047d592abead04d9ba1c6ed954d6c8649f8186bf330464cd20dcc453a3c3b45"
+  }
+]
