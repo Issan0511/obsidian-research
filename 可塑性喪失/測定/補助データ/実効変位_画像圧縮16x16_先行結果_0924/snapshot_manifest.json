@@ -88,5 +88,35 @@
     "backup": "/home/issan/Projects/obsidian-research/可塑性喪失/測定/補助データ/実効変位_画像圧縮16x16_先行結果_0924/windows.csv",
     "bytes": 10220,
     "sha256": "7047d592abead04d9ba1c6ed954d6c8649f8186bf330464cd20dcc453a3c3b45"
+  },
+  {
+    "source": "/home/issan/Projects/obsidian-research-data/effdisp_imagegeom_0924/priority_avg16/analysis/width_normalization_posthoc.csv",
+    "backup": "/home/issan/Projects/obsidian-research/可塑性喪失/測定/補助データ/実効変位_画像圧縮16x16_先行結果_0924/width_normalization_posthoc.csv",
+    "bytes": 4502,
+    "sha256": "d8378d50883dad8ed1791743763921e50a066a2285dd542afc55aa96ad3203bc"
+  },
+  {
+    "source": "/home/issan/Projects/obsidian-research-data/effdisp_imagegeom_0924/priority_avg16/analysis/width_normalization_posthoc_groups.csv",
+    "backup": "/home/issan/Projects/obsidian-research/可塑性喪失/測定/補助データ/実効変位_画像圧縮16x16_先行結果_0924/width_normalization_posthoc_groups.csv",
+    "bytes": 782,
+    "sha256": "f14b000277c2625c6d161386a87d4a6778f9ad80ba8a8a681874c8a67fe03bbb"
+  },
+  {
+    "source": "/home/issan/Projects/obsidian-research-data/effdisp_imagegeom_0924/priority_avg16/analysis/width_normalization_posthoc_definitions.json",
+    "backup": "/home/issan/Projects/obsidian-research/可塑性喪失/測定/補助データ/実効変位_画像圧縮16x16_先行結果_0924/width_normalization_posthoc_definitions.json",
+    "bytes": 825,
+    "sha256": "a09ec5a9ef7d27b3873d1fee031833d04beac8c49841e6c11a1c279a8d1f92d5"
+  },
+  {
+    "source": "/home/issan/Projects/obsidian-research-data/effdisp_imagegeom_0924/priority_avg16/analysis/width_normalization_posthoc_audit.json",
+    "backup": "/home/issan/Projects/obsidian-research/可塑性喪失/測定/補助データ/実効変位_画像圧縮16x16_先行結果_0924/width_normalization_posthoc_audit.json",
+    "bytes": 838,
+    "sha256": "94fd6aaa349617b1756c38ac5d7b94dc24ef8e75262409abb3e88c9557dba313"
+  },
+  {
+    "source": "/home/issan/Projects/obsidian-research-data/effdisp_imagegeom_0924/priority_avg16/analysis/reproduce_width_normalization_posthoc.py",
+    "backup": "/home/issan/Projects/obsidian-research/可塑性喪失/測定/補助データ/実効変位_画像圧縮16x16_先行結果_0924/reproduce_width_normalization_posthoc.py",
+    "bytes": 3426,
+    "sha256": "d5a79189cf651024fd03027956b51727b2e2d9a6affe800bfd29bf458a982e08"
   }
 ]
