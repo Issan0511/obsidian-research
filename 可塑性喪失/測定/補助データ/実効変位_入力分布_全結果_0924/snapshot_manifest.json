@@ -1,0 +1,59 @@
+{
+  "note": "Frozen full130 result snapshot. Inputscope raw states remain in obsidian-research-data; all result figures and transitions are in the code repository.",
+  "files": [
+    {
+      "source": "/home/issan/Projects/claude/wt/effdisp_inputscope_0924/results/effdisp_inputscope_0924/summary.md",
+      "backup": "/home/issan/Projects/obsidian-research/可塑性喪失/測定/補助データ/実効変位_入力分布_全結果_0924/summary.md",
+      "bytes": 63084,
+      "sha256": "57234a393d33e26c35e4ea42347f1c52fab21ad1c490dbc1700f7f54f4864cd8"
+    },
+    {
+      "source": "/home/issan/Projects/claude/wt/effdisp_inputscope_0924/results/effdisp_inputscope_0924/verdict.csv",
+      "backup": "/home/issan/Projects/obsidian-research/可塑性喪失/測定/補助データ/実効変位_入力分布_全結果_0924/verdict.csv",
+      "bytes": 35152,
+      "sha256": "55173a686ef0380ca9fc72cbf06d5453d52c5894f36ba26c1a44b9b0ffb2c208"
+    },
+    {
+      "source": "/home/issan/Projects/claude/wt/effdisp_inputscope_0924/results/effdisp_inputscope_0924/seed_summary.csv",
+      "backup": "/home/issan/Projects/obsidian-research/可塑性喪失/測定/補助データ/実効変位_入力分布_全結果_0924/seed_summary.csv",
+      "bytes": 510293,
+      "sha256": "b63e98957a760b653e298ed1da0f56343fdc516015895aa4b20ef3dec6314231"
+    },
+    {
+      "source": "/home/issan/Projects/claude/wt/effdisp_inputscope_0924/results/effdisp_inputscope_0924/paired_group.csv",
+      "backup": "/home/issan/Projects/obsidian-research/可塑性喪失/測定/補助データ/実効変位_入力分布_全結果_0924/paired_group.csv",
+      "bytes": 3345521,
+      "sha256": "6bacd237032254b9563ae9d09c8ab3cd4a46801d4ec02f3150fb28c2d46f3265"
+    },
+    {
+      "source": "/home/issan/Projects/claude/wt/effdisp_inputscope_0924/results/effdisp_inputscope_0924/group_stats.csv",
+      "backup": "/home/issan/Projects/obsidian-research/可塑性喪失/測定/補助データ/実効変位_入力分布_全結果_0924/group_stats.csv",
+      "bytes": 762462,
+      "sha256": "5462d8ff09cc547b9a55978c47a314b95250c531ce9fb6cb0383faca3b0df8d4"
+    },
+    {
+      "source": "/home/issan/Projects/claude/wt/effdisp_inputscope_0924/results/effdisp_inputscope_0924/completion.csv",
+      "backup": "/home/issan/Projects/obsidian-research/可塑性喪失/測定/補助データ/実効変位_入力分布_全結果_0924/completion.csv",
+      "bytes": 67659,
+      "sha256": "862745224276777ec713b51a7d77f512ab9d571bbde22f3b868e6be2dc2df4c7"
+    },
+    {
+      "source": "/home/issan/Projects/claude/wt/effdisp_inputscope_0924/results/effdisp_inputscope_0924/analysis_provenance.json",
+      "backup": "/home/issan/Projects/obsidian-research/可塑性喪失/測定/補助データ/実効変位_入力分布_全結果_0924/analysis_provenance.json",
+      "bytes": 1514,
+      "sha256": "e66564ef424393427a271cf5e8016d60025a40e080c5e1a8dad0807331274dfe"
+    },
+    {
+      "source": "/home/issan/Projects/claude/wt/effdisp_inputscope_0924/results/effdisp_inputscope_0924/growth_all_mnist.png",
+      "backup": "/home/issan/Projects/obsidian-research/可塑性喪失/測定/補助データ/実効変位_入力分布_全結果_0924/growth_all_mnist.png",
+      "bytes": 380997,
+      "sha256": "748651795fc33aee02086d2f3bc2892ea34d11b2ab8a0ee04d9dbccad563d925"
+    },
+    {
+      "source": "/home/issan/Projects/claude/wt/effdisp_inputscope_0924/results/effdisp_inputscope_0924/balance_all_mnist.png",
+      "backup": "/home/issan/Projects/obsidian-research/可塑性喪失/測定/補助データ/実効変位_入力分布_全結果_0924/balance_all_mnist.png",
+      "bytes": 252929,
+      "sha256": "5bc143c60dc68b3e4dcee7a0edcc31c74beef4cb73fe4c32bd326ce4b1c28597"
+    }
+  ]
+}
