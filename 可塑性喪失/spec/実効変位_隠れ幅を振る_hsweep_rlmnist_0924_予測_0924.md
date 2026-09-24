@@ -57,6 +57,7 @@ Claude と Codex は数値がほぼ同じ（f_10 の列は .35/.42/.50/.55/.58/.
 
 - 最初の起動（11:47）は runner の登録検査（seed を 1 本ずつ渡す起動を弾いた）で 30 本とも即失敗、出力なし。検査を「登録 seed の部分集合」に直して commit（63746e0）し、11:5x に起動し直した。予測・spec は変えていない。
 - Codex への最初の依頼は stdin 待ちで止まった疑いがあり、scratchpad から仕切り直した。
+- 12:00: 最初の launcher の 8 枠のうち 5 枠を h=300（1 課題 2 分強）が占めて小さい h の腕が後回しになるので、STOP ファイルで最初の launcher の残りの列を止め、残り 22 系列を第 2 の launcher（`analysis/hsweep_rlmnist_0924/launch_remaining.sh`、6 並列、同じ commit 63746e0）で起動した。走の中身・spec・予測は同じ。
 
 ## 所在
 
