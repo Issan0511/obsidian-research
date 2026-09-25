@@ -90,3 +90,5 @@
 - 写し: [[箱AでLoPが起きる理由_幅の爪車から容量まで_先生Session43_0925]]（原文のまま・写しの注つき）。先生の script・json はすべて先生のマシン上（`~/project/Nakatsuka/claude/hole1_scripts/session43_*`）。
 - 初期化の照合: `obsidian-research-data/zero_attraction_0913/training/ckpts/LR_a0p1_q0_step0.pt`（10 seed）を読んだだけ。走ゼロ。
 - 本稿の condA 登録結果: [[命題1-5_上端則結果_0905]]・repo `results/coupling_fbw_0813`・`results/fullbatch_0812`・[[φ′収縮の局所式と全網の補償_結果_0918]]。
+
+- 0925 夕: §2.2 の切替の押しのスケッチと「p⁺ の単調減少」「平均ゲート → 0」の理論検証（Codex 独立レビュー・反例 2 件）と 1 層の走は [[切替の押しの符号とp⁺の単調減少_理論検証と1層の走_0925]]。向き S_i > 0 は導出不可で実測 95〜99%（leaky 7 割・床が切替の押しにも入る）。
