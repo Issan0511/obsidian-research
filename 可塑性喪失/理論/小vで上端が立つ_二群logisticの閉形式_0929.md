@@ -63,3 +63,5 @@ Adam32腕の負の対照では、真ELUの10⁻¹²程度の生勾配でもε=0�
 - [真ELUの図](https://github.com/Issan0511/lop_analysis/blob/f2ea4e8e53de6ec872c6aa578aabe0b82d1339a0/results/two_group_logistic_0929/exact_mechanism.png)
 
 spec・コード・CSV・検算・実行時hashを同commitのmainに保存。元CSV改行をLFへ統一する前のbytesと生ログは obsidian-research-data/two_group_logistic_0929 に保存し、backup_manifest.jsonから追跡できる。
+
+- 検証（Claude・0929 夕）: [[ELUを縮める_α梯子_1層200課題と理論_0925]] §8.44。数式は独立に検算して一致。実網で出力 logit を固定すると、負側の帯は log(1/v) のずれで一致（±0.1）、正側は v を大きくする向きだけ一致。v 0.1 倍では開く入力が写像の約 5 倍（89% が深部から）で、上端の伸びは 7.4（写像 10）。補いの量は 1 unit の模型の外。
