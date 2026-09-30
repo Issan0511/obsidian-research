@@ -1,6 +1,6 @@
 # 沈降の根を分ける走 sink_roots_0930 — 追補 1〜6 と R7 の結果（0930）
 
-親: [[沈降の根を分ける走_sink_roots_0930_結果_0930]]（本編。R3・R5・R9・R11a）/ 依頼元: [[本稿と理論のすり合わせ_導出が要る場所_0930]]（本体セッション「ELUが沈降しない事件」が導出を担当し、走をこのセッション（fork2）に依頼）/ repo: lop_analysis `claude/sink_roots_0930`（spec は `specs/spec_sink_roots_0930_round{1,1b,2,3,4,5,6}.md`・`spec_sink_roots_0930_R7_gpu.md`）/ 状態: **依頼された走は R11b（5+1 CIFAR、CIFAR-100 の取得の許可待ち）を除いて全部済み** / 更新: 2026-09-30 / Claude（fork2）
+親: [[沈降の根を分ける走_sink_roots_0930_結果_0930]]（本編。R3・R5・R9・R11a）/ 依頼元: [[本稿と理論のすり合わせ_導出が要る場所_0930]]（本体セッション「ELUが沈降しない事件」が導出を担当し、走をこのセッション（fork2）に依頼）/ repo: lop_analysis `claude/sink_roots_0930`（spec は `specs/spec_sink_roots_0930_round{1,1b,2,3,4,5,6}.md`・`spec_sink_roots_0930_R7_gpu.md`）/ 状態: **依頼された走は全部済み**（R11b は本編 §7） / 更新: 2026-09-30 / Claude（fork2）
 格: **[登録]** 走の前に判定を固定（予言は依頼の原文のまま specs/ に写した）、**[記述]** 判定しない量、**[事後]** 結果を見てからの読み。予言の多くは本体の導出役・反証役・改訂役のもので、Claude の予言ではない。
 
 ## 0. 要点
@@ -151,5 +151,5 @@ spec_postfit_elu_cifar_0924 を登録元の形（GPU、R = 10、CUDA graph）で
 
 ## 11. 所在
 
-- repo: lop_analysis `claude/sink_roots_0930`（main への統合は CLAUDE.md §4 の片付けのとき）。要約 `results/sink_roots_0930/`（round1_*・round1b_wcap・round2_*・round3_*・round4_*・round5_*・round6_analysis・R7gpu_*）、集計 `analysis/sink_roots_0930/`、エンジン `src/sink_roots_mnist_0930.py`、写し `src/sink_roots_round{2,3,4,6}/`。
+- repo: lop_analysis main（661f83c で統合、branch と worktree は片付け済み）。要約 `results/sink_roots_0930/`（round1_*・round1b_wcap・round2_*・round3_*・round4_*・round5_*・round6_analysis・R7gpu_*）、集計 `analysis/sink_roots_0930/`、エンジン `src/sink_roots_mnist_0930.py`、写し `src/sink_roots_round{2,3,4,6}/`。
 - 生データ: `obsidian-research-data/sink_roots_0930/{mnist,round1,…,round6,r7gpu}/`。G5 の毎課題の状態は `mnist/G5age_<act>_s<seed>/state_before_tXXX.npz`（本体が f_k を出す）。
