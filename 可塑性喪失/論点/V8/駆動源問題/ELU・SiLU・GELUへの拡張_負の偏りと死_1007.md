@@ -103,3 +103,10 @@ leaky の鎖では、期待の押しに安定な釣り合いは無く、止ま�
 - 計算（同フォルダ） `silu_sigma.py`・`real_states.py`・`revision1_checks.py`（出力 `revision1_checks.out`）。
 - 実状態の全 unit `obsidian-research-data/push_direction_proof_0930/review/stage4_1002/block_1003/stage16_1008_silu_sigma/real_states.csv`（改訂前は `real_states_v1.csv`）。
 - 反証役（Opus）の検算 `obsidian-research-data/push_direction_proof_0930/review/stage4_1002/block_1003/stage16_1008_silu_sigma/verify_1/`（v1〜v11: 定数・乱択の十分条件・ガウスの格子と細格子・mpmath・実状態の再計算・SC2・敵対分布・valley_long）。
+
+### 7.1 自己項の向きからの手の導出（Fable・1008・Issa の問いへの答え）
+Issa「負側の遠くで φ が 0 へ戻るなら自己項の向きで見ればむしろ示しやすいはず」。自己形（段 0）ではそのとおり:
+- **段 0 [厳密・K 一定・分布によらず]**: E[φ′φ] = ½E[(φ²)′] で、深い側 D は 1 点ごとに沈める側（φ < 0・φ′ ≤ 0）、浮かせるのは帯 B = [−t₀, 0) だけ。開いた側は φφ′ ≥ z/4。よって E[φ′φ] ≥ ¼E[z₊] − M_B·β（M_B = max_B|φφ′| = 0.0495 SiLU・0.0309 GELU、β = P(B)）。
+- **段 1 [厳密・K 一定・分布によらず]**: 対の恒等式 Cov(φ′, φ) = ½E[(Δφ′)(Δφ)] で、負になる対は「谷をまたぐ対」(D, B)（≥ −M_B）と「谷の壁」(D, D₂)（≥ −κ_DD = 0.0126・0.0112）と (O, O) の行き過ぎ（≥ −c_O|Δz|、c_O = 0.103・0.134）だけ。足すと Cov ≥ (¼d − c_O p)E[z₊] − M_B d β − κ_DD d d₂。十分条件は「開いた側の 1 次モーメント E[z₊] が帯と壁の質量を上回る」形で、幅 σ は入らない。三点分布の反例（E[z₊] 0.002 対 β 0.2）はこれを破る。ガウスではこの粗い下界でも σ ≥ 1.2〜3.0（SiLU, r = −1〜−3）・0.8〜1.9（GELU）で正。判定には SC1（§7）の方が鋭い。
+- **ガウスの仮定**: 置いてよい（[ガウス] の格・整流型の段 2 と同じ）が、買えるのは σ ≥ 0.87・0.53 の数値の向きまで。実状態の文は状態ごとの条件の方が強いので V12 v5.2 の形を変えない。
+- 記録 `obsidian-research-data/push_direction_proof_0930/review/stage4_1002/block_1003/stage16_1008_silu_sigma/fable/FABLE_VALLEY.md`（導出・定数の表・min k の表）、`derive.py`・`check2.py`（20,000 分布で段 0・段 1 の下界とも違反 0）。
