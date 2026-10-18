@@ -1,6 +1,6 @@
 # neokunekune_cifar5p1_cnn_1018 — 実ラベル5+1 CIFARでの損失ゲートSnake
 
-状態：**実行前spec v1・実装／学習未実施**。2026-10-18、Codex。
+状態：**実行済み（2026-10-18）。登録判定 D1 `INCONCLUSIVE`・D2 `INFERIOR_TO_FREEZE`。結果は [[Neokunekune_5p1CNN_結果_1018]]**。起草 2026-10-18、Codex。
 
 登録正本：[lop_analysis / spec_neokunekune_cifar5p1_cnn_1018.md（commit 0250b361）](https://github.com/Issan0511/lop_analysis/blob/0250b361/specs/spec_neokunekune_cifar5p1_cnn_1018.md)。本ノートは登録本文の閲覧用写し。結果後の改変はせず、変更は追補で記録する。
 依頼：Issa「まずは実践投入かな」→5+1 CIFARのCNNを第一候補として提案→「spec書いて」。
