@@ -1,6 +1,6 @@
 # Neokunekune の手法比較 12 腕（実ラベル 5+1 CIFAR の CNN）— spec 案 1018
 
-状態: **案（未登録）。Issa の承認のあと、lop_analysis の `specs/` に commit して登録し、それから実装・較正・本走に進む。**
+状態: **Issa が承認（2026-10-18 夜）し、lop_analysis に登録済み（`specs/spec_neokunekune_methods_cifar5p1_cnn_1018.md`、commit `170beea5`）。実装 `3b8ce017`・検査と smoke `188f84eb` のあと、較正・本走を実行中。** 本ノートは承認時の案で、登録版は実装の細部（格子の同点の順序・ReDo の手順・束の組み方）を足したもの。
 起草: 2026-10-18 夜、Claude（Opus 5.5）。発端: Codex の 12 腕案（Issa 経由で転送）。
 前段: [[Neokunekune_5p1CNN_結果_1018]]（登録 [[Neokunekune_5p1CNN_spec_1018]]）。前段は「損失ゲートの効果」の検証として閉じた。
 
