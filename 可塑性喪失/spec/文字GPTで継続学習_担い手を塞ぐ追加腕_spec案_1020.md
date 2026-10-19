@@ -1,6 +1,6 @@
 # 文字 GPT で継続学習：担い手を塞ぐ追加腕（spec 案 1020）
 
-状態：**案・未登録・Issa の承認待ち**。走らせていない。/ 2026-10-20 未明、Claude（Opus 5.5）。予測は Neokunekune のセッションと相談して作った（Issa「寝るので予測は Neokunekune CIFAR5p1 CNN spec と相談して作って」）。
+状態：**登録済み・white-san で実行中**（2026-10-20）。**登録（2026-10-20、Issa「そのまま無許可で2つ目を回してください」）。** 予測（§4）と主な量（§3）はこの時点で凍結する。追加腕は white-san（RTX 5060 Ti）で seed 0 から回す。主比較の C3・B3 は別マシンの本走と seed で対応させる（データ列はビット一致、違うのは GPU の丸めだけ）。seed 0・1 は white-san の C3・B3（crosscheck_white-san）とも比べ、マシン違いの影響の大きさを見る。機構の族（B3H 対 B3HB）は両方 white-san なので同じ GPU の中で比べる。/ 2026-10-20 未明、Claude（Opus 5.5）。予測は Neokunekune のセッションと相談して作った（Issa「寝るので予測は Neokunekune CIFAR5p1 CNN spec と相談して作って」）。
 親：[[文字GPTで継続学習_乱数マルコフ言語と窓の乱数ラベル_設計案_1019]]（本 spec v1.1。この案は repo の追補 3 と同じ内容で、v1.1 の判定は変えない）。
 根拠：[[文字GPTで継続学習_先行seed0_暫定_1020]] の「事後解析 1」。実装は lop_analysis のブランチ `claude/chargpt_cl_1019` の `src/chargpt_cl_1019_center.py`（本走のモジュールは書き換えない）。
 
