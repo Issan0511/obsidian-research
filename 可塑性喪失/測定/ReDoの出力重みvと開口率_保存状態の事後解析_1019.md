@@ -39,3 +39,7 @@ v=0の直後は本人のincoming損失勾配も0。新課題を直す向きにv�
 ![vの大きさと開口率](/home/issan/Projects/obsidian-research-data/redo_v_opening_1019/exports/v_and_opening.png)
 
 実験repo mainの保存commit: `222758ab`（push成功確認済み）。生配列と読みやすい報告の写し: `/home/issan/Projects/obsidian-research-data/redo_v_opening_1019/`。元の再現走の配列は変更していない。
+
+## 1019追補：初回リセットへの因果介入が完了
+
+[[ReDoのvリセットと正の片側化_因果対照とFable検証_1019]]に、Fableと検討した9条件・20 paired seedの結果を保存した。第3課題50更新時の初回交換群で、vをゼロから旧normの独立ランダム方向へ変えると、p≥0.99個体の割合は88.14%→28.49%、第3課題onlineは62.94%→65.90%。v初期化の因果効果は支持された。一方、平均入力の座標変更と乱択対照では片側化と成績が解離し、片側化による性能媒介は未同定。今回の相関の記録と新規介入の証拠を区別する。数値正本: `results/redo_v_causal_1019/summary.md`、結果commit `f838d7ff`（main反映確認）。
