@@ -1,6 +1,6 @@
 # 文字 GPT で継続学習：担い手を塞ぐ追加腕（spec 案 1020）
 
-状態：**登録済み・white-san で実行中**（2026-10-20）。**登録（2026-10-20、Issa「そのまま無許可で2つ目を回してください」）。** 予測（§4）と主な量（§3）はこの時点で凍結する。追加腕は white-san（RTX 5060 Ti）で seed 0 から回す。主比較の C3・B3 は別マシンの本走と seed で対応させる（データ列はビット一致、違うのは GPU の丸めだけ）。seed 0・1 は white-san の C3・B3（crosscheck_white-san）とも比べ、マシン違いの影響の大きさを見る。機構の族（B3H 対 B3HB）は両方 white-san なので同じ GPU の中で比べる。/ 2026-10-20 未明、Claude（Opus 5.5）。予測は Neokunekune のセッションと相談して作った（Issa「寝るので予測は Neokunekune CIFAR5p1 CNN spec と相談して作って」）。
+状態：**登録済み・一時停止中**（2026-10-20 08:00 ごろ、seed 2 の C3H まで完走。Issa の指示で GPU を 5+1 MLP の 10 倍予算の検証に回した。再開の手順は末尾の「一時停止と再開」）。**登録（2026-10-20、Issa「そのまま無許可で2つ目を回してください」）。** 予測（§4）と主な量（§3）はこの時点で凍結する。追加腕は white-san（RTX 5060 Ti）で seed 0 から回す。主比較の C3・B3 は別マシンの本走と seed で対応させる（データ列はビット一致、違うのは GPU の丸めだけ）。seed 0・1 は white-san の C3・B3（crosscheck_white-san）とも比べ、マシン違いの影響の大きさを見る。機構の族（B3H 対 B3HB）は両方 white-san なので同じ GPU の中で比べる。/ 2026-10-20 未明、Claude（Opus 5.5）。予測は Neokunekune のセッションと相談して作った（Issa「寝るので予測は Neokunekune CIFAR5p1 CNN spec と相談して作って」）。
 親：[[文字GPTで継続学習_乱数マルコフ言語と窓の乱数ラベル_設計案_1019]]（本 spec v1.1。この案は repo の追補 3 と同じ内容で、v1.1 の判定は変えない）。
 根拠：[[文字GPTで継続学習_先行seed0_暫定_1020]] の「事後解析 1」。実装は lop_analysis のブランチ `claude/chargpt_cl_1019` の `src/chargpt_cl_1019_center.py`（本走のモジュールは書き換えない）。
 
@@ -134,3 +134,19 @@ Neokunekune のセッションの依頼（1020 早朝）で起案した。走ら
 - **C3P のほうが、2 つの読みをきれいに分ける。** 担い手を塞いだまま、非定常性だけを課題の頭の 100 更新に限るからである。C3F は依頼どおりの形で、担い手の大きさと学ぶ力を課題ごとに並べると (a) の用量反応が見える。
 - どちらも本走と同じ箱 M・seed 0〜9・C3 と seed で対応させる。費用は 1 腕 10 seed で約 7 時間。
 - 予測は、Issa の判断のあとで、走る前に記名する。
+
+## 一時停止と再開（引き渡しメモ、1020 08:00 ごろ）
+
+- **止めた理由**：Issa の指示（原文「送って」）。Neokunekune のセッションの提案「文字 GPT の追加腕は、いま走っている 1 走が終わった所でいったん止め、GPU を 5+1 MLP の 10 倍予算の検証に回し、終わったら再開する」への同意として、同セッションから伝えられた。
+- **完走した走**：seed 0 と seed 1 の 3 腕（C3H・B3H・B3HB）と、seed 2 の C3H。どれも white-san で回し、ブランチ `claude/chargpt_cl_1019` に push 済み（最後は commit fa08a62b）。
+- **未走**：seed 2 の B3H・B3HB と、seed 3〜9 の 3 腕。
+- **止め方**：起動スクリプト（PID 125121）だけを止め、走っていた seed 2・C3H は最後まで走らせた。途中で殺した走は無い。
+- **再開の手順**：white-san の worktree `~/Projects/claude/wt/chargpt_cl_1019` で次を実行する。起動スクリプトは完了した走（provenance.json があるもの）を飛ばすので、seed 2 から渡せば B3H・seed 2 から始まる。
+
+  ```bash
+  cd ~/Projects/claude/wt/chargpt_cl_1019
+  setsid nohup bash src/chargpt_cl_1019_production_center.sh 2 3 4 5 6 7 8 9 >> results/chargpt_cl_1019/production_center_launch.log 2>&1 < /dev/null &
+  ```
+
+  依頼文では「seed 3 の C3H から再開」だったが、それだと seed 2 の B3H・B3HB が抜ける。1 seed の 3 腕は同じマシンでそろえるので、seed 2 から渡す。
+- **再開の前に確かめること**：GPU にほかの走が無いこと（`nvidia-smi`）、`git status --porcelain src/` が空であること（来歴の git hash を clean に保つ）。
