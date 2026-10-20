@@ -1,0 +1,258 @@
+{
+ "created": "2026-10-21T00:29:32",
+ "from": "white-san Claude Code (Fable 5.1) session 125c0bca",
+ "to": "Codex (same machine)",
+ "same_machine": true,
+ "upload": null,
+ "notes": [
+  {
+   "name": "セッション引き継ぎ_1021_Transformer文字GPTの箱.md",
+   "kind": "handoff_note",
+   "path": "可塑性喪失/引き継ぎ/2026-10-21_V13機構の全体とTransformer_Codexへ/セッション引き継ぎ_1021_Transformer文字GPTの箱.md",
+   "sha256": "557ec60842af6ae417388c95bb66ff3c4fe6390b5b763b53530856a1165ccf30",
+   "bytes": 13250
+  },
+  {
+   "name": "セッション引き継ぎ_1021_V13機構の全体と部品の表.md",
+   "kind": "handoff_note",
+   "path": "可塑性喪失/引き継ぎ/2026-10-21_V13機構の全体とTransformer_Codexへ/セッション引き継ぎ_1021_V13機構の全体と部品の表.md",
+   "sha256": "49fc377e1ced808854a2019d84f55a511c831a5b47a65319f78716d3edc198f1",
+   "bytes": 17127
+  }
+ ],
+ "memory": [
+  {
+   "name": "asymmetric-activation-drift-literature-1019.md",
+   "sha256": "fb4bbe1d13c290b13e4bdf2334be86adb702e6f85329a1216e39543428785164",
+   "bytes": 5565
+  },
+  {
+   "name": "body-conditions-go-to-appendix-1017.md",
+   "sha256": "3ec116a6ee674dc3e83ac575bae45be8fc475b4b3d49777503e9dc81de24278e",
+   "bytes": 1806
+  },
+  {
+   "name": "chargpt-centering-reversal-1020.md",
+   "sha256": "350ac6e33620e58c9a2702f0f6df2bea93bf289e1c8cd8a86b9a09a44b3cbc37",
+   "bytes": 6297
+  },
+  {
+   "name": "chargpt-cl-1019.md",
+   "sha256": "d979a81c7fc414fc90055bf0fd852520e0607742edb3627a7a1db5a5fbf5bc5a",
+   "bytes": 36843
+  },
+  {
+   "name": "claims-are-outcomes-not-proof-seams-1015.md",
+   "sha256": "1877980c0307a74e8bcaf013f6f9e426b7a3b722cb183a49442e61249b914222",
+   "bytes": 3642
+  },
+  {
+   "name": "depth-silu-rlmnist-1020.md",
+   "sha256": "319fa184656176872885d5316e8db70f137494bd6467fde16ef60a050da34510",
+   "bytes": 3331
+  },
+  {
+   "name": "derived-mechanism-over-narrative.md",
+   "sha256": "b9946792e654fefaedf495eead5a81894372ba871d8ec43fe65f715e54dfb216",
+   "bytes": 3156
+  },
+  {
+   "name": "experiment-chaining-stop-point.md",
+   "sha256": "db1720bbb37ebe859b02d446e6c2fc765de16f33006922501d4f3d04a9c5ce0f",
+   "bytes": 2010
+  },
+  {
+   "name": "fable-role-claim-strength.md",
+   "sha256": "cd552dbdf4b04c60439f228d126d0a9ac7990d2e0f13b25e4a63343a1776bd94",
+   "bytes": 1767
+  },
+  {
+   "name": "icml-target-1015.md",
+   "sha256": "8f82f8543e605bfcac3bcc9308e6d2e06b4e49a1e80ba34bf9b078b8da34e554",
+   "bytes": 4526
+  },
+  {
+   "name": "interim-report-cadence.md",
+   "sha256": "3068b84bb207701973bcd92269dd8da49dba311430087ed90425baa0e7ce51ec",
+   "bytes": 1378
+  },
+  {
+   "name": "issa-hypotheses-take-seriously.md",
+   "sha256": "09144a879b7c680cad1b3d2c69f4395dc69b9612c82ba0706ca2c3e695cc6fc1",
+   "bytes": 20303
+  },
+  {
+   "name": "kappa-reload-1020.md",
+   "sha256": "39c60836f7fb8c1963b88f0b4a9fda009b39aa5d71b4ebd2ca7f3d1e091afb6f",
+   "bytes": 3837
+  },
+  {
+   "name": "kappa-reload-cnn-1020.md",
+   "sha256": "f79bab6ae553699432fb2a17d13f9401a8e30ecfe9aff3c24a4eee876152cc87",
+   "bytes": 3132
+  },
+  {
+   "name": "known-results-check-before-claim.md",
+   "sha256": "0b5f56b633d62131c714e8217ded678269778a68e241b890f7b9a5e7f29fc7da",
+   "bytes": 1613
+  },
+  {
+   "name": "lemma1-width-invariance-flaw-1019.md",
+   "sha256": "cd7b09c2f8511c337514a5a965423a888efc68a8044996fabd1ebdc8301b7afe",
+   "bytes": 11137
+  },
+  {
+   "name": "moving-carrier-deep-nets-1020.md",
+   "sha256": "abee7da94cd59788d4fa639c7728721b68e757cfbc3c78bf670839bc787f0cb5",
+   "bytes": 2968
+  },
+  {
+   "name": "no-time-estimates-asap.md",
+   "sha256": "f0b8710135766ef40c7ce6ad14b027f7db7517206476c442522a38882281615e",
+   "bytes": 1396
+  },
+  {
+   "name": "plasticity-loss-three-phases-1020.md",
+   "sha256": "7516512354de733bf48b4c1cb9eac73557322f1cf6e3129a5272acb2b138049e",
+   "bytes": 1769
+  },
+  {
+   "name": "readable-writing-standard-1015.md",
+   "sha256": "6f3ad8c4472e7d872e242b17cc509c8e4e7822cbe66a4be8b400976a32bf467d",
+   "bytes": 5491
+  },
+  {
+   "name": "reload-dial-1020.md",
+   "sha256": "bb0dceaaee751ad80cdb767e606a6d2c4f93963f9d9640ebf477af0f7584372d",
+   "bytes": 3416
+  },
+  {
+   "name": "report-in-japanese.md",
+   "sha256": "9e3d3824fffd3fca976efd74f2eb054b4984d2686c45e6034cfcde0b3d8a462f",
+   "bytes": 1005
+  },
+  {
+   "name": "silu-gelu-no-return-band-1014.md",
+   "sha256": "94d22f0b0c2f65462f623b766137f1f2dbe39d98b28b5d3a7ba7ccb64c57773d",
+   "bytes": 9265
+  },
+  {
+   "name": "theory-chapter-no-measurement-figures.md",
+   "sha256": "1ef54f3aca6369c0c40faa16b7ba915a3719465d334c51d617df7ff3a13a6689",
+   "bytes": 1614
+  },
+  {
+   "name": "three-layer-rlcifar-extension-1007.md",
+   "sha256": "46da729555064e901c8be9848990673edb15dd8b09a0636580f8878e53386403",
+   "bytes": 6492
+  },
+  {
+   "name": "threshold-derivation-rule.md",
+   "sha256": "0049f92bf6d477c2bf8cfde2e52432ad0d5378b1a67563db021bba4982bebb24",
+   "bytes": 4088
+  },
+  {
+   "name": "v13-catchphrase-mechanism-1019.md",
+   "sha256": "e962a55233a37ecb1f2d5a44e7aa9a239c172173916340fa000da60fc025630c",
+   "bytes": 23188
+  },
+  {
+   "name": "vault-no-new-folders.md",
+   "sha256": "011827bdf6a0c0f7790f1685d44cc55f44dbec981b7a3f8b563fcc04061413e7",
+   "bytes": 1992
+  },
+  {
+   "name": "vault-parallel-session-collision.md",
+   "sha256": "d54dfd77aa642c13efb1551baf72b1e5f8bd1d0a54b895c433e52706fde854f0",
+   "bytes": 1545
+  },
+  {
+   "name": "workflow-credit-usage-feedback.md",
+   "sha256": "5acacc70b46bc1d6bdc6645a4622b175ec9deb69978e21811a4ad84f8850441b",
+   "bytes": 2540
+  },
+  {
+   "name": "write-for-human-readers.md",
+   "sha256": "1a3b67975a5b863c5d56560cde9e6cb1036714be987674e552d49850fba6c235",
+   "bytes": 2715
+  }
+ ],
+ "raw_data_local": [
+  {
+   "name": "kappa_reload_1020",
+   "path": "/home/issan/Projects/obsidian-research-data/kappa_reload_1020",
+   "note": "MLP の κ 再装填の生データ"
+  },
+  {
+   "name": "reload_dial_1020",
+   "path": "/home/issan/Projects/obsidian-research-data/reload_dial_1020",
+   "note": "装填のダイヤル"
+  },
+  {
+   "name": "kappa_reload_cnn_1020",
+   "path": "/home/issan/Projects/obsidian-research-data/kappa_reload_cnn_1020",
+   "note": "CNN の装填（217 ファイル・Codex ログ込み）"
+  },
+  {
+   "name": "depth_silu_rlmnist_1020",
+   "path": "/home/issan/Projects/obsidian-research-data/depth_silu_rlmnist_1020",
+   "note": "深さ 1/2/4 SiLU MLP（2.4 GB）"
+  },
+  {
+   "name": "mlp_center_x10_1020",
+   "path": "/home/issan/Projects/obsidian-research-data/mlp_center_x10_1020",
+   "note": "5+1 MLP 10 倍予算の中心化"
+  },
+  {
+   "name": "cnn_center_budget_1020",
+   "path": "/home/issan/Projects/obsidian-research-data/cnn_center_budget_1020",
+   "note": "5+1 CNN 中心化×予算（1.6 GB・幅の分解 script）"
+  },
+  {
+   "name": "theory_crosscheck_1019",
+   "path": "/home/issan/Projects/obsidian-research-data/theory_crosscheck_1019",
+   "note": "Li/Shvetsov 照合の Astra・Opus 原文"
+  },
+  {
+   "name": "selfform_boundary_check_1020",
+   "path": "/home/issan/Projects/obsidian-research-data/selfform_boundary_check_1020",
+   "note": "境 r*₀ の検査"
+  },
+  {
+   "name": "astra_2block_1020",
+   "path": "/home/issan/Projects/obsidian-research-data/astra_2block_1020",
+   "note": "2 ブロック判断の Astra 2 巡の原文"
+  },
+  {
+   "name": "rho_identity_1020",
+   "path": "/home/issan/Projects/obsidian-research-data/rho_identity_1020",
+   "note": "フォークの ρ 恒等式の玩具"
+  }
+ ],
+ "repo": [
+  {
+   "name": "chargpt_cl_1019",
+   "where": "worktree /home/issan/Projects/claude/wt/chargpt_cl_1019 (branch claude/chargpt_cl_1019, main 未統合)",
+   "paths": [
+    "results/chargpt_cl_1019/summary.md",
+    "results/chargpt_cl_1019/verdict.csv",
+    "results/chargpt_cl_1019/quicklook/M",
+    "results/chargpt_cl_1019/quicklook/M2",
+    "results/chargpt_cl_1019/quicklook/judge_m2/judge_m2.md",
+    "analysis/chargpt_cl_1019_quicklook"
+   ]
+  },
+  {
+   "name": "origin/main の実験",
+   "paths": [
+    "results/kappa_reload_cnn_1020/summary.md",
+    "results/depth_silu_rlmnist_1020/summary.md",
+    "results/depth_silu_rlmnist_1020/gating_layers.md",
+    "results/kappa_reload_1020/summary.md",
+    "results/reload_dial_1020",
+    "results/mlp_center_x10_1020",
+    "results/cnn_center_budget_1020"
+   ]
+  }
+ ]
+}
