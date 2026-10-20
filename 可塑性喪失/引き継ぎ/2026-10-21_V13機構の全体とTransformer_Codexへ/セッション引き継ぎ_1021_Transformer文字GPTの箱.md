@@ -73,3 +73,4 @@ C3・C4・B3 は SINKS かつ NO_LOSS（fresh gap −0.040・−0.131・−0.048
 ## Log
 
 - 2026-10-21 未明: Fable が作成。
+- 2026-10-21 早朝（引き継ぎの後に Claude Opus 5.5 が足した）: Transformer × 0（装填、seed 1000）と × 5（折れ目の喪失、本走 10 seed）の事後解析を済ませた → [[文字GPTの装填と折れ目の喪失_事後_1021]]（lop_analysis main 21989864、片付け済み）。2 ブロック C3-2・ReLUcap-2 の 10 seed・100 課題の登録走（追補 7、3d7e0544）を文字 GPT のセッションに依頼し、white-san で 01:07 から走行中（境界の checkpoint つき。終わったら (A) を同じコード `analysis/chargpt_load_fold_1021/load/measure.py` で 10 seed に広げる）。§3 の判断待ちの (a) は依頼済みに変わった。
