@@ -59,7 +59,7 @@ ReLUでは強い学習劣化の救済を、ELUでは応答と再学習速度の�
 別実験として各1 worktreeを使う。元cloneのmainは切り替えず、他セッションの `wt/chargpt_cl_1019` には触れない。
 
 - `wt/cnn_response_center_1021` / `codex/cnn_response_center_1021`
-- `wt/cnn_width_cap_1021` / `codex/cnn_width_cap_1021`
+- `wt/cnn_width_cap_1021` / `codex/cnn_width_cap_1021`（cap完走後、SHA退避・main統合・削除済み。main `dfb944dd`）
 
 正式な判定・検査・操作順はそれぞれの `specs/spec_<runid>.md`。応答交換は `aa991f9e`、幅capは `dffbbbf8` で登録・push済み。写しは [[CNN中心化が保った応答の双方向交換_spec_1021]] と [[実ラベル5p1CNN_幅cap_spec_1021]]。登録後に実データの検査を開始した。既存状態の選定に使った結果は既知であり、新規seedによる独立な再発見とは数えない。新しい介入結果を見る前に判定を固定する登録走として扱う。
 

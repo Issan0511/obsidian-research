@@ -215,3 +215,5 @@ Wとbiasを同率に縮めるため、固定した局所入力で投影する瞬
 元driver sessionからnatural/cap/summary各工程のexit0記録を回収した。driver自身の終了コードは推定しない。[終了と修正の記録](https://github.com/Issan0511/lop_analysis/blob/73fdc5d6/analysis/cnn_width_cap_1021/postrun_report_fix_1021.md)。
 
 生データ204ファイル・1,428,434,071 bytesを `/home/issan/Projects/obsidian-research-data/cnn_width_cap_1021/` へSHA256/bytes照合付きで退避した。[manifest](https://github.com/Issan0511/lop_analysis/blob/73fdc5d6/results/cnn_width_cap_1021/backup_manifest.json)。退避後の元コピーは検証してから除去し、元worktreeパスを保ったprovenanceからもレポートが参照を解決できるようにした。
+
+**統合・整理完了**：repoのmainは `dfb944dd` へ統合・push済み。cap専用worktreeとローカル／リモートbranchを整理した。元worktreeを削除した状態でmainの別checkoutから、退避データだけを使ってCPUレポートを再生成し、保存済みJSONの全フィールドが一致した。検証用の一時worktreeも削除した。CHB応答交換 `cnn_response_chb_1021` は別担当が継続する。
