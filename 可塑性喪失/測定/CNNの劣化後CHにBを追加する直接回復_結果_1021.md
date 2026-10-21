@@ -17,6 +17,8 @@
 
 結果・独立監査・図の保存commit: [`9c9f32d3`](https://github.com/Issan0511/lop_analysis/tree/9c9f32d3/results/cnn_chb_delayed_1021)。図は同commitの `figures/learning_and_primary.png` と `figures/natural_diagnostics.png`。全seedの精度・CEは `report/per_seed_windows.csv`。
 
+保存整理完了: main [`3be54c79`](https://github.com/Issan0511/lop_analysis/tree/3be54c79/results/cnn_chb_delayed_1021)。生データ448ファイル・1,729,500,094 bytesを `/home/issan/Projects/obsidian-research-data/cnn_chb_delayed_1021/` へSHA256/bytes照合付きで退避し、専用worktree・local/remote branchを削除。削除後、別checkoutと退避データから `report.json`・`report.md`・全seed窓CSVを再生成し、3ファイルすべてbytes一致を確認した。元cloneのcheckout/commitや他worktreeは変更していない。
+
 ## 終盤と操作成立の読み
 
 全30000更新のaccuracy差は−1.803 pt、最後3000更新は37.448%→29.548%（−7.899 pt、4 seed改善/6悪化）。CEは副窓1001–3000・全体・last3000の全てで10/10悪化し、last3000は1.645→12922.019だった。主窓だけの過渡で片付けない。
