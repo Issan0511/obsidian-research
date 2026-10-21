@@ -1,4 +1,4 @@
-正本: [登録commit 338a9443](https://github.com/Issan0511/lop_analysis/blob/338a9443/specs/spec_cnn_response_chb_1021.md)。これは登録時の写し。17項目の合成CPU検査と既存保存物の資格確認はPASS。実データGPU検査・本走はcap実験終了待ちで、結果は未判定。
+正本: [登録commit 338a9443](https://github.com/Issan0511/lop_analysis/blob/338a9443/specs/spec_cnn_response_chb_1021.md)。これは登録時の写し。17項目の合成CPU検査、既存保存物の資格確認、GPU検査11群はPASS。全4腕×10 seed×30000更新を完了し、独立監査と登録判定が一致した。結果は [[CNNのCHとCHBが保った全層応答の交換_結果_1021]]（初期accuracyはBIDIRECTIONAL、CE悪化と終盤の限界を併記）。以下の登録本文は維持する。
 
 # CNN CH′対CH′＋B：長期予防で保った全4層の応答場を交換する
 
