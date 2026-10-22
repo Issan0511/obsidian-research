@@ -1,0 +1,93 @@
+{
+  "schema": "v13-writing-handoff-local-v1",
+  "created_date_jst": "2026-10-22",
+  "source_thread_id": "01a14da9-6ed1-7d12-9eb3-ed79510a9c72",
+  "vault_head_before_handoff": "1bfeb87f8c2315aa684d1418fc3440c600eb1ff7",
+  "scope": "Local Vault writing handoff; no new experiments or external upload.",
+  "files": [
+    {
+      "path": "可塑性喪失/引き継ぎ/2026-10-22_V13本文起草とTransformer統合_別チャット/セッション引き継ぎ_1022_V13本文起草とTransformer統合.md",
+      "bytes": 17107,
+      "sha256": "3ce07becf45fdaf20c0c168ff71424d4aa2651969f9dc3fef9891ba45880fca4"
+    },
+    {
+      "path": "可塑性喪失/引き継ぎ/2026-10-22_V13本文起草とTransformer統合_別チャット/memory/V13編集方針と落とし穴_1022.md",
+      "bytes": 3352,
+      "sha256": "c7222993edefb759910f93936eb3af38f2dd3a58f088da8183fd40be1d1c8226"
+    }
+  ],
+  "canonical_sources": [
+    {
+      "path": "可塑性喪失/現在地.md",
+      "bytes": 35364,
+      "sha256": "12224f870507fd5d3024cea8a0a8c98dddd6923475519677089a06eb49f54979"
+    },
+    {
+      "path": "可塑性喪失/引用禁止.md",
+      "bytes": 20609,
+      "sha256": "86ff50a466b545ae1cb4cfdc489f90d26828b40be3a67d565f7339f92ad19462"
+    },
+    {
+      "path": "可塑性喪失/運用ルール.md",
+      "bytes": 42346,
+      "sha256": "e1ac69c6ec93c67f2baeec17e6f791d8bb7074261ce6978741a1bbfb041af2bc"
+    },
+    {
+      "path": "可塑性喪失/論文作成/V13段落地図_通読版_1022.md",
+      "bytes": 33302,
+      "sha256": "6be0b0cdf133aa8612b03b630bfe20aa9390cd03ffd9ae65ce01f9d2ce188246"
+    },
+    {
+      "path": "可塑性喪失/論文作成/V13本文_第2章から第4章_1022.md",
+      "bytes": 26967,
+      "sha256": "b0a61b0e949ceeeffaed3a49b2b3f02670bd2b76f59f12c2a147dc35823e3aac"
+    },
+    {
+      "path": "可塑性喪失/論文作成/V13第2〜4章_起草と照合記録_1022.md",
+      "bytes": 9317,
+      "sha256": "becb42c6a2029c69c57a82c2b4411a246547e838a59150191b56a0d668da6a0b"
+    },
+    {
+      "path": "可塑性喪失/論文作成/V13背骨と段落地図_1018.md",
+      "bytes": 49311,
+      "sha256": "335318723d7355534c83e012a39cac6662d6e80d239f25f40d67d9a584986e4d"
+    },
+    {
+      "path": "可塑性喪失/論文作成/V13機構の部品表_1021.md",
+      "bytes": 26184,
+      "sha256": "fed4f0155099fac944abcdc4adaa44fc05303b47c6a3ffb9d8e6696beb596efb"
+    },
+    {
+      "path": "可塑性喪失/測定/文字GPTで継続学習_2ブロックでL0の応答と実効学習率を操作する_1022.md",
+      "bytes": 15804,
+      "sha256": "17c30e7f9d21fe296e020f00f5f8ba5d00a38a1aa709e5665d7054760ced089f"
+    },
+    {
+      "path": "可塑性喪失/測定/文字GPTで継続学習_2ブロックのL1の担い手を共通成分の固定で確かめる_1021.md",
+      "bytes": 6330,
+      "sha256": "d3a5354c89508162ba3b1f28f91b4e65f20bdaf93ce5a7517e904865ea6d20bd"
+    }
+  ],
+  "local_archives": [
+    {
+      "path": "/home/issan/Projects/obsidian-research-data/v13_ch234_draft_1022",
+      "manifest": "archive_manifest.json",
+      "status": "existence checked; contents not reuploaded"
+    },
+    {
+      "path": "/home/issan/Projects/obsidian-research-data/v13_mlp_edit_1021",
+      "manifest": "manifest.json",
+      "status": "existence checked; contents not reuploaded"
+    }
+  ],
+  "repository": {
+    "path": "/home/issan/Projects/claude/proj_004_drift",
+    "head": "d82f7ca9ccdc0f3f82cda05432d7053928668b09",
+    "branch": "main",
+    "working_tree": "clean",
+    "local_head_only_commits": 13,
+    "local_origin_main_only_commits": 101,
+    "do_not_modify_other_session_worktree": "/home/issan/Projects/claude/wt/chargpt_cl_1019"
+  },
+  "uploads": []
+}
