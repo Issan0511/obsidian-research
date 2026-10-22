@@ -4,7 +4,7 @@
 
 実験 ID: `cnn_response_center_1021`。2026-10-21。
 
-登録状態: REGISTERED
+登録状態: REGISTERED → **実行済み（2026-10-21・4 腕 × 10 seed 完走）。主判定 `ONE_DIRECTION`。結果は [[CNN中心化が保ったc1応答場の交換_結果_1021]]。1022 に `spec/実行済み/` へ移動**
 
 ## 問いと比較の範囲
 

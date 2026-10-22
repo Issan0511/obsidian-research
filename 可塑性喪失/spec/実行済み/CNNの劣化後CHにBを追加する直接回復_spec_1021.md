@@ -1,6 +1,6 @@
 # 劣化後のCH′に自然なBを追加する直接回復対照
 
-登録状態: REGISTERED
+登録状態: REGISTERED → **実行済み（2026-10-21・完走・保存曲線から独立再計算一致）。first3000 の精度 `INCONCLUSIVE`・CE `WORSENS`。結果は [[CNNの劣化後CHにBを追加する直接回復_結果_1021]]。1022 に `spec/実行済み/` へ移動**
 実験ID: `cnn_chb_delayed_1021`
 作成日: 2026-10-21 / 依頼: Issa（元会話 01a14da9-6ed1-7d12-9eb3-ed79510a9c72）
 
