@@ -154,7 +154,7 @@ ReLUcap-2 でも lnex1 で塞ぐと、10 seed のうち 9 で生き返らなか�
 
 ## 10. 置き場
 
-- lop_analysis のブランチ `claude/chargpt_seed10_1022`: spec 91bba399、追補 1・手順書・束の manifest f6d706cc、手順書の直し 90f3c805、byakko の検査 55bc8cef、追補 2 867c9752、A 90be889e、C1・C2 2265ece7、B 4f51a246、B・C3 の cap e93fa5be、D と判定 [fef75986](https://github.com/Issan0511/lop_analysis/tree/fef75986/results/chargpt_seed10_1022)。
+- lop_analysis の main に統合（d02d6ea5、ブランチは削除）。commit は spec 91bba399、追補 1・手順書・束の manifest f6d706cc、手順書の直し 90f3c805、byakko の検査 55bc8cef、追補 2 867c9752、A 90be889e、C1・C2 2265ece7、B 4f51a246、B・C3 の cap e93fa5be、D と判定 [fef75986](https://github.com/Issan0511/lop_analysis/tree/fef75986/results/chargpt_seed10_1022)。
 - 判定の全文は `results/chargpt_seed10_1022/judge.md` と `judge.json`。
 - git に入れなかった大きなファイル（checkpoint・unit ごとの配列、2,235 ファイル、10.4 GB）は byakko の `/home/kubo/project/Nakatsuka/lop_seed10` に残っている（`raw_manifest.json`）。
 - byakko に渡した checkpoint の束（3.50 GB）は `obsidian-research-data/chargpt_seed10_1022/transfer/`。
