@@ -1,6 +1,6 @@
 # V13付録：MLP+CNN 版（arXiv v1 用）1023
 
-状態: MLP+CNN 版 v0.1 / 2026-10-23 / Claude（Opus 5.5、MLP+CNN 版のセッション）。元は [[V13付録_最小限_1023]]（C.7 の補題を含む版、vault d128756、作成時の head ee517ba）。本文は [[V13通し稿_MLP_CNN版_1023]]。Issa の決定（1023 夜）で arXiv v1 は MLP+CNN だけ、v2 で Transformer を足す。元ノートから GPT の部分だけを外した写しで、本線は元ノートである。
+状態: MLP+CNN 版 v0.1 / 2026-10-23 / Claude（Opus 5.5、MLP+CNN 版のセッション）。元は [[V13付録_最小限_1023]]（C.7 の補題を含む版、vault d128756、作成時の head ee517ba）。本文は [[V13通し稿_MLP_CNN版_1023]]（v0.2 で本文だけ直し、付録は v0.1 のまま）。v2 で Transformer を戻すときの接合面（外した行・段落・節の位置と元の文、差分）は [[V13_Transformer切り取りの接合面_1023]]。Issa の決定（1023 夜）で arXiv v1 は MLP+CNN だけ、v2 で Transformer を足す。元ノートから GPT の部分だけを外した写しで、本線は元ノートである。
 
 **外したもの。**
 - A.1: 表の「2ブロック文字GPT」「4ブロック文字GPT」の 2 行、GPT 箱 M の段落、出典の `specs/spec_chargpt_cl_1019.md` 追補6・7。
