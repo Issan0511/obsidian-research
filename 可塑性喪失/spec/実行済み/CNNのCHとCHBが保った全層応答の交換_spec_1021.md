@@ -4,7 +4,7 @@
 
 実験ID: `cnn_response_chb_1021` / 2026-10-21
 
-登録状態: REGISTERED
+登録状態: REGISTERED → **実行済み（2026-10-21・全 4 腕 × 10 seed 完走・独立監査一致）。初期 accuracy の登録判定 `BIDIRECTIONAL`。結果は [[CNNのCHとCHBが保った全層応答の交換_結果_1021]]。1022 に `spec/実行済み/` へ移動**
 
 ## 目的と前の走との関係
 

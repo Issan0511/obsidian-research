@@ -2,7 +2,7 @@
 
 正本: [登録spec dffbbbf8](https://github.com/Issan0511/lop_analysis/blob/dffbbbf8/specs/spec_cnn_width_cap_1021.md)。Vaultは登録時の写し。実装・判定の変更は正本の追補と照合する。
 
-状態：**REGISTERED仕様（2026-10-21）— 凍結commit/pushと親のRELEASE後に実データのforward・再生・学習を行う。登録commitは各出力のprovenanceに記録する。**
+状態：**実行済み（2026-10-21・完走・独立集計一致）。ReLU `INCONCLUSIVE`／ELU `WORSENS`。結果は [[実ラベル5p1CNN_幅cap_結果_1021]]。1022 に `spec/実行済み/` へ移動。** 登録時の状態: **REGISTERED仕様（2026-10-21）— 凍結commit/pushと親のRELEASE後に実データのforward・再生・学習を行う。登録commitは各出力のprovenanceに記録する。**
 
 ## 1. 問いと位置づけ
 
