@@ -10,6 +10,9 @@ L2 Init はこの増分の蓄積のうち次の課題に見えない分を、介
 ただし増分は後の課題でゆっくり消され（|e| > 0.1）、見えない質量の差は喪失の差と seed 間で順位が合わない。
 「見えない向きへの移送」と「L2 Init の差」は立つ。「削られずに積もる」と「喪失と結びつく」は支持されない。
 
+追補 A・B（本ノート末尾、11/8）: 中心化＋bias 抑制は第 1 層の伸びに触らず、kunekune は総量だけを減らす。
+切替ごとに第 1 層を縮めると残りの喪失は消えるが、見えない帯を消す操作と等方の縮小で差がつかない（判定 `NORM_OR_NONSPECIFIC`）。
+
 ## 1. 箱の照合（S-box）
 
 箱は `src/pmnist_0905.py`（先生の補足の材料の pmnist.py と同じ）で、ReLU・784-100-100-10・Adam 1e−3・batch 16・625 更新/課題・500 課題・CPU。
@@ -101,8 +104,8 @@ PM の top の在庫は過去の課題の乱数の投影で、新しい課題の
 
 ## 5. 限界と未測
 
-- 中心化＋bias 抑制と kunekune の網では測っていない（この走の腕は none と L2 Init だけ）。「本稿の経路は見えない向きの伸びに触らない」は、この走では確かめていない。
-- 見えない質量を消す介入は走らせていない。L2 Init の差は見えない質量以外の差も含む（‖W‖ も bias も第 2 層も違う）。因果は示していない。
+- 中心化＋bias 抑制と kunekune の網では測っていない（この走の腕は none と L2 Init だけ）。「本稿の経路は見えない向きの伸びに触らない」は、この走では確かめていない。→ 追補 A（本ノート末尾）で測った。
+- 見えない質量を消す介入は走らせていない。L2 Init の差は見えない質量以外の差も含む（‖W‖ も bias も第 2 層も違う）。因果は示していない。→ 追補 B（本ノート末尾）で走らせた。
 - Continual ImageNet の対照は無い。「見えたまま削られる」は未測。
 - 帯の切り方は 0922 の順位に揃えた。MNIST では PC 439 で 99.8% で、CIFAR の 99% とは位置が違う。
 
@@ -120,7 +123,9 @@ PM の top の在庫は過去の課題の乱数の投影で、新しい課題の
 
 ## 7. V13 v1 の PM の段落に入れられる文（格つき）
 
-格はいずれも、事後（本稿の規則の外）・予測は走る前に固定・10 seed・500 課題・ReLU・Adam 1e−3。
+11/8 に追補 A・B を受けて書き直した。文 1・2 は本走のまま、文 3 を短くし、文 4〜7 を足した。旧版は git の 5859092 にある。
+格はいずれも、事後（本稿の規則の外）・予測は走る前に固定・10 seed・500 課題・Adam 1e−3。
+文 1〜3 は ReLU の介入なしと L2 Init で測った。文 4〜7 は追補の腕で測った（本ノート末尾）。
 
 文 1. Permuted MNIST で、各課題が第 1 層に書いた重みの増分の重みつきノルムを次の課題の入力の共分散で測ると、書いた課題での値の 7% しか残らない（窓ごとの seed の中央値 0.069〜0.073、順列の算術の参照値と一致）。
 In Permuted MNIST, the input-weighted norm of the increment each task writes into the first layer, measured under the next task's input covariance, is only about 7% of its value under the task's own covariance (window medians 0.069–0.073, matching the permutation arithmetic).
@@ -128,7 +133,144 @@ In Permuted MNIST, the input-weighted norm of the increment each task writes int
 文 2. 介入なしの網では第 1 層に残る過去の増分の二乗ノルムは課題とともにほぼ線形に伸び（課題 451〜500 の平均 2.06×10⁴）、その 43% は各課題の入力の分散が 0.2% しかない帯にあるが、L2 Init はこの帯の質量を介入なしの 0.6% に抑えた（同じ seed の対、10/10）。
 Without intervention the squared norm of the first-layer increments that remain from past tasks grows nearly linearly (2.06×10⁴ on average over tasks 451–500), and 43% of it lies in the eigenbands of the current task that carry 0.2% of the input variance; L2 Init holds this mass at 0.6% of the uninterventioned value (same-seed pairs, 10/10).
 
-文 3. ただし増分は後の課題で消されないわけではなく（次の課題 1 つで振幅の 0.4〜0.9%、45〜50 課題の窓の中で二乗の 22〜27%）、見えない質量の差と喪失の差は seed 間で順位が合わなかったので（Spearman −0.29、n = 10）、Permuted MNIST に残る喪失をこの蓄積に帰する文はこの測定だけでは書けない。
-However, later tasks do erode an increment (0.4–0.9% of its amplitude in the next task, 22–27% of its squared norm within a 45–50-task window), and the seed-level differences in invisible mass do not rank-match the differences in the loss of plasticity (Spearman −0.29, n = 10), so these measurements alone do not attribute the remaining Permuted-MNIST loss to this accumulation.
+文 3. 増分は後の課題でゆっくり消される。次の課題 1 つで振幅の 0.4〜0.9%、45〜50 課題の窓の中で二乗の 22〜27% が打ち消される。
+Later tasks erode an increment slowly: 0.4–0.9% of its amplitude in the next task and 22–27% of its squared norm within a 45–50-task window.
+
+文 4. 中心化＋bias 抑制は第 1 層の伸びを止めない（二乗ノルムは介入なしの 1.04 倍、見えない帯の質量は 1.05 倍）。kunekune は総量を減らすが（0.42 倍、0.43 倍）、見えない帯の割合はどちらも 0.44 のままである（課題 451〜500、10 seed の中央値）。
+Centering plus bias suppression does not stop this growth (the first-layer squared norm is 1.04 times the no-intervention value and the invisible-band mass 1.05 times). Kunekune reduces the total (0.42 and 0.43 times), but in both cases the invisible-band share stays at 0.44 (tasks 451–500, medians over 10 seeds).
+
+文 5. 切替のたびに第 1 層の重みから新しい課題の見えない帯（入力の分散の 0.2%）の成分を消すと、中心化＋bias 抑制の網の残りの喪失は消える（初期化から学ばせた網との差が +1.58 → −4.49 ポイント、同じ seed の対で 10/10）。
+Zeroing, at every task switch, the first-layer weight components in the new task's invisible band (0.2% of the input variance) removes the remaining loss of the centered network (gap to a from-scratch network +1.58 → −4.49 points; same-seed pairs, 10/10).
+
+文 6. 同じノルムへ等方に縮めても同じだけ消える（−4.86、帯を消した場合との差は 0.37 ポイントで J.2 の線 0.5 の内）。順列のもとでは帯を消す操作は長い目で等方の縮小と同じ働きをするので、ここから言えるのは「残りの喪失は第 1 層の蓄積を切替ごとに縮めれば消える」までで、見えない向きの質量そのものが原因だとは言えない。
+An isotropic shrink to the same Frobenius norm removes it just as well (−4.86; the difference from band-zeroing is 0.37 points, within the 0.5-point line of J.2). Under random permutations, band-zeroing acts over many tasks like an isotropic shrink, so these results show that the remaining loss disappears when first-layer accumulation is reduced at each switch, not that the invisible-direction mass itself is the cause.
+
+文 7. L2 Init の網に、介入なしと同じ質量の乱数を切替ごとに見えない帯へ足しても、介入なしとの差の 26% しか戻らない（−4.24 → −0.93、10/10）。
+Adding to an L2 Init network, at every switch, random mass in the invisible band equal to the no-intervention network's invisible mass brings back only 26% of the gap to the no-intervention network (−4.24 → −0.93; 10/10).
 
 生データ: `~/Projects/obsidian-research-data/pm_ledger_1108/`（W1・b1・順列・online・帳簿の npz・ログ）。コード: `analysis/pm_ledger_1108/`（main）。
+
+## 追補 A・B — 本稿の経路と、第 1 層を切替ごとに縮める介入（pm_ledger_add_1108、2026-11-08）
+
+同じ箱・同じ帳簿で腕を足した。
+A は「本稿の経路（中心化＋bias 抑制・kunekune）は見えない向きの伸びに触らない」を測る。
+B は残りの喪失が見えない質量に従うかを介入で決める。
+
+格: 事後（先生の付録 J の規則の外）。予測 P5〜P8 は走る前に固定した（`specs/spec_pm_ledger_add_1108.md`、commit 55a1e921）。
+10 seed（評価の seed 0〜9）、500 課題、lr 0.001、CPU。数は生の値から 1 回だけ丸めた。
+全表: `results/pm_ledger_add_1108/summary.md`・`compare_pairs.csv`・`judge.json`。図: `fig_pm_ledger_add_1108.png`（main）。
+
+### 追補の腕
+
+切替の操作は、新しい順列が決まった時点、学習の前に、第 1 層の入力の重み W1 だけを変える。
+bias・第 2 層と第 3 層の重み・Adam の状態は触らない。
+帯の切り方は本走と同じで、「見えない帯」は low と comp を合わせた帯（PC 440 以降、次元の 44%、入力の分散の 0.2%）である。
+
+| 腕 | 中身 |
+|---|---|
+| CHB | 先生の中心化＋bias 抑制。入力から EMA（係数 0.01）を引く C、両隠れ層の出力の EMA を引く H、第 1 層の bias を 0 に固定、第 2 層の bias に λ = 0.1713 |
+| KKT1 | kunekune（a0 = 0.6） |
+| CHB+INV0 | CHB に、切替で W1 の見えない帯の成分を 0 にする操作を足す |
+| CHB+ISO | CHB に、切替で W1 を等方に縮めて、INV0 を当てた場合と同じフロベニウスノルムにする操作を足す（縮める比 c は 0.729〜0.769） |
+| L2I+ADD | L2 Init に、切替で none の同じ seed・同じ課題の M_inv(t) と同じ二乗ノルムの乱数を見えない帯へ足す操作を足す |
+| KKT1+INV0、none+INV0 | KKT1・none に INV0 を足す（優先順位 6 の腕） |
+
+新品の走は同じ規則の網と比べる（J.2）。
+CHB 系と KKT1 系の新品はこの追補で 5 点（課題 100〜500）走らせた。腕の間でビット一致している。
+L2I+ADD と none+INV0 は本走の L2 Init・none の新品を再利用した。
+
+### 箱の照合（S-box2）
+
+| 量（10 seed の平均） | CHB 実測 | CHB 先生 | KKT1 実測 | KKT1 先生 |
+|---|---|---|---|---|
+| 新品との差 G（課題 400・500） | +1.58 | +1.7 | +2.07 | +2.0 |
+| 全課題の平均 online | 84.70% | 84.7% | 84.99% | 85.0% |
+| 後期窓（課題 451〜500）の online | 83.42% | 83.4% | 84.37% | 84.4% |
+| 課題 1 の online | 85.02% | 84.8% | 86.35% | 86.2% |
+| 課題 500 の死（第 1/第 2 層） | 0/0 | 0/0 | 0/0 | 0/0 |
+
+G の照合の線は ±0.33（先生の区間から算術で出した）で、両方とも中に入った。
+切替の操作は仕様どおりに当たった。INV0 の後の見えない質量は操作前の ‖W1‖² の 6×10⁻¹⁷ 以下である。ADD の質量は none の M_inv(t) と相対誤差 5×10⁻¹⁰ で一致した（`summary.md` §4c）。
+
+### 結果
+
+G は初期化から学ばせた網との差（J.2、課題 400・500 の平均）で、小さいほど可塑性を保つ。
+‖W1‖² は第 1 層の入力の重みの二乗ノルムである（課題 451〜500 の、課題の末の値の平均）。
+M_inv は切替の操作の後の見えない質量で、S = W^start − W_0 で測る。
+
+| 腕 | G（10 seed の平均） | 全課題の平均 online | 課題 500 の死 %（第 1/第 2 層） | ‖W1‖² | M_inv | M_inv ÷ ‖S‖² |
+|---|---|---|---|---|---|---|
+| none（本走） | +8.64 | 78.76% | 10.6 / 77.5 | 20,615 | 8,934 | 0.435 |
+| L2 Init（本走） | −4.24 | 88.37% | 4.2 / 0.6 | 153 | 52.7 | 0.437 |
+| CHB | +1.58 | 84.70% | 0 / 0 | 21,344 | 9,378 | 0.440 |
+| KKT1 | +2.07 | 84.99% | 0 / 0 | 8,758 | 3,855 | 0.439 |
+| CHB+INV0 | −4.49 | 89.64% | 0 / 0 | 105 | 14.7 | 0.158 |
+| CHB+ISO | −4.86 | 90.08% | 0 / 0 | 103 | 39.9 | 0.438 |
+| L2I+ADD | −0.93 | 86.02% | 0 / 1.8 | 6,645 | 11,840 | 0.762 |
+| KKT1+INV0 | −1.79 | 88.32% | 0 / 0 | 90 | 14.7 | 0.174 |
+| none+INV0 | −2.73 | 87.27% | 92.0 / 15.3 | 9 | 14.7 | 0.379 |
+
+‖W1‖²・M_inv は 10 seed の中央値である。
+INV0 の腕の M_inv 14.7 は W_0 の見えない成分である（W^start の見えない成分は 0 だが、S は W_0 からの変位なので W_0 の分が残る）。
+切替の操作がある腕の ero_all・ρ は操作の分を含むので、本走の値と比べない。
+
+同じ seed の対の比べ（差 = A − B、線は J.2 の 0.5 ポイント）:
+
+| A − B | G の差の平均 [95% t 区間] | A の G が大きい seed | J.2 の線 |
+|---|---|---|---|
+| CHB+INV0 − CHB | −6.08 [−6.31, −5.85] | 0/10 | A が保つ |
+| CHB+ISO − CHB | −6.45 [−6.66, −6.23] | 0/10 | A が保つ |
+| CHB+INV0 − CHB+ISO | +0.37 [+0.14, +0.60] | 9/10 | 差が定まらない（線の内） |
+| L2I+ADD − L2 Init | +3.31 [+3.02, +3.61] | 10/10 | L2 Init が保つ |
+| CHB − none | −7.06 [−7.53, −6.59] | 0/10 | A が保つ |
+| KKT1 − none | −6.57 [−7.20, −5.95] | 0/10 | A が保つ |
+| KKT1+INV0 − KKT1 | −3.86 [−4.10, −3.61] | 0/10 | A が保つ |
+| none+INV0 − none | −11.37 [−11.97, −10.77] | 0/10 | A が保つ |
+
+### 予測の採点
+
+| 予測 | 文 | 実測 | 採点 |
+|---|---|---|---|
+| P5 | CHB と KKT1 の ‖W1‖² は none の 0.5〜2 倍で、M_inv/‖S‖² は 0.40〜0.47 | CHB は 1.036 倍・0.440（条件内）、KKT1 は 0.425 倍・0.439（総量が範囲の外） | △ |
+| P6 | CHB+INV0 の G は CHB の半分以下 | −4.49（線 +0.79） | ○ |
+| P7 | CHB+INV0 の G は CHB+ISO より小さい（8/10 以上かつ平均差 ≥ 0.5） | 逆向き。ISO − INV0 が正の seed は 1/10、平均差 −0.37 | × |
+| P8 | L2I+ADD の G は none との差の半分以上まで上がる（≥ +2.20） | −0.93（差の 26%） | × |
+
+判定（spec の規則）: A は `PARTIAL`、B は `NORM_OR_NONSPECIFIC`（P6 ○・P7 ×）。
+
+### 読み
+
+**A. 本稿の経路は伸びの向きを変えない。**
+CHB は第 1 層の伸びに触らない。‖W1‖² は none の 1.04 倍、見えない質量は 1.05 倍である（中央値）。
+KKT1 は総量を減らす。‖W1‖² は none の 0.42 倍、見えない質量は 0.43 倍である。
+見えない帯の割合はどちらも 0.44 で、none の 0.435 と同じく次元の比に重なる。
+P5 で外れたのは KKT1 の総量だけで、「向きを選ばない」は 2 腕とも成り立った。
+
+**B. 第 1 層を切替ごとに縮めると、残りの喪失は消える。**
+INV0 を足すと、CHB の G は +1.58 から −4.49 へ下がる（10/10）。KKT1 と none でも同じ向きである。
+CHB の G は課題 100 の −0.55 から課題 500 の +1.73 へ伸びる。INV0 を足すと 5 点とも −4.4〜−4.6 で平らになり、時間で伸びない。
+none+INV0 は第 1 層の 92% が死んでも喪失が消える（−2.73）。先生の cap12 の結果（第 1 層の 91.3% が死んで −3.4）と同じ形である。
+
+**ただし見えない帯が特別だとは言えない。**
+同じノルムへ等方に縮める ISO も同じだけ消した（−4.86）。INV0 との差は 0.37 ポイントで線の内にあり、向きは予測の逆だった（P7 ×）。
+L2 Init に none 以上の見えない質量を足しても（M_inv 11,840、none は 8,934）、G は −0.93 までしか上がらず、none との差の 26% にとどまった（P8 ×）。
+
+**この対照の限界。**
+INV0 が切替で消す質量は毎回 ‖W1‖² の 43.8% で、これは見えない帯の次元の比 0.44 そのものである。
+順列のもとでは、どの向きも次の課題で 44% の確率で見えない帯に入る。
+だから毎回 INV0 を当てると、長い目では全部の向きが同じ割合で縮む。
+実際に INV0 と ISO の定常の ‖W1‖² は 105 と 103 で揃い、ISO の見えない質量も CHB の 0.4%（40 対 9,378）まで落ちている。
+したがって INV0 と ISO の比べは「向きかノルムか」をほとんど分けられない。
+言えるのは「第 1 層の蓄積を切替ごとに縮めて約 200 分の 1 に止めると、止め方によらず喪失は消える」までである。
+「見えない向きの質量が原因である」も「原因でない」も、この 2 腕からは決められない。
+
+L2I+ADD にも二つの注意がある。
+足した質量は乱数で、学習で書かれた増分ではない。
+L2 Init は課題の中でこの質量の約 6 割を消す（切替の後の ‖S‖² 15,539 が課題の末の ‖W1‖² 6,645 になる）。
+
+### 未測
+
+- 向きとノルムを分ける対照はこの追補に無い。分けるには、見える帯だけを消して見えない質量を残す腕や、見えない帯が課題をまたいで固定される箱が要る。
+- 活性化ごとの差（CHB+INV0 −4.49、KKT1+INV0 −1.79、none+INV0 −2.73）の理由は測っていない。
+
+生データ: `~/Projects/obsidian-research-data/pm_ledger_add_1108/`（W1・W1s・b1・順列・online・新品・帳簿の npz・ログ）。コード: `analysis/pm_ledger_add_1108/`（main）。
