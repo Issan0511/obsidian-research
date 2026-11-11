@@ -1,0 +1,51 @@
+{
+  "posthoc": true,
+  "result_git": "765f2ef722bfd8837811a274c4667a75fdfe0b10",
+  "files": [
+    {
+      "path": "可塑性喪失/測定/補助データ/leaky_product_1111/backup_manifest.json",
+      "sha256": "c692f9715f0758faac2903a4f09581a7fd248dc67c294f4ca97316a2a981b786",
+      "bytes": 213
+    },
+    {
+      "path": "可塑性喪失/測定/補助データ/leaky_product_1111/checks.json",
+      "sha256": "3a5777aea9cde04e6ef75026d8c3d9fb6209e6ab6b1756e8c0efd904dbbca82b",
+      "bytes": 177
+    },
+    {
+      "path": "可塑性喪失/測定/補助データ/leaky_product_1111/fits.csv",
+      "sha256": "43ab67800a442167020fb4bb086080283061c0a7033bb8a771b39119bc4b79a1",
+      "bytes": 1693
+    },
+    {
+      "path": "可塑性喪失/測定/補助データ/leaky_product_1111/group_summary.csv",
+      "sha256": "810aff7df3edc0b102e262c2ad329cf364d7a1ee071b8611b1f6c549d5ffa7c1",
+      "bytes": 4721
+    },
+    {
+      "path": "可塑性喪失/測定/補助データ/leaky_product_1111/per_seed_products.csv",
+      "sha256": "d9c19af49ee42bf8c8e9faae6e44b5803570608b5046f4c412f1f94c4a199d28",
+      "bytes": 26749
+    },
+    {
+      "path": "可塑性喪失/測定/補助データ/leaky_product_1111/product_vs_time_posthoc.pdf",
+      "sha256": "4c7fb0aaa6fb03fb5d5f6b56f984b2a9c168c05e20bee6d661911d19ea7cb4f7",
+      "bytes": 29061
+    },
+    {
+      "path": "可塑性喪失/測定/補助データ/leaky_product_1111/product_vs_time_posthoc.png",
+      "sha256": "dc17c09819acf4d4d78efdaf666cb6cf903161d02e3ce0f29b41c3f4cb76f6ea",
+      "bytes": 150370
+    },
+    {
+      "path": "可塑性喪失/測定/補助データ/leaky_product_1111/provenance.json",
+      "sha256": "6e987f3a22369ff76ac77158d19e66aca8929645409e5e8285de1cdbbbc59330",
+      "bytes": 26123
+    },
+    {
+      "path": "可塑性喪失/測定/補助データ/leaky_product_1111/single_layer_comparison.csv",
+      "sha256": "0ceac20441969072705bc9959bf81ea2b6be5dde2338d98146b22e8fe8a35279",
+      "bytes": 1974
+    }
+  ]
+}
