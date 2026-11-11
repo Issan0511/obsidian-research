@@ -1,0 +1,200 @@
+{
+  "source_result_commit": "054fe56f78e8c05d4beea2e5ed13f38524ad664c",
+  "files": [
+    {
+      "file": "COMPLETE.json",
+      "bytes": 1019,
+      "sha256": "2dad7ae9297dd64bf2de43ecb613cfe434b871c31ba011723f1b7e4dac81d83f"
+    },
+    {
+      "file": "backup_manifest.json",
+      "bytes": 369149,
+      "sha256": "694469a2fe26d723aa10bf835930ac3ced0d08e39fe4a7d521b7574836c6436b"
+    },
+    {
+      "file": "boundary_mechanism.pdf",
+      "bytes": 28388,
+      "sha256": "29c137832af02e0b7a679cb1f454d4dd38fbf121989cbbccf56fc7940a4e0b64"
+    },
+    {
+      "file": "boundary_mechanism.png",
+      "bytes": 244937,
+      "sha256": "5e0b625656058f7df7b33dc6c6f7d37aee37d9e874648272dd1f7d836aba3bde"
+    },
+    {
+      "file": "boundary_overview.pdf",
+      "bytes": 28129,
+      "sha256": "6a481a7c52343351e441014af3f767cb2c1d3228fc1b2df7ab3fb7e9583b3480"
+    },
+    {
+      "file": "boundary_overview.png",
+      "bytes": 193610,
+      "sha256": "6d555b8165d39cf200f123eb16d17251c74556cef68fc622c9cbd66c3671e0d5"
+    },
+    {
+      "file": "boundary_selection.csv",
+      "bytes": 234,
+      "sha256": "c668ab96a11ea3a727f5806efde4c32f3017c86bf1b168f78fa143dce219aa98"
+    },
+    {
+      "file": "checks.json",
+      "bytes": 372,
+      "sha256": "5e84fff38e111dd260e7760d38e251b5b4ca886459bd195be46e002e4c2eeb05"
+    },
+    {
+      "file": "clock_collapse.pdf",
+      "bytes": 29927,
+      "sha256": "97e93a999fef356796e0e1a27fd111f1408d2cf9df3f6670b984548c4e142196"
+    },
+    {
+      "file": "clock_collapse.png",
+      "bytes": 242947,
+      "sha256": "14ab1839d2db560e1ba848afebb002ef01b98026a152a2848e0f9e4b8e587a08"
+    },
+    {
+      "file": "clock_seed_tests.csv",
+      "bytes": 1919,
+      "sha256": "e0b4a3238d496364c182de4d6e087e6185f9dee9b1591198a2e303f2a85f5849"
+    },
+    {
+      "file": "control_boundary_interactions.csv",
+      "bytes": 596,
+      "sha256": "81dad52c0eba9e247ddd81a17befcff6046da0a52bbf54f1b52d80db614f6a89"
+    },
+    {
+      "file": "endpoint_aggregate.csv",
+      "bytes": 2643,
+      "sha256": "6aff81edaa3e44d25386f7ff718c1370d8d9dc1f822d43293959012a72690ea7"
+    },
+    {
+      "file": "gate_aggregate.csv",
+      "bytes": 68212,
+      "sha256": "63bd0abb65044e1bc1c23dc2f8381bddd5a9c0d8da202f7c68861971f47e7226"
+    },
+    {
+      "file": "gate_dynamics.pdf",
+      "bytes": 26077,
+      "sha256": "11afff1c498cd05e8913efa6cea710e7f35fe5ce8bff6748c58d3dfda3ab5346"
+    },
+    {
+      "file": "gate_dynamics.png",
+      "bytes": 309477,
+      "sha256": "9a9f9d69ca4a205a44058f5aa9fbb3dab201b232a59fb624452a41cabaf5430a"
+    },
+    {
+      "file": "gate_prepost_contrasts.csv",
+      "bytes": 13670,
+      "sha256": "ec974f1c45f0b6d1eace3140ba444e80e8770ddcea3efedd16b7ff614617a784"
+    },
+    {
+      "file": "integrity_audit.json",
+      "bytes": 1956,
+      "sha256": "fee7cfee962f9c7b4c29d490a90b4c6559ac042880b680e2dd76c75f63ea264f"
+    },
+    {
+      "file": "margin_boundary.pdf",
+      "bytes": 27896,
+      "sha256": "c4a4bac3273f9be197a3f37e2621b253c80f7a5dcc7b4bc2a25d790c8e2fe073"
+    },
+    {
+      "file": "margin_boundary.png",
+      "bytes": 216509,
+      "sha256": "18e6249911578c322119443c6d054f7c27a417adef0e775bb6e4b14084bc629a"
+    },
+    {
+      "file": "margin_cdfs.csv",
+      "bytes": 245840,
+      "sha256": "6a17b12d591efecb7f0be853359e7c07222b5c46abfcfa028e0f05744a0b45b1"
+    },
+    {
+      "file": "margin_seed_summary.csv",
+      "bytes": 2079,
+      "sha256": "b609764907ede4680ae7b69c99b74416a31d53a9b5cb52deb934c6dabf9909ee"
+    },
+    {
+      "file": "mechanism_paired_contrasts.csv",
+      "bytes": 337,
+      "sha256": "667e06aba24d9c3547aef9948f2a222b878ae99903d0c0152fe8b775228745e2"
+    },
+    {
+      "file": "normalized_ce_curves.csv",
+      "bytes": 15788,
+      "sha256": "1f38dd525865e2c0556cc755caeaff2381a9be664cd641f598f7c1d0a489512c"
+    },
+    {
+      "file": "paired_contrasts.csv",
+      "bytes": 4545,
+      "sha256": "c9724221ff564691200eaf9d5466788eabf406e4200aecd06c1b2fd14bd17944"
+    },
+    {
+      "file": "paired_dense_points.csv",
+      "bytes": 284915,
+      "sha256": "ee6b4e895c9a4660bfe1a181f686e03f788e975e649f99c503d82c22028c9376"
+    },
+    {
+      "file": "paired_learning.pdf",
+      "bytes": 103003,
+      "sha256": "90b18a69ce255fa0ff5937b66a0eb8bafc6443e099bdcfac970890ec78c3b451"
+    },
+    {
+      "file": "paired_learning.png",
+      "bytes": 402308,
+      "sha256": "88254b149088e3edb8cb88cc7913c11e224ecd5e2671b1dd0688035c1022fe91"
+    },
+    {
+      "file": "prefix_tasks.csv",
+      "bytes": 5016,
+      "sha256": "bb31723cc13176e57ed56ebf6587b71e0bce18c8f2a858c29f71b497f3d01cc4"
+    },
+    {
+      "file": "probe_seed_summary.csv",
+      "bytes": 29302,
+      "sha256": "cfb889ccffdb3914070daec87ae4138133e0d5129d579b21ddedb23fa60cdbd3"
+    },
+    {
+      "file": "quarter_source_clocks.csv",
+      "bytes": 10863,
+      "sha256": "6af3a188862a292a1ef18140f4c9f499371947b11c539d0b09158c09cd5516c2"
+    },
+    {
+      "file": "selection.json",
+      "bytes": 826,
+      "sha256": "4a62f97fea10cac9b4a80c990a7124aa320ae82c07e3b0b2db12f824b2db0f65"
+    },
+    {
+      "file": "source_quarter_gate_dynamics.csv",
+      "bytes": 194399,
+      "sha256": "3a5c2ea72b8ec73a725e0eb70abf763035edf264d1e0c22a76011f7230bc6252"
+    },
+    {
+      "file": "spectral_checks.json",
+      "bytes": 457,
+      "sha256": "4cec0e7f104f96bfe34cb9702c05fcc2d4b7e56cc5d1db640f38f6c490a4cd7f"
+    },
+    {
+      "file": "spectral_convergence_counts.csv",
+      "bytes": 875,
+      "sha256": "3999457ffffacafe48e7a0dab3fe6373eb348a146a67aa60e565f00c6d750fd8"
+    },
+    {
+      "file": "spectral_demand.pdf",
+      "bytes": 36876,
+      "sha256": "009a97814714c9e1ea6bd73405df2a731c790a00460f68ac70eb4b358bca3bb2"
+    },
+    {
+      "file": "spectral_demand.png",
+      "bytes": 612822,
+      "sha256": "73cc67f0ecf4872e94f2e27bb3c9a53bf8c2a19efc6120faf8fb71877a2094fa"
+    },
+    {
+      "file": "spectral_summary.csv",
+      "bytes": 29320,
+      "sha256": "1eec0e5023a08421de607c5737cd860bf6f81fb72a46655c9105cc31c9322854"
+    },
+    {
+      "file": "verdict.csv",
+      "bytes": 1249,
+      "sha256": "402fdf67caa644a5200158740a780030c7dd886a58ab156a079d7877be37d0d3"
+    }
+  ]
+}
