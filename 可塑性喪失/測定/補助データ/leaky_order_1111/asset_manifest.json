@@ -1,0 +1,132 @@
+{
+  "run": "leaky_order_1111",
+  "result_git": "ec6df62b5125f149c77fd6217e7fd5260bdc2693",
+  "files": [
+    {
+      "path": "可塑性喪失/測定/補助データ/leaky_order_1111/COMPLETE.json",
+      "source": "/home/issan/Projects/claude/wt/leaky_order_1111/results/leaky_order_1111/COMPLETE.json",
+      "sha256": "1a2fca55a8cc6872d505fc40c39aa0a753755040e5ba45836639e86544b949f0",
+      "bytes": 130
+    },
+    {
+      "path": "可塑性喪失/測定/補助データ/leaky_order_1111/all_probes.csv",
+      "source": "/home/issan/Projects/claude/wt/leaky_order_1111/results/leaky_order_1111/all_probes.csv",
+      "sha256": "703c7cfa83fd16cf4493515b5e888a6f74f278378de312abd45b604e9257384d",
+      "bytes": 29244
+    },
+    {
+      "path": "可塑性喪失/測定/補助データ/leaky_order_1111/analysis_checks.json",
+      "source": "/home/issan/Projects/claude/wt/leaky_order_1111/results/leaky_order_1111/analysis_checks.json",
+      "sha256": "28a138c552261fecf543364d0d6244ab4c474c44bd96e8c9203107fd8779108a",
+      "bytes": 250
+    },
+    {
+      "path": "可塑性喪失/測定/補助データ/leaky_order_1111/backup_manifest.json",
+      "source": "/home/issan/Projects/claude/wt/leaky_order_1111/results/leaky_order_1111/backup_manifest.json",
+      "sha256": "b3412ca6f35de90df7426dcb3c2f892a680e8ec91fd2e6da3d1817c9a98b528f",
+      "bytes": 494484
+    },
+    {
+      "path": "可塑性喪失/測定/補助データ/leaky_order_1111/checks.json",
+      "source": "/home/issan/Projects/claude/wt/leaky_order_1111/results/leaky_order_1111/checks.json",
+      "sha256": "dea8a748c8047435d68a509ae0dba548bb9edc9386af77f5890631c5a204cf17",
+      "bytes": 234
+    },
+    {
+      "path": "可塑性喪失/測定/補助データ/leaky_order_1111/common_budget_curves.pdf",
+      "source": "/home/issan/Projects/claude/wt/leaky_order_1111/results/leaky_order_1111/common_budget_curves.pdf",
+      "sha256": "f336a083aeb8bdf78b2576496845ab1296616d6579e7c6d9a434c1e02464a183",
+      "bytes": 83357
+    },
+    {
+      "path": "可塑性喪失/測定/補助データ/leaky_order_1111/common_budget_curves.png",
+      "source": "/home/issan/Projects/claude/wt/leaky_order_1111/results/leaky_order_1111/common_budget_curves.png",
+      "sha256": "14ef2fe3809d3f52d3a2b56d2e4ba20852a20f14dae74bc7a589d407a8681e20",
+      "bytes": 306636
+    },
+    {
+      "path": "可塑性喪失/測定/補助データ/leaky_order_1111/derivative_checks_posthoc.json",
+      "source": "/home/issan/Projects/claude/wt/leaky_order_1111/results/leaky_order_1111/derivative_checks_posthoc.json",
+      "sha256": "babbdf60b47587628beb7eb65ca66adf26451e016be6a5984219cf8719f1b803",
+      "bytes": 382
+    },
+    {
+      "path": "可塑性喪失/測定/補助データ/leaky_order_1111/derivative_points_posthoc.csv",
+      "source": "/home/issan/Projects/claude/wt/leaky_order_1111/results/leaky_order_1111/derivative_points_posthoc.csv",
+      "sha256": "900ee4d1ad4c1980a3cd71813bd3195fd67a32d07d9cec7edda7ccfb1719d765",
+      "bytes": 36478
+    },
+    {
+      "path": "可塑性喪失/測定/補助データ/leaky_order_1111/derivative_summary_posthoc.csv",
+      "source": "/home/issan/Projects/claude/wt/leaky_order_1111/results/leaky_order_1111/derivative_summary_posthoc.csv",
+      "sha256": "c2c0c45d074cc4434884c7a33b8107323196b75e29ad88725bc57b77e99604b7",
+      "bytes": 24495
+    },
+    {
+      "path": "可塑性喪失/測定/補助データ/leaky_order_1111/derivative_trajectories_posthoc.pdf",
+      "source": "/home/issan/Projects/claude/wt/leaky_order_1111/results/leaky_order_1111/derivative_trajectories_posthoc.pdf",
+      "sha256": "822c520e623ddac404f5c68094c8cc677e8499c969ea0b0f2df249ed821e379d",
+      "bytes": 30227
+    },
+    {
+      "path": "可塑性喪失/測定/補助データ/leaky_order_1111/derivative_trajectories_posthoc.png",
+      "source": "/home/issan/Projects/claude/wt/leaky_order_1111/results/leaky_order_1111/derivative_trajectories_posthoc.png",
+      "sha256": "15aaec292af2bf08487b73d15e443cc78660b9b259c56acba06b8f4e484100bc",
+      "bytes": 293922
+    },
+    {
+      "path": "可塑性喪失/測定/補助データ/leaky_order_1111/exploratory_local_slopes.csv",
+      "source": "/home/issan/Projects/claude/wt/leaky_order_1111/results/leaky_order_1111/exploratory_local_slopes.csv",
+      "sha256": "0f222a287f6b56b83adcbfc6d3dae2fb9ec8ac40ca760e4b33dca421275c1e33",
+      "bytes": 4371
+    },
+    {
+      "path": "可塑性喪失/測定/補助データ/leaky_order_1111/group_summary.csv",
+      "source": "/home/issan/Projects/claude/wt/leaky_order_1111/results/leaky_order_1111/group_summary.csv",
+      "sha256": "1321f7b94ebde035db46f3bf814282d0eb3da1cdcb04653f22f2ae811859127a",
+      "bytes": 3258
+    },
+    {
+      "path": "可塑性喪失/測定/補助データ/leaky_order_1111/host_check.json",
+      "source": "/home/issan/Projects/claude/wt/leaky_order_1111/results/leaky_order_1111/host_check.json",
+      "sha256": "053a48514b3b9bb649da65661dd233fed5c5099a6f8daead42a92686fbd4ac80",
+      "bytes": 274
+    },
+    {
+      "path": "可塑性喪失/測定/補助データ/leaky_order_1111/paired_ratios.csv",
+      "source": "/home/issan/Projects/claude/wt/leaky_order_1111/results/leaky_order_1111/paired_ratios.csv",
+      "sha256": "56fbce44db3c7bdd7c410e226bd02d6c8fa2e09a5e41c168a577654d5205c20d",
+      "bytes": 3059
+    },
+    {
+      "path": "可塑性喪失/測定/補助データ/leaky_order_1111/paired_stream_checks.json",
+      "source": "/home/issan/Projects/claude/wt/leaky_order_1111/results/leaky_order_1111/paired_stream_checks.json",
+      "sha256": "3c8a9ee35afc95bde9caadcc1de8a4b980baac13628d344f69b762388d1aeba4",
+      "bytes": 135
+    },
+    {
+      "path": "可塑性喪失/測定/補助データ/leaky_order_1111/source_derivative_paired_posthoc.csv",
+      "source": "/home/issan/Projects/claude/wt/leaky_order_1111/results/leaky_order_1111/source_derivative_paired_posthoc.csv",
+      "sha256": "dafba5dbf6718121f9d3392ecaf032269e5e42678359ec90eadb181c345c82c4",
+      "bytes": 564
+    },
+    {
+      "path": "可塑性喪失/測定/補助データ/leaky_order_1111/source_manifest.json",
+      "source": "/home/issan/Projects/claude/wt/leaky_order_1111/results/leaky_order_1111/source_manifest.json",
+      "sha256": "cf28b5fafba781b4c8c7d74dd515d2f95342b4d3bba5350a033a2e12567c079e",
+      "bytes": 22095
+    },
+    {
+      "path": "可塑性喪失/測定/補助データ/leaky_order_1111/time_orders.pdf",
+      "source": "/home/issan/Projects/claude/wt/leaky_order_1111/results/leaky_order_1111/time_orders.pdf",
+      "sha256": "ff31a6d78410eaede632e02c25d08dc099226c2e45c318874c8a570c0bce9d9d",
+      "bytes": 23680
+    },
+    {
+      "path": "可塑性喪失/測定/補助データ/leaky_order_1111/time_orders.png",
+      "source": "/home/issan/Projects/claude/wt/leaky_order_1111/results/leaky_order_1111/time_orders.png",
+      "sha256": "fe6cf9ec571c30624a323327b4d6198520ead83fbd7b266468237ebf4ab85d9e",
+      "bytes": 191898
+    }
+  ]
+}
