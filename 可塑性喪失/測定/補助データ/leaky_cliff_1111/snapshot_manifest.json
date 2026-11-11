@@ -1,0 +1,190 @@
+{
+  "source_commit": "048b848fa43b4fa452b14bdb496d8439d1eb1ea5",
+  "training_commit": "18b4681fec66d42617da7814ae625852d3ca108d",
+  "files": [
+    {
+      "file": "budget_seed_summary.csv",
+      "sha256": "e357400a2d2cc9e1cea0263d16b2470ae912550e541f4a120d618a6138528034"
+    },
+    {
+      "file": "below_point1_recovery_posthoc.csv",
+      "sha256": "b3304dce472e87ea81f42cb228303a5d67c74b244b72ab284abebbd86143b491"
+    },
+    {
+      "file": "branch_initial_checks.csv",
+      "sha256": "a7a81f4c5e9a9a7424b09a83f3713664c7dd5cd0e17946bc53b3f08a3b86473e"
+    },
+    {
+      "file": "branch_mechanism.pdf",
+      "sha256": "87f643295982153b2614faace4184035deb7caa2e12133c5c7d458c052f010ad"
+    },
+    {
+      "file": "historical_elu_traces_posthoc.csv",
+      "sha256": "fe23d2ad15e7d435d5cbe8ea6e7dd321e2c96e14fbed356af3c773ba35992259"
+    },
+    {
+      "file": "dense_diagnostics.pdf",
+      "sha256": "9865847c816f97aa80be9c3ebeb2d11e55ec4e6bbc49dbac7b6614c3e46c6dec"
+    },
+    {
+      "file": "branch_diagnostic_points.csv",
+      "sha256": "3f98c4759c57bafe795e047f4baaaf10f4fc5002b6e5ff62bb34ebd8ca0fa532"
+    },
+    {
+      "file": "verdict.csv",
+      "sha256": "cc7f37b35497e7a9476c6a72da9ca7717a415ca2ab3d5b00d282ca6b8bf1a74c"
+    },
+    {
+      "file": "same_state_branches.png",
+      "sha256": "f54613c2e5329e118077bd0b80c6f13351928bd52dd7357e571edb953846ef06"
+    },
+    {
+      "file": "natural_sweep.pdf",
+      "sha256": "247bbf774024b6c48051675c5e04729989ea0f6864fa9cdd0cc92adccf4a780e"
+    },
+    {
+      "file": "checks.json",
+      "sha256": "0b2cf5cf29e7e72ee22649d61201afd4cc3514dff6c545276422dcf29218c59c"
+    },
+    {
+      "file": "summary.md",
+      "sha256": "58971377ac9c1b21231b2cad9a5da26e129b06f9f4d0f1b92bdc4ae3911cd11a"
+    },
+    {
+      "file": "historical_sources.json",
+      "sha256": "e2829b784601d2a1ceab4d83e6bf2de186496ca4b14d63fecee471109dcac8cb"
+    },
+    {
+      "file": "confirmation_contrasts.csv",
+      "sha256": "ef1b87f960c6285e3f11348b3f75508d2591fd325e0e4cec2c858a769d225147"
+    },
+    {
+      "file": "dense_diagnostics.png",
+      "sha256": "361dfa8131602634e9a2e13b0fa76cec4675bf4ee090ce2b2abcdc4142b9fb0e"
+    },
+    {
+      "file": "matched_means_descriptive.csv",
+      "sha256": "8dec06ebf6d3af0c58e149de1a07529556f38238b971052261e91fd742a83833"
+    },
+    {
+      "file": "historical_elu_events_posthoc.csv",
+      "sha256": "a08dcf3ca5d605136f04838eb5ae58ec93249e709a4f27fb5e98fff3e96d6284"
+    },
+    {
+      "file": "unit_geometry.csv.gz",
+      "sha256": "25c1400e3de44cb5cca5e584531ca949a32821cfc22479373b2bbfe410e5f537"
+    },
+    {
+      "file": "epsilon_input_control.csv",
+      "sha256": "38f80efbdec16e29b14b5a3cbbe841854034f1b4b2eec27a47f3e069ec341a4c"
+    },
+    {
+      "file": "analysis_provenance.json",
+      "sha256": "824d8a949ce1670a48e3d5976f960ddeee1a245032857d43f8c13584ca887c4e"
+    },
+    {
+      "file": "branch_group_summary.csv",
+      "sha256": "69d402f4b5406e7f4a81123ce995b3df4b996a8b62ff955f265ae2f3af0fe119"
+    },
+    {
+      "file": "selection.json",
+      "sha256": "0b9ed3a691f9cd33e490b1fd8a7fbcb8d875da862be97b546d43b65e32ed9377"
+    },
+    {
+      "file": "task_end_geometry.csv.gz",
+      "sha256": "d8e037c179e2851fce1d921b36b619ccf553047e8e01638a8100f8fc4a939ad6"
+    },
+    {
+      "file": "natural_sweep.png",
+      "sha256": "cbb700184028a79d97fa7bdb14f27b976e752478609cafabac74898c2c8801b1"
+    },
+    {
+      "file": "leaky_cliff_summary.png",
+      "sha256": "652d904d58bcfbe570ef72fb21084659bec1bdce26edcfc53ead6e563f60c8fd"
+    },
+    {
+      "file": "same_state_branches.pdf",
+      "sha256": "22a5f2fb519f9f27e4bd49c55693470d3e5e7cbc54ff3d0f76a18b5e67ac02a8"
+    },
+    {
+      "file": "unit_distribution.pdf",
+      "sha256": "8e071647ed0a89e77a108bfba48ef3b009e982b264833a7a0d4687c5c5599acd"
+    },
+    {
+      "file": "leaky_cliff_summary.pdf",
+      "sha256": "a82a67f847fec940ecded9333740c01c39b06933be101ffee31227e5e5d78a01"
+    },
+    {
+      "file": "historical_elu.pdf",
+      "sha256": "8e6608cfec044385cc53c9ad2f503e87615884c048dab86ac7534c6f7427d46e"
+    },
+    {
+      "file": "historical_elu.png",
+      "sha256": "7e3628a24f7a5158e0925c8b64edab12f75a538ac0596b78145daa519c249858"
+    },
+    {
+      "file": "unit_distribution.png",
+      "sha256": "54b2d3c7f11fbf4a4dccb52ebd429559feba5adc1d42d7e79842a71f10586091"
+    },
+    {
+      "file": "branch_seed_summary.csv",
+      "sha256": "c70dd30aba48130583130e991727bd3c6dbe4c1c46f8489e296f2fdbd394d0ff"
+    },
+    {
+      "file": "natural_group_summary.csv",
+      "sha256": "04fb55419b02807347b35e5e14c2faa94f4abfbc647ca05ae04eb501a9a4d856"
+    },
+    {
+      "file": "launch.log",
+      "sha256": "531d15c55a30090e625da2e8ee8174d82471d1fff63c8e879e8620dc349b791e"
+    },
+    {
+      "file": "natural_events.csv",
+      "sha256": "2b5eb19b028849a245dd8517d363f3d8f2734ab91ac8a81928a9c41d58563670"
+    },
+    {
+      "file": "branch_mechanism.png",
+      "sha256": "5e98aaf256feb17b40df522f5dc5d8dc2221744f39c092c787e63d0bb76b90d4"
+    },
+    {
+      "file": "COMPLETE.json",
+      "sha256": "b3479e4d202555a066e6d1f090ba18a927c6cd7d5d854f6b6be7f866a1e4db02"
+    },
+    {
+      "file": "integrity.json",
+      "sha256": "5d2a08a0967e627cd1d4d1838f2036ee56002dc05bbe104435b121cb08f7932d"
+    },
+    {
+      "file": "natural_seed_summary.csv",
+      "sha256": "3b54126f5f94009faee07f743dc74c1d5f3be941fc014b578c3adce68f750984"
+    },
+    {
+      "file": "backup_manifest.json",
+      "sha256": "4352eda0634777ec6842f7cd5baf4a56316c62d895de0f1624b4a2cf9f5f917f"
+    },
+    {
+      "file": "censored_times.csv",
+      "sha256": "08172884eca74884ff3d8d521032d5b1e8f06ff1a46db6aa5b733f11f1c0635f"
+    },
+    {
+      "file": "localization_selection.json",
+      "sha256": "bc4e69cfcbef121b2da3b67f5e029602f71553969c1f928a72f3f613134fc3b5"
+    },
+    {
+      "file": "branch_scale_shadow.csv",
+      "sha256": "0a59c6197633b172a78751e17ba4097336e306d9fc0fc339cb60755fa89c3557"
+    },
+    {
+      "file": "branch_contrasts.csv",
+      "sha256": "9a14fd4b46575448020bc79c7353e3d1c86c028633966186e00276e61f5d67a4"
+    },
+    {
+      "file": "spec_leaky_cliff_1111.md",
+      "sha256": "6d6547a2e0b5900475a9a9381928ffdcd9ea1bc1ff57846877c086a58b0500f1"
+    },
+    {
+      "file": "interpretation.md",
+      "sha256": "14dcf6eb1371e180453170663d820912c6674ad19b463c86a4a5698761f713b0"
+    }
+  ]
+}
