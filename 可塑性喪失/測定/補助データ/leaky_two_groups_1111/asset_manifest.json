@@ -1,0 +1,56 @@
+{
+  "posthoc": true,
+  "result_git": "c151b84337d5356e9c7113573a1b02f3204af2aa",
+  "files": [
+    {
+      "path": "可塑性喪失/測定/補助データ/leaky_two_groups_1111/backup_manifest.json",
+      "sha256": "b5bb3b4142e481e7ebdeebbbe6396acbdb00d0e4d6dac85a265222379b031732",
+      "bytes": 193
+    },
+    {
+      "path": "可塑性喪失/測定/補助データ/leaky_two_groups_1111/checks.json",
+      "sha256": "1f7d95964e71f9343a1a9536e068a420eef947cec88fbcc6df676ec4c3e518b1",
+      "bytes": 213
+    },
+    {
+      "path": "可塑性喪失/測定/補助データ/leaky_two_groups_1111/group_summary.csv",
+      "sha256": "b7c01ea43bf5d30d0ef87486769e99c34acaeff7043bb73734488a948ff955e8",
+      "bytes": 8647
+    },
+    {
+      "path": "可塑性喪失/測定/補助データ/leaky_two_groups_1111/per_seed_groups.csv",
+      "sha256": "ce6a46fdbcad3f2ae73aa79471f0b0068d6329d76309e583a1297ea879fa7962",
+      "bytes": 24515
+    },
+    {
+      "path": "可塑性喪失/測定/補助データ/leaky_two_groups_1111/product_gap.json",
+      "sha256": "0bf5530a4f914b57e59b95bc46a90e3ab6c84c60e9bcb0f04ee1af9663eef735",
+      "bytes": 269
+    },
+    {
+      "path": "可塑性喪失/測定/補助データ/leaky_two_groups_1111/provenance.json",
+      "sha256": "ed64466a3a53e7db8000c385560ec9e5620668d7581f0f79bbb80e96a7f82582",
+      "bytes": 8928
+    },
+    {
+      "path": "可塑性喪失/測定/補助データ/leaky_two_groups_1111/two_groups_posthoc.pdf",
+      "sha256": "9fe7db0f3dd0e7241b5f85795ff4c94704e6e5a278193bdfb69697cea8605bcc",
+      "bytes": 42264
+    },
+    {
+      "path": "可塑性喪失/測定/補助データ/leaky_two_groups_1111/two_groups_posthoc.png",
+      "sha256": "06d8dade9f22e64436e935683caadfc7e876b6216ef5f5dc393a5276a9421aa8",
+      "bytes": 198006
+    },
+    {
+      "path": "可塑性喪失/測定/補助データ/leaky_two_groups_1111/within_group_fits.csv",
+      "sha256": "efe7be9f7b062f41c6d3208a23c672a9da00996ce507b8589be2e78dcbcdb266",
+      "bytes": 1161
+    },
+    {
+      "path": "可塑性喪失/測定/補助データ/leaky_two_groups_1111/within_leak_times.csv",
+      "sha256": "66b7de1d460a026196264591603867c9bfd433b79696157eeb0f97fbb6ce8d80",
+      "bytes": 478
+    }
+  ]
+}
