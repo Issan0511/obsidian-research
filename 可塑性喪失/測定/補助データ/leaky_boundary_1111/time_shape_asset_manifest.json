@@ -1,0 +1,30 @@
+{
+  "status": "posthoc_existing_data_only",
+  "files": [
+    {
+      "file": "time_shape_by_age_posthoc.csv",
+      "sha256": "dabe03001bca4d52f761fe3ac43e2dca83f6492ef2b5a43eb22c621cc191eb67",
+      "bytes": 370
+    },
+    {
+      "file": "time_shape_fits_posthoc.csv",
+      "sha256": "6584207a94bcae632b429c968d9a8bfcba1b180588af9edea71829b0600024a8",
+      "bytes": 3581
+    },
+    {
+      "file": "time_shape_posthoc.pdf",
+      "sha256": "3fca485a4de7d46fd7c05316e8294c3ea4c62a171b6b83d54107f1d465193228",
+      "bytes": 26465
+    },
+    {
+      "file": "time_shape_posthoc.png",
+      "sha256": "4b8a56b936e0d3ee0a2b1877632ef70260e435937049830ab3d46861694a5257",
+      "bytes": 211163
+    },
+    {
+      "file": "time_shape_provenance.json",
+      "sha256": "52d2fe57793ae64f1df86c0d090f19f4f98ce3c4b62347f571d76527ea673880",
+      "bytes": 613
+    }
+  ]
+}
